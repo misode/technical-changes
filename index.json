@@ -1,4 +1,10 @@
 [
-  "1.17",
-  "1.18"
+  {
+    "id": "1.17",
+    "article": "caves---cliffs--part-i-out-today-java"
+  },
+  {
+    "id": "1.18",
+    "article": null
+  }
 ]

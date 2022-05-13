@@ -1,18 +1,8 @@
 [
-  {
-    "id": "1.17",
-    "article": "caves---cliffs--part-i-out-today-java"
-  },
-  {
-    "id": "1.18",
-    "article": "caves---cliffs--part-ii-out-today-java"
-  },
-  {
-    "id": "1.18.2",
-    "article": "minecraft-java-edition-1-18-2"
-  },
-  {
-    "id": "1.19",
-    "article": null
-  }
+  "1.16",
+  "1.16.2",
+  "1.17",
+  "1.18",
+  "1.18.2",
+  "1.19"
 ]

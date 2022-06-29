@@ -1,0 +1,27 @@
+name: Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - run: python generate.py
+
+      - uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          folder: 'generated'
+          branch: 'generated'
+          git-config-name: GitHub Actions
+          git-config-email: actions@github.com
+          commit-message: ⚙️ Update changes

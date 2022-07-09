@@ -22,6 +22,9 @@ for name in versions:
 
 os.makedirs('generated', exist_ok=True)
 with open('generated/changes.json', 'w') as f:
+	json.dump(changes, f, indent=2)
+	f.write('\n')
+with open('generated/changes.min.json', 'w') as f:
 	json.dump(changes, f)
 
 print(f'Generated {len(changes)} changes from {len(versions)} versions')

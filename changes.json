@@ -113,6 +113,111 @@
     "content": "Tags can now have optional entries. Instead of a string, they are defined as `{ \"id\": \"foo\", \"required\": false }`."
   },
   {
+    "group": "1.19.1",
+    "version": "1.19.1-rc1",
+    "tags": [
+      "text"
+    ],
+    "content": "The `run_command` click event no longer supports sending chat messages. Values now always need to have `/` as prefix."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre2",
+    "tags": [
+      "options"
+    ],
+    "content": "The server property `enforce-secure-profile` now defaults to `true`."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre2",
+    "tags": [
+      "text",
+      "chat-type",
+      "data"
+    ],
+    "content": "Removed the `system`, `game_info`, and `tellraw_command` chat types."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre2",
+    "tags": [
+      "text",
+      "chat-type"
+    ],
+    "content": "Removed the `overlay` field in chat types. Chat types can now no longer be used to show text on the actionbar."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre2",
+    "tags": [
+      "text",
+      "chat-type"
+    ],
+    "content": "Flattened the chat type decorations, which are now placed directly in the `chat` and `narration` fields, without a `decoration` object. Removed the `priority` field in `narration`."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre3",
+    "tags": [
+      "assets",
+      "splash"
+    ],
+    "content": "Added splash text \"Technoblade never dies!\"."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre3",
+    "tags": [
+      "text",
+      "chat-type"
+    ],
+    "content": "Renamed the `team_name` parameter to `target`. This is now also used in the `msg_command_outgoing` chat type."
+  },
+  {
+    "group": "1.19.1",
+    "version": "1.19.1-pre3",
+    "tags": [
+      "text",
+      "chat-type",
+      "data"
+    ],
+    "content": "The `msg_command` chat type has been split into `msg_command_outgoing` and `msg_command_incoming`."
+  },
+  {
+    "group": "1.19.1",
+    "version": "22w24a",
+    "tags": [
+      "api"
+    ],
+    "content": "Changed `launchermeta.mojang.com` \u2192 `piston-meta.mojang.com`. The old URL is still supported for now."
+  },
+  {
+    "group": "1.19.1",
+    "version": "22w24a",
+    "tags": [
+      "game-event"
+    ],
+    "content": "Added game events `jukebox_play` and `jukebox_stop_play`."
+  },
+  {
+    "group": "1.19.1",
+    "version": "22w24a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added icons for chat reporting to the `guide/social_interactions.png` texture."
+  },
+  {
+    "group": "1.19.1",
+    "version": "22w24a",
+    "tags": [
+      "text",
+      "chat-type"
+    ],
+    "content": "The `style` field in chat type decorations is now optional."
+  },
+  {
     "group": "1.18.2",
     "version": "22w06a",
     "tags": [
@@ -707,7 +812,8 @@
     "group": "1.19",
     "version": "22w18a",
     "tags": [
-      "text"
+      "text",
+      "chat-type"
     ],
     "content": "Added chat types, which are stored in the `chat_type` folder. There are 8 vanilla chat types which can be overwritten:\n* `chat`: When a player sends a message to chat\n* `emote_command`: When a player uses the `/me` command\n* `game_info`: For messages that are displayed to the actionbar\n* `msg_command`: When a player uses the `/msg` command\n* `say_command`: When a player uses the `/say` command\n* `system`: For system messages\n* `team_msg_command`: When a player uses the `/teammsg` command\n* `tellraw_command`: When the `/tellraw` command is used"
   },

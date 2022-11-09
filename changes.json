@@ -327,12 +327,106 @@
   },
   {
     "group": "1.19.3",
+    "version": "22w44a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `blockExplosionDropDecay`, `mobExplosionDropDecay` and `tntExplosionDropDecay` game rules. When set to `false`, all blocks drop loot. When set to `true`, blocks drop loot randomly depending on how far from the explosion center. Defaults to `false` for TNT, `true` for block and mob."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w44a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `snowAccumulationHeight` game rule, which defaults to `1`. When snowing, determines the maximum snow layers that can be accumulated in each block."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w44a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `waterSourceConversion` and `lavaSourceConversion` game rules. Defaults to `true` for water and `false` for lava."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w44a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `globalSoundEvents` game rule, defaults to `true`. It controls whether gameplay moments like spawning a wither are heard by all players."
+  },
+  {
+    "group": "1.19.3",
     "version": "22w43a",
     "tags": [
       "assets",
       "lang"
     ],
     "content": "Added languages Nahuatl (`nah`) and Rusyn (`ry_ua`)."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 12."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added textures for the new player skins under `entity/player/(slim|wide)`: `alex`, `ari`, `efe`, `kai`, `makena`, `noor`, `steve`, `sunny`, and `zuri`."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Removed player skin textures `entity/steve` and `entity/alex`."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Changed the `gui/container/creative_inventory/tabs` texture to fit an extra tab on the top and bottom."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "command",
+      "breaking"
+    ],
+    "content": "Change the `/publish` command syntax:\n* Old syntax: `/publish [port]`\n* New syntax: `/publish [allowCommands] [gamemode] [port]`"
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "creative"
+    ],
+    "content": "Added a new `Operator Utilities` creative tab. It can be enabled in Options > Controls > Operator Items Tab > ON. Only opped players can see it."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w45a",
+    "tags": [
+      "tags",
+      "data",
+      "breaking"
+    ],
+    "content": "Removed block tag `overworld_natural_logs`."
   },
   {
     "group": "1.19",

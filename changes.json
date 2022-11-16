@@ -327,6 +327,31 @@
   },
   {
     "group": "1.19.3",
+    "version": "22w46a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `/fillbiome` command with syntax `/fillbiome <from> <to> <biome>`."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w46a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `if biome` execute subcommand with syntax `/execute if|unless biome <pos> <biome>`. The biome argument can be a biome or biome tag."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w46a",
+    "tags": [
+      "pack",
+      "assets"
+    ],
+    "content": "Translation files and `pack.mcmeta` now use non-ascii characters instead of escape sequences."
+  },
+  {
+    "group": "1.19.3",
     "version": "22w44a",
     "tags": [
       "gamerule"

@@ -415,16 +415,15 @@
       "command",
       "breaking"
     ],
-    "content": "Changed the `/weather` command. The time parameter now requires a `t`, `s`, or `d` suffix. To retain existing functionality, you need to add an `s` suffix to pre-existing commands."
+    "content": "Changed the `/weather` command. The time parameter now accepts a `t`, `s`, or `d` suffix. To retain existing functionality, you need to add an `s` suffix to pre-existing commands."
   },
   {
     "group": "1.19.4",
     "version": "23w03a",
     "tags": [
-      "command",
-      "breaking"
+      "command"
     ],
-    "content": "Changed the `/title <selector> times` command. All time parameters now require a `t`, `s`, or `d` suffix."
+    "content": "Changed the `/title <selector> times` command. All time parameters now accept a `t`, `s`, or `d` suffix."
   },
   {
     "group": "1.19.4",

@@ -2387,6 +2387,14 @@
     "group": "1.19.4",
     "version": "23w04a",
     "tags": [
+      "nbt"
+    ],
+    "content": "Added new flag to the `HideFlags` tag on items. Adding `128` will hide armor trim item tooltips."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w04a",
+    "tags": [
       "tag",
       "data"
     ],

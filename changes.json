@@ -2365,7 +2365,7 @@
     "tags": [
       "trims"
     ],
-    "content": "Added trim patterns, which are stored in the `trim_pattern` data pack folder. It has fields `asset_id` (resource location), `description` (object with field `translate`), and `template_item` (item)."
+    "content": "Added trim patterns, which are stored in the `trim_pattern` data pack folder. It has fields `asset_id` (resource location), `description` (text component), and `template_item` (item)."
   },
   {
     "group": "1.19.4",
@@ -2373,7 +2373,7 @@
     "tags": [
       "trims"
     ],
-    "content": "Added trim materials, which are stored in the `trim_material` data pack folder. It has fields `asset_name` (string), `description` (object with fields `color` and `translate`), `ingredient` (item), `item_model_index` (float), and optionally `incompatible_armor_material` (string)."
+    "content": "Added trim materials, which are stored in the `trim_material` data pack folder. It has fields `asset_name` (string), `description` (text component), `ingredient` (item), `item_model_index` (float), and optionally `incompatible_armor_material` (string)."
   },
   {
     "group": "1.19.4",

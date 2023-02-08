@@ -2518,6 +2518,65 @@
     "content": "Added biome tags `spawns_white_rabbits`, `spawns_snow_foxes`, `increased_fire_burnout`, and `snow_golem_melts`."
   },
   {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `/damage` command. It has syntax:\n* `damage <target> <amount> [<damageType>] [at <location>]`\n* `damage <target> <amount> [<damageType>] [by <entity>] [from <cause>]`"
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `/execute summon` subcommand. It has syntax `execute summon <entity id>`."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "predicate",
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed damage predicates. Removed fields `is_projectile, is_explosion`, `bypasses_armor`, `bypasses_invulnerability`, `bypasses_magic`, `is_fire`, `is_magic`, and `is_lightning`. Added new field `tags` which is a list of objects, each containting two fields: `id` (id of damage type tag) and `expected` (boolean)."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "predicate"
+    ],
+    "content": "Added damage types, which are stored in the `damage_type` folder. It has fields:\n* `message_id`: String used for the translation message `death.attack.{message_id}.message`.\n* `exhaustion`: Float.\n* `scaling`: One of `never`, `always`, `when_caused_by_living_non_player`.\n* `effects`: Optional. One of `hurt`, `thorns`, `drowning`, `burning`, `poking`, or `freezing`.\n* `death_message_type`: Optional. `default`, `fall_variants`, or `intentional_game_design`."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added three new display entities: `item_display`, `block_display`, and `text_display`. They share common tags: `transformation`, `interpolation_duration`, `interpolation_start`, `billboard`, `view_range`, `shadow_radius`, `shadow_strength`, `width`, `height`, `glow_color_override`, `brightness`.\n* `block_display`: Has field `block_state`.\n* `item_display`: Has fields `item` and `item_display`.\n* `text_display`: Has fields `line_width`, `text_opacity`, `background`, `shadow`, `see_through`, `default_background`, `alignment`, and `text`."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "shader"
+    ],
+    "content": "Added shader types `rendertype_text_background` and `rendertype_text_background_see_through` for the `text_display` entity."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "game-event"
+    ],
+    "content": "Added game events `entity_dismount` (frequency 6), and `entity_mount` (frequency 7)."
+  },
+  {
     "group": "1.17",
     "version": "21w20a",
     "tags": [

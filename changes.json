@@ -2521,6 +2521,15 @@
     "group": "1.19.4",
     "version": "23w06a",
     "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 12."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
       "command"
     ],
     "content": "Added the `/damage` command. It has syntax:\n* `damage <target> <amount> [<damageType>] [at <location>]`\n* `damage <target> <amount> [<damageType>] [by <entity>] [from <cause>]`"

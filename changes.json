@@ -2577,6 +2577,14 @@
     "content": "Added game events `entity_dismount` (frequency 6), and `entity_mount` (frequency 7)."
   },
   {
+    "group": "1.19.4",
+    "version": "23w06a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `doVinesSpread` game rule, which defaults to `true`. It controls whether vines will spread to nearby blocks."
+  },
+  {
     "group": "1.17",
     "version": "21w20a",
     "tags": [

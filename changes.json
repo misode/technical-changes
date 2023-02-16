@@ -2407,7 +2407,7 @@
       "nbt",
       "entity"
     ],
-    "content": "Added entity `interaction`. It has tags `width` (float), `height` (float), response (boolean), `attack` (player action), and `interaction` (player action). Player actions have tags `player` (UUID) and `timestamp` (long)."
+    "content": "Added entity `interaction` which allows detecting left and right clicks. It has tags `width` (float), `height` (float), response (boolean), `attack` (player action), and `interaction` (player action). Player actions have tags `player` (UUID) and `timestamp` (long)."
   },
   {
     "group": "1.19.4",
@@ -2416,7 +2416,7 @@
       "assets",
       "lang"
     ],
-    "content": "The `en_us.json` file is not sorted alphanumerically."
+    "content": "The `en_us.json` file is now sorted alphanumerically."
   },
   {
     "group": "1.19.4",

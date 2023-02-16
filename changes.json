@@ -2436,6 +2436,22 @@
   },
   {
     "group": "1.19.4",
+    "version": "23w07a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added foliage placer `cherry_foliage_placer`. It has fields `height` (int provider), `wide_bottom_layer_hole_chance` (float), `corner_hole_chance` (float), `hanging_leaves_chance` (float), and `hanging_leaves_extension_chance` (float)."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w07a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added trunk placer `cherry_trunk_placer`. It has fields `branch_count` (int provider), `branch_horizontal_length` (int provider), `branch_start_offset_from_top` (int provider), and `branch_end_offset_from_top` (int provider)."
+  },
+  {
+    "group": "1.19.4",
     "version": "23w05a",
     "tags": [
       "trims"

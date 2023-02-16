@@ -2402,6 +2402,56 @@
   },
   {
     "group": "1.19.4",
+    "version": "23w07a",
+    "tags": [
+      "nbt",
+      "entity"
+    ],
+    "content": "Added entity `interaction`. It has tags `width` (float), `height` (float), response (boolean), `attack` (player action), and `interaction` (player action). Player actions have tags `player` (UUID) and `timestamp` (long)."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w07a",
+    "tags": [
+      "assets",
+      "lang"
+    ],
+    "content": "The `en_us.json` file is not sorted alphanumerically."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w07a",
+    "tags": [
+      "recipe"
+    ],
+    "content": "Added `crafting_decorated_pot` recipe type. It has no extra configuration."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w07a",
+    "tags": [
+      "recipe"
+    ],
+    "content": "Added the `show_notification` field to the `crafting_shaped` recipe. It determines if a notification is shown when unlocking this recipe."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w05a",
+    "tags": [
+      "trims"
+    ],
+    "content": "Removed field `incompatible_armor_material` from trim materials and added `override_armor_materials`, which is an optional map of armor material to overriden color palette."
+  },
+  {
+    "group": "1.19.4",
+    "version": "23w05a",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed the `/effect` command. `infinite` is now a valid option for effect durations."
+  },
+  {
+    "group": "1.19.4",
     "version": "23w03a",
     "tags": [
       "pack",

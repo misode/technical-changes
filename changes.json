@@ -1195,6 +1195,14 @@
   },
   {
     "group": "1.17",
+    "version": "1.17-pre1",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed the `weight` field in `template_pool`. It is now limited between 1 and 150 (inclusive)."
+  },
+  {
+    "group": "1.17",
     "version": "20w48a",
     "tags": [
       "gamerule"
@@ -2216,6 +2224,14 @@
       "gamerule"
     ],
     "content": "Added `globalSoundEvents` game rule, defaults to `true`. It controls whether gameplay moments like spawning a wither are heard by all players."
+  },
+  {
+    "group": "1.19.3",
+    "version": "22w44a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Removed field `name` from `template_pool`."
   },
   {
     "group": "1.19.3",

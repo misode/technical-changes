@@ -2477,6 +2477,24 @@
   },
   {
     "group": "1.19.4",
+    "version": "1.19.4-pre4",
+    "tags": [
+      "data",
+      "damage-type",
+      "tag"
+    ],
+    "content": "Added damage tag `bypasses_shield`. It contains `#bypasses_armor`, `falling_anvil`, and `falling_stalactite` by default."
+  },
+  {
+    "group": "1.19.4",
+    "version": "1.19.4-pre4",
+    "tags": [
+      "entity"
+    ],
+    "content": "Behavior of display entities has changed: When a new interpolation is started, it now starts from the current state instead of the final state."
+  },
+  {
+    "group": "1.19.4",
     "version": "23w07a",
     "tags": [
       "nbt",

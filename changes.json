@@ -1127,6 +1127,76 @@
     "content": "Removed field `output_nbt` from the `rule` structure processor. Added `block_entity_modifier` as replacement. It takes a block entity modifier, which is an object that can be one of 4 types:\n* `clear`: Completely clears the block NBT.\n* `passthrough`: A no-op, leaves the block NBT without any modifications.\n* `append_static`: Merges the block NBT with a static compound using a field `data`, similar to the old `output_nbt`.\n* `append_loot`: Sets the `LootTable` and `LootTableSeed` NBT tags using a field `loot_table`."
   },
   {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "text",
+      "command",
+      "breaking"
+    ],
+    "content": "Signs with click commands can now be interacted with even if the Sign is not waxed. Signs with non-`\"text\"` chat components can no longer be edited."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Added item modifier `reference`. It has a single field `name` which is a reference to an item modifier."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "jar"
+    ],
+    "content": "Removed `server` and `port` command line arguments."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "jar"
+    ],
+    "content": "Added `quickPlaySingleplayer`, `quickPlayMultiplayer`, and `quickPlayRealms` command line arguments that allow the game to be launched directly into a world. The argument takes respectively the name of a world, the IP address of a server, or the Realms ID. Added `quickPlayPath` argument used for logging."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Removed block tag `replaceable_plants` and added `replaceable` and `replaceable_by_trees` to control blocks that are replaced when the tree grows through them."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tag `enchantment_power_provider` and `enchantment_power_transmitter`, respectively containing `bookshelf` and `#replaceable`."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tag `sword_efficient` to represent blocks that are broken slightly faster by a sword than normal."
+  },
+  {
+    "group": "1.20",
+    "version": "23w14a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Changed the `minecraft.png` texture."
+  },
+  {
     "group": "1.16",
     "version": "20w20a",
     "tags": [

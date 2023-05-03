@@ -4813,6 +4813,51 @@
   },
   {
     "group": "1.20",
+    "version": "23w18a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 15."
+  },
+  {
+    "group": "1.20",
+    "version": "23w18a",
+    "tags": [
+      "advancement"
+    ],
+    "content": "Added field `sends_telemetry_event` (boolean) to advancements. It defaults to false."
+  },
+  {
+    "group": "1.20",
+    "version": "23w18a",
+    "tags": [
+      "loot",
+      "predicate",
+      "breaking"
+    ],
+    "content": "Renamed the `alternative` condition to `any_of`."
+  },
+  {
+    "group": "1.20",
+    "version": "23w18a",
+    "tags": [
+      "loot",
+      "predicate"
+    ],
+    "content": "Added the `all_of` condition. It has a field `terms` and passes only if all the terms pass."
+  },
+  {
+    "group": "1.20",
+    "version": "23w18a",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed the `placed_block`, `item_used_on_block`, and `allay_drop_item_on_block` advancement triggers. All fields are now collapsed into `location` which is no longer just a location predicate. It now accepts a list of loot conditions, just like the `player` condition."
+  },
+  {
+    "group": "1.20",
     "version": "23w17a",
     "tags": [
       "text",

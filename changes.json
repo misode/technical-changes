@@ -1650,8 +1650,7 @@
     "version": "23w03a",
     "tags": [
       "pack",
-      "breaking",
-      "obsolete"
+      "breaking"
     ],
     "content": "Data pack format has been increased to 11."
   },
@@ -4369,8 +4368,7 @@
     "version": "23w14a",
     "tags": [
       "pack",
-      "breaking",
-      "obsolete"
+      "breaking"
     ],
     "content": "Resource pack format has been increased to 14."
   },
@@ -4449,8 +4447,7 @@
     "version": "23w16a",
     "tags": [
       "pack",
-      "breaking",
-      "obsolete"
+      "breaking"
     ],
     "content": "Data pack format has been increased to 14."
   },
@@ -4501,8 +4498,7 @@
     "version": "23w12a",
     "tags": [
       "pack",
-      "breaking",
-      "obsolete"
+      "breaking"
     ],
     "content": "Data pack format has been increased to 13."
   },
@@ -4571,8 +4567,7 @@
     "group": "1.20",
     "version": "1.20-pre2",
     "tags": [
-      "recipe",
-      "obsolete"
+      "recipe"
     ],
     "content": "`minecraft:air` can now be used in smithing recipes to denote an ingredient that needs to match an empty slot."
   },
@@ -4755,8 +4750,7 @@
     "version": "22w42a",
     "tags": [
       "pack",
-      "breaking",
-      "obsolete"
+      "breaking"
     ],
     "content": "Resource pack format has been increased to 11 (skipping 10)."
   },

@@ -687,6 +687,92 @@
     "content": "Added nbt field `IsImmuneToZombification` to piglins that prevents them from zombifying in the overworld."
   },
   {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 19."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text"
+    ],
+    "content": "Plain-text chat components are now always serialized as strings instead of `{\"text\": \"blah\"}`"
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text",
+      "network"
+    ],
+    "content": "Chat components now serialize to NBT when sent over network."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added optional field `type` to text components. One of `text`, `translatable`, `score`, `selector`, `nbt`, and `keybind`."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text"
+    ],
+    "content": "In chat components, the `id` field for `show_entity` `hoverEvent` style accepts UUID as an array of four ints."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text"
+    ],
+    "content": "Numeric and boolean arguments for `translate` component are no longer converted to a string."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text",
+      "breaking"
+    ],
+    "content": "The JSON components of `null` and `[]` are no longer accepted in chat components."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "text"
+    ],
+    "content": "Errors in following chat component style fields are no longer silently ignored:\n* `color`\n* `clickEvent`\n* `hoverEvent`\n* `hoverEvent[action=show_entity].contents.name`\n* `hoverEvent[action=show_item].contents.tag`"
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "data",
+      "tag",
+      "damage-type"
+    ],
+    "content": "Added damage tag `can_break_armor_stands`, which can incrementally knock down armor stands."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w40a",
+    "tags": [
+      "data",
+      "tag"
+    ],
+    "content": "Added entity type tags `can_breathe_under_water`, `undead`, and `zombies`."
+  },
+  {
     "group": "1.20.2",
     "version": "23w33a",
     "tags": [

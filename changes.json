@@ -1162,6 +1162,24 @@
     "group": "1.20.3",
     "version": "23w41a",
     "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added boolean tag `dangerous` to entity `wither_skull`. It determines whether it is a blue skull."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w41a",
+    "tags": [
+      "block",
+      "nbt"
+    ],
+    "content": "Added tag `item` to block entity `decorated_pot`, which is an item stack."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w41a",
+    "tags": [
       "command",
       "breaking"
     ],
@@ -1332,6 +1350,15 @@
       "command"
     ],
     "content": "Changed behavior of `/execute if|unless function`. If the called functions dit not return, `unless` will now pass. For a single context, the first `return` in any of the functions will return."
+  },
+  {
+    "group": "1.20.3",
+    "version": "23w44a",
+    "tags": [
+      "block",
+      "nbt"
+    ],
+    "content": "Added tags `LootTable` and `LootTableSeed` to block entity `decorated_pot`."
   },
   {
     "group": "1.20.3",

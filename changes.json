@@ -967,7 +967,7 @@
     "tags": [
       "text"
     ],
-    "content": "Plain-text chat components are now always serialized as strings instead of `{\"text\": \"blah\"}`"
+    "content": "Plain-text text components are now always serialized as strings instead of `{\"text\": \"blah\"}`"
   },
   {
     "group": "1.20.3",
@@ -976,7 +976,7 @@
       "text",
       "network"
     ],
-    "content": "Chat components now serialize to NBT when sent over network."
+    "content": "text components now serialize to NBT when sent over network."
   },
   {
     "group": "1.20.3",
@@ -992,15 +992,7 @@
     "tags": [
       "text"
     ],
-    "content": "In chat components, the `id` field for `show_entity` `hoverEvent` style accepts UUID as an array of four ints."
-  },
-  {
-    "group": "1.20.3",
-    "version": "23w40a",
-    "tags": [
-      "text"
-    ],
-    "content": "Numeric and boolean arguments for `translate` component are no longer converted to a string."
+    "content": "In text components, the `id` field for `show_entity` `hoverEvent` style accepts UUID as an array of four ints."
   },
   {
     "group": "1.20.3",
@@ -1009,7 +1001,7 @@
       "text",
       "breaking"
     ],
-    "content": "The JSON components of `null` and `[]` are no longer accepted in chat components."
+    "content": "Numeric and boolean text components are no longer converted to a string. Additionaly, `null` and `[]` are no longer accepted."
   },
   {
     "group": "1.20.3",
@@ -1017,7 +1009,7 @@
     "tags": [
       "text"
     ],
-    "content": "Errors in following chat component style fields are no longer silently ignored:\n* `color`\n* `clickEvent`\n* `hoverEvent`\n* `hoverEvent[action=show_entity].contents.name`\n* `hoverEvent[action=show_item].contents.tag`"
+    "content": "Errors in following text component style fields are no longer silently ignored:\n* `color`\n* `clickEvent`\n* `hoverEvent`\n* `hoverEvent[action=show_entity].contents.name`\n* `hoverEvent[action=show_item].contents.tag`"
   },
   {
     "group": "1.20.3",
@@ -1687,7 +1679,7 @@
       "command",
       "breaking"
     ],
-    "content": "Signs with click commands can now be interacted with even if the Sign is not waxed. Signs with non-`\"text\"` chat components can no longer be edited."
+    "content": "Signs with click commands can now be interacted with even if the Sign is not waxed. Signs with non-`\"text\"` text components can no longer be edited."
   },
   {
     "group": "1.20",

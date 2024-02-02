@@ -3211,15 +3211,6 @@
     "group": "1.20.5",
     "version": "24w04a",
     "tags": [
-      "damage-type",
-      "obsolete"
-    ],
-    "content": "Added damage type `wind_charge`"
-  },
-  {
-    "group": "1.20.5",
-    "version": "24w04a",
-    "tags": [
       "storage",
       "options"
     ],
@@ -3407,7 +3398,7 @@
     "tags": [
       "damage-type"
     ],
-    "content": "Added experimental damage type `wind_charge`."
+    "content": "Added damage type `wind_charge`."
   },
   {
     "group": "1.20.5",
@@ -3453,15 +3444,6 @@
       "breaking"
     ],
     "content": "Resource pack format has been increased to 30."
-  },
-  {
-    "group": "1.20.5",
-    "version": "24w05a",
-    "tags": [
-      "damage-type",
-      "obsolete"
-    ],
-    "content": "Removed damage type `wind_charge`"
   },
   {
     "group": "1.20.5",

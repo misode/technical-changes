@@ -3195,7 +3195,8 @@
     "version": "24w04a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 29."
   },
@@ -3239,7 +3240,8 @@
     "version": "24w03a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 24."
   },
@@ -3443,7 +3445,7 @@
       "pack",
       "breaking"
     ],
-    "content": "Resource pack format has been increased to 30."
+    "content": "Resource pack format has been increased to 25."
   },
   {
     "group": "1.20.5",

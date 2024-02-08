@@ -3473,6 +3473,14 @@
     "group": "1.20.5",
     "version": "24w06a",
     "tags": [
+      "command"
+    ],
+    "content": "Added two events to the `/jfr` command: `ChunkRegionRead` and `ChunkRegionWrite`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w06a",
+    "tags": [
       "entity"
     ],
     "content": "Added new entity type `breeze_wind_charge`."
@@ -3520,7 +3528,7 @@
       "assets",
       "font"
     ],
-    "content": "Added font variant filters to font providers. Added a new field `filters` to all glyph providers, which is a map of variants to booleans. Current variants are `uniform` (Force Uniform button) and `jp` (Japanese Glyph Variants button)."
+    "content": "Added font variant filters to font providers. Added a new field `filters` to all glyph providers, which is a map of variants to booleans. Current variants are `uniform` (Force Unicode Font) and `jp` (Japanese Glyph Variants)."
   },
   {
     "group": "1.20.5",

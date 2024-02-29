@@ -9,6 +9,7 @@
     "breaking": "Any change that will break/cause errors with existing packs",
     "chat-type": "Anything regarding chat types",
     "command": "New commands or changes to command syntax/behavior",
+    "component": "Changes to data components",
     "damage-type": "Changing any damage type or tag",
     "data": "Any changes to the vanilla data",
     "debug": "Debug commands or behavior changes",

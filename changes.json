@@ -4388,6 +4388,272 @@
   },
   {
     "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 39."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "assets",
+      "lang"
+    ],
+    "content": "Added new language Viossa. It has code `vp_vl`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "command",
+      "breaking"
+    ],
+    "content": "Changed the `/particle` command syntax for particles with extra options:\n* `block redstone_lamp[lit=true]` \u2192 `block{block_state:{Name:\"redstone_lamp\",Properties:{lit:\"true\"}}}` (also for `block_marker`, `falling_dust`, and `dust_pillar`)\n* `dust 0.1 0.2 0.3 0.4` \u2192 `dust{color:[0.1,0.2,0.3],scale:0.4}`\n* `dust_color_transition 0.1 0.2 0.3 0.4 0.5 0.6 0.7` \u2192 `dust_color_transition{from_color:[0.1,0.2,0.3],scale:0.4,to_color:[0.5,0.6,0.7]}`\n* `entity_effect 123` \u2192 `entity_effect{color:123}` (ARGB integer, now also accepts a list of RGBA)\n* `sculk_charge 0.1` \u2192 `sculk_charge{roll:0.1}`\n* `vibration 0.1 0.2 0.3 4` \u2192 `vibration{destination:{type:\"block\",pos:[0.1,0.2,0.3]},arrival_in_ticks:4}`\n* `shriek 1` \u2192 `shriek{delay:1}`"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Changed the `Particle` field of area effect clouds to match worldgen and command format. For example `{Particle:{type:\"block\",block_state:\"diamond_block\"}}`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "block",
+      "nbt"
+    ],
+    "content": "Removed spawn data field `equipment_loot_table`, and replaced it with `equipment`, which has fields `loot_table` (same as the old field), and `slot_drop_chances` (optional list of floats, or single float)."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "The combination of `max_stack_size` and `max_damage` is no longer allowed."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "The page limit in written books has been removed. Note that the 100 page limit still exists for writable books and in survival."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Changed the `food` component. Replaced field `saturation_modifier` \u2192 `saturation`, which is now defines as `nutrition * saturation_modifier * 2`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Changed the `set_contents` function. Removed field `type` and added field `component`, which can be one of `container`, `bundle_contents`, or `charged_projectiles`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Changed the `set_custom_data` function. The `tag` field now also allows unflattened objects."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Added function `modify_contents`, which applies an item modifier to items inside a component. It has fields `component` (one of `container`, `bundle_contents`, or `charged_projectiles`), and `modifier` (loot function or list)."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Added function `set_item`. It has a single field `item`, which is a resource location."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Added function `filtered`, which applies an item modifier only when the current item matches an item predicate. It has fields `item_filter` (item predicate), and `modifier` (loot function or list)."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Added function `set_custom_model_data`. It has a single field `value`, which is a number provider."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added new field `body` in `equipment` entity sub predicate."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added collection matchers, which are used in predicates. It is an object with optional fields: `size` (int bounds), `contains` (list of element predicates), and `count` (object with fields `test` and `count`)."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `container`. It has a single optional field `items`, which is a collection matcher of item predicates. Empty slots will be ignored."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `bundle_contents`. It has a single optional field `items`, which is a collection matcher of item predicates."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `firework_explosion`. It has optional fields `shape` (string), `has_trail` (boolean), and `has_twinkle` (boolean)."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `fireworks`. It has optional fields `explosions` (collection matcher of firework explosions), and `flight_duration`"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `writable_book_content`. It has a single optional field `pages`, which is a collection matcher of strings."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `written_book_content`. It has a optional fields `pages` (collection matcher of text components), `author` (string), `title` (string), `generation` (int bounds), and `resolved` (boolean)."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `attribute_modifiers`. It has a single optional field `modifiers`, which is a collection matcher of modifier predicates."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added item sub predicate `trim`. It has optional fields `material` and `pattern`, both an entry, list of entries, or tag."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "worldgen",
+      "structure"
+    ],
+    "content": "Added new terrain adaptation `encapsulate`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "data",
+      "tag",
+      "breaking"
+    ],
+    "content": "Removed item tag `tools`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "data",
+      "tag"
+    ],
+    "content": "Added entity type tag `punchable_projectiles`, for projectiles that the player can deflect."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre1",
+    "tags": [
+      "data",
+      "tag"
+    ],
+    "content": "Added enchantment tag `tooltip_order` controlling the order of enchantments in item tooltips."
+  },
+  {
+    "group": "1.20.5",
     "version": "24w07a",
     "tags": [
       "pack",
@@ -4727,7 +4993,8 @@
     "version": "24w12a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 36."
   },
@@ -4736,7 +5003,8 @@
     "version": "24w12a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 30."
   },
@@ -4845,6 +5113,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `food`, which makes the item consumable. It has fields `nutrition` (integer), `saturation_modifier` (float), `can_always_eat` (optional boolean), `eat_seconds` (optional float), and `effects` (optional list of effects)."
@@ -4853,6 +5122,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `max_stack_size`, which is an integer between 1 and 99."
@@ -4861,6 +5131,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `max_damage`, which is a positive integer. If not present, the item cannot be damaged."
@@ -4869,6 +5140,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `fire_resistant`, which accepts an empty object."
@@ -4877,6 +5149,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `rarity`, which determines the color of the item name. It can be one of `common`, `uncommon`, `rare`, or `epic`."
@@ -4885,6 +5158,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `tool`. It has fields `default_mining_speed` (optional float), `damage_per_block` (optional integer), and `rules`. Rules is an object with fields `blocks` (entries or block tag), `speed` (optional float), and `correct_for_drops` (optional boolean)."
@@ -4893,6 +5167,7 @@
     "group": "1.20.5",
     "version": "24w12a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added component `hide_tooltip`, which accepts an empty object. When present, completely hides the tooltip when hovered over."
@@ -5188,6 +5463,54 @@
   },
   {
     "group": "1.20.5",
+    "version": "24w14a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 38."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w14a",
+    "tags": [
+      "jar"
+    ],
+    "content": "The game now requires Java 21 and a 64-bit operating system."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w14a",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Changed function `set_attributes`. Added optional field `replace` (boolean), which defaults to `true`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w14a",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "component"
+    ],
+    "content": "The `text` field in filterable has been renamed to `raw` to avoid ambiguity. Note this is not the same `text` field in text components."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w14a",
+    "tags": [
+      "block",
+      "item",
+      "nbt",
+      "component"
+    ],
+    "content": "The `profile` component and field on items and blocks now supports resolving by UUID, when the `id` field is specified, but `name` is not."
+  },
+  {
+    "group": "1.20.5",
     "version": "24w09a",
     "tags": [
       "pack",
@@ -5451,6 +5774,159 @@
   },
   {
     "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 37."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 31."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "network"
+    ],
+    "content": "The `chat_command_signed` packet has been split from `chat_command`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "network"
+    ],
+    "content": "The server can now clear chat state by sending a `reset_chat` packet in configuration phase."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added loot table type `equipment`. It has required parameters `this_entity`, and `origin`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "block",
+      "nbt"
+    ],
+    "content": "Changed spawn data NBT, used in `SpawnPotentials` and `spawn_potentials`. Added an optional field `equipment_loot_table`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "block",
+      "nbt",
+      "component"
+    ],
+    "content": "Non-default components on item stacks are now copied to block entities when placed in a field `components`. Note that breaking the block does not automatically copy the components to the drops."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added component `item_name`, which is a stringified text component."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added component `ominous_bottle_amplifier`, which is an integer between 0 and 4."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Replaced field `components` with two fields: `include` and `exclude`, both optional lists of component types."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Changed function `set_name`. Added optional field `target`, which can be one of `custom_name` or `item_name`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Added function `set_ominous_bottle_amplifier`. It has a field `amplifier`, which is a number provider that will set the `ominous_bottle_amplifier` component."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "predicate",
+      "advancement",
+      "loot"
+    ],
+    "content": "Added entity sub predicate `raider`. It has two optional boolean fields: `has_raid`, and `is_captain`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "particle"
+    ],
+    "content": "Added particle types `infested`, `item_cobweb`, `small_gust`, `raid_omen`, `trial_omen`, `trial_spawner_detection_ominous`, and `ominous_spawning`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Int and float providers no longer wrap fields in an extra `value` object."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "data",
+      "tag"
+    ],
+    "content": "Added damage type tag `is_player_attack`, for attacks performed by a player."
+  },
+  {
+    "group": "1.20.5",
+    "version": "24w13a",
+    "tags": [
+      "data",
+      "tag"
+    ],
+    "content": "Added entity type tags `immune_to_oozing`, and `immune_to_infested`."
+  },
+  {
+    "group": "1.20.5",
     "version": "24w10a",
     "tags": [
       "pack",
@@ -5524,6 +6000,7 @@
     "group": "1.20.5",
     "version": "24w10a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Changed the `profile` component. The `name` field is now optional. Added a shorthand: it can be defined as a string playername."
@@ -5532,6 +6009,7 @@
     "group": "1.20.5",
     "version": "24w10a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Added some alternative shorthands to components:\n* `profile` can now also be a player name string\n* `dyed_color` can now also be an integer rgb\n* `attribute_modifiers` can now also be a list of modifiers\n* `potion_contents` can now also be a single potion string\n* `enchantments` and `stored_enchantments` can now also be a map of enchantment to level"
@@ -5540,6 +6018,7 @@
     "group": "1.20.5",
     "version": "24w10a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "All container blocks now use the `container` component in item form, not just shulker boxes."
@@ -5548,6 +6027,7 @@
     "group": "1.20.5",
     "version": "24w10a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Renamed the component `lodestone_target` \u2192 `lodestone_tracker`. Changed its field, it now has a single field: `target`, which is an optional object containing `pos` and `dimension`."
@@ -5556,6 +6036,7 @@
     "group": "1.20.5",
     "version": "24w10a",
     "tags": [
+      "item",
       "component"
     ],
     "content": "Changed the `lore` and `fireworks` components. The maximum number of lore and firework entries has been increased to 256."

@@ -3,6 +3,7 @@
     "api": "Common API changes, such as updates URLs",
     "assets": "Asset changes, such as textures, sounds, or lang",
     "attribute": "Changes to the attribute registry",
+    "banner": "Changes to banner patterns",
     "block": "New blocks or changes to block data",
     "block-entity": "Used alongside `block` to specify block entities",
     "blockstate": "Changes to blockstates",
@@ -47,5 +48,6 @@
     "tag": "Any change to any tag",
     "text": "Changes to text components, properties, or parsing",
     "trims": "Changes to the armor trim data system",
+    "wolf-variant": "Changes to wolf variant definitions",
     "worldgen": "Overarching tag for all worldgen changes"
 }

@@ -4411,7 +4411,7 @@
       "command",
       "breaking"
     ],
-    "content": "Changed the `/particle` command syntax for particles with extra options:\n* `block redstone_lamp[lit=true]` \u2192 `block{block_state:{Name:\"redstone_lamp\",Properties:{lit:\"true\"}}}` (also for `block_marker`, `falling_dust`, and `dust_pillar`)\n* `dust 0.1 0.2 0.3 0.4` \u2192 `dust{color:[0.1,0.2,0.3],scale:0.4}`\n* `dust_color_transition 0.1 0.2 0.3 0.4 0.5 0.6 0.7` \u2192 `dust_color_transition{from_color:[0.1,0.2,0.3],scale:0.4,to_color:[0.5,0.6,0.7]}`\n* `entity_effect 123` \u2192 `entity_effect{color:123}` (ARGB integer, now also accepts a list of RGBA)\n* `sculk_charge 0.1` \u2192 `sculk_charge{roll:0.1}`\n* `vibration 0.1 0.2 0.3 4` \u2192 `vibration{destination:{type:\"block\",pos:[0.1,0.2,0.3]},arrival_in_ticks:4}`\n* `shriek 1` \u2192 `shriek{delay:1}`"
+    "content": "Changed the `/particle` command syntax for particles with extra options:\n* `block redstone_lamp[lit=true]` \u2192 `block{block_state:{Name:\"redstone_lamp\",Properties:{lit:\"true\"}}}` (also for `block_marker`, `falling_dust`, and `dust_pillar`)\n* `dust 0.1 0.2 0.3 0.4` \u2192 `dust{color:[0.1,0.2,0.3],scale:0.4}`\n* `dust_color_transition 0.1 0.2 0.3 0.4 0.5 0.6 0.7` \u2192 `dust_color_transition{from_color:[0.1,0.2,0.3],scale:0.4,to_color:[0.5,0.6,0.7]}`\n* `entity_effect` \u2192 `entity_effect{color:[0.1,0.2,0.3,0.4]}`\n* `item diamond` \u2192 `item{item:\"diamond\"}`\n* `sculk_charge 0.1` \u2192 `sculk_charge{roll:0.1}`\n* `shriek 1` \u2192 `shriek{delay:1}`\n* `vibration 0.1 0.2 0.3 4` \u2192 `vibration{destination:{type:\"block\",pos:[0.1,0.2,0.3]},arrival_in_ticks:4}`"
   },
   {
     "group": "1.20.5",
@@ -4573,7 +4573,7 @@
       "advancement",
       "loot"
     ],
-    "content": "Added item sub predicate `fireworks`. It has optional fields `explosions` (collection matcher of firework explosions), and `flight_duration`"
+    "content": "Added item sub predicate `fireworks`. It has optional fields `explosions` (collection matcher of firework explosions), and `flight_duration`."
   },
   {
     "group": "1.20.5",

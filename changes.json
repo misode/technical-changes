@@ -4288,6 +4288,14 @@
   },
   {
     "group": "1.20.5",
+    "version": "1.20.5-rc1",
+    "tags": [
+      "network"
+    ],
+    "content": "Changed the approach to game client disconnecting on invalid data in packets sent from a server\n* To ease the transition period, modded servers can opt out by setting the appropriate field in the handshake/game_profile packet\n* This option will be removed in the next release"
+  },
+  {
+    "group": "1.20.5",
     "version": "24w07a",
     "tags": [
       "pack",
@@ -4321,6 +4329,24 @@
       "loot"
     ],
     "content": "Added loot table `gameplay/panda_sneeze` for drops when pandas sneeze."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre3",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 41."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre3",
+    "tags": [
+      "data",
+      "tag"
+    ],
+    "content": "Replaced entity type tag `punchable_projectiles` with tag `redirectable_projectile` for projectiles which can be redirected by player attacks and projectiles"
   },
   {
     "group": "1.20.5",
@@ -4998,6 +5024,65 @@
   },
   {
     "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 40."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "advancement"
+    ],
+    "content": "`Snip it!` advancement has been renamed to `Shear Brilliance`"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "item",
+      "nbt"
+    ],
+    "content": "Using ctrl+pick block no longer lists \"(+NBT)\" in the item tooltip"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "assets"
+    ],
+    "content": "The animated nether portal texture is now displayed when changing dimension to or from the nether"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "assets"
+    ],
+    "content": "The animated end portal effect is now displayed when changing dimension to or from the end"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "network"
+    ],
+    "content": "Invalid data in packets sent from a server will now cause the game client to disconnect"
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre2",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Changed the `set_fireworks` function. Fields `explosions` and `mode` have been grouped together as a sub-object:\n* `{\"explosions\":<list>,\"mode\":<mode>,<mode-dependent fields>}` \u2192 `{\"explosions\":{\"values\":<list>,\"mode\":<mode>,<mode-dependent fields>}}`\n* New `explosions` field is now optional, while `values` field inside it is now mandatory"
+  },
+  {
+    "group": "1.20.5",
     "version": "24w14a",
     "tags": [
       "pack",
@@ -5328,6 +5413,25 @@
       "options"
     ],
     "content": "Added a third possible value for the `region-file-compression` option in `server.properties`: `none`."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre4",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 32."
+  },
+  {
+    "group": "1.20.5",
+    "version": "1.20.5-pre4",
+    "tags": [
+      "assets",
+      "font",
+      "breaking"
+    ],
+    "content": "The `shift` in TTF glyph providers is now restricted to the range `[-512; 512]`"
   },
   {
     "group": "1.20.5",

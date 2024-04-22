@@ -4292,7 +4292,7 @@
     "tags": [
       "network"
     ],
-    "content": "Changed the approach to game client disconnecting on invalid data in packets sent from a server\n* To ease the transition period, modded servers can opt out by setting the appropriate field in the handshake/game_profile packet\n* This option will be removed in the next release"
+    "content": "To ease the transition period, modded servers can now opt-out of the client disconnecting on invalid data by setting the appropriate field in the `handshake/game_profile` packet."
   },
   {
     "group": "1.20.5",
@@ -4346,7 +4346,7 @@
       "data",
       "tag"
     ],
-    "content": "Replaced entity type tag `punchable_projectiles` with tag `redirectable_projectile` for projectiles which can be redirected by player attacks and projectiles"
+    "content": "Replaced entity type tag `punchable_projectiles` with `redirectable_projectile` for projectiles which can be redirected by player attacks and projectiles."
   },
   {
     "group": "1.20.5",
@@ -4361,7 +4361,8 @@
     "version": "1.20.5-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 39."
   },
@@ -5027,7 +5028,8 @@
     "version": "1.20.5-pre2",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 40."
   },
@@ -5037,7 +5039,7 @@
     "tags": [
       "advancement"
     ],
-    "content": "`Snip it!` advancement has been renamed to `Shear Brilliance`"
+    "content": "`Snip it!` advancement has been renamed to `Shear Brilliance`."
   },
   {
     "group": "1.20.5",
@@ -5046,7 +5048,7 @@
       "item",
       "nbt"
     ],
-    "content": "Using ctrl+pick block no longer lists \"(+NBT)\" in the item tooltip"
+    "content": "Using ctrl+pick block no longer lists \"(+NBT)\" in the item tooltip."
   },
   {
     "group": "1.20.5",
@@ -5054,7 +5056,7 @@
     "tags": [
       "assets"
     ],
-    "content": "The animated nether portal texture is now displayed when changing dimension to or from the nether"
+    "content": "The animated nether portal texture is now displayed when changing dimension to or from the nether."
   },
   {
     "group": "1.20.5",
@@ -5062,7 +5064,7 @@
     "tags": [
       "assets"
     ],
-    "content": "The animated end portal effect is now displayed when changing dimension to or from the end"
+    "content": "The animated end portal effect is now displayed when changing dimension to or from the end."
   },
   {
     "group": "1.20.5",
@@ -5070,7 +5072,7 @@
     "tags": [
       "network"
     ],
-    "content": "Invalid data in packets sent from a server will now cause the game client to disconnect"
+    "content": "Invalid data in packets sent from a server will now cause the game client to disconnect."
   },
   {
     "group": "1.20.5",
@@ -5079,7 +5081,7 @@
       "loot",
       "item-modifier"
     ],
-    "content": "Changed the `set_fireworks` function. Fields `explosions` and `mode` have been grouped together as a sub-object:\n* `{\"explosions\":<list>,\"mode\":<mode>,<mode-dependent fields>}` \u2192 `{\"explosions\":{\"values\":<list>,\"mode\":<mode>,<mode-dependent fields>}}`\n* New `explosions` field is now optional, while `values` field inside it is now mandatory"
+    "content": "Changed the `set_fireworks` function. Fields `explosions` and `mode` have been grouped together as a sub-object `explosions` field fields `values`, `mode`, and mode-dependent fields."
   },
   {
     "group": "1.20.5",
@@ -5144,7 +5146,8 @@
     "version": "24w13a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 31."
   },
@@ -5431,7 +5434,7 @@
       "font",
       "breaking"
     ],
-    "content": "The `shift` in TTF glyph providers is now restricted to the range `[-512; 512]`"
+    "content": "The `shift` field in `ttf` glyph providers is now restricted between -512 and 512."
   },
   {
     "group": "1.20.5",

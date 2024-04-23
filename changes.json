@@ -3931,9 +3931,10 @@
     "tags": [
       "loot",
       "advancement",
-      "predicate"
+      "predicate",
+      "breaking"
     ],
-    "content": "Changed fluid predicates:\n* The field `fluids` now also supports a single entry, and a hash-prefixed fluid tag"
+    "content": "Changed fluid predicates:\n* Renamed `fluid` \u2192 `fluids`, and now also supports a single entry, and a hash-prefixed fluid tag"
   },
   {
     "group": "1.20.5",
@@ -3951,7 +3952,8 @@
     "tags": [
       "loot",
       "advancement",
-      "predicate"
+      "predicate",
+      "breaking"
     ],
     "content": "Changed location predicates:\n* Renamed `biome` \u2192 `biomes`, and now also supports a hash-prefixed biome tag, and a list of biomes\n* Renamed `structure` \u2192 `structures`, and now also supports a hash-prefixed structure tag, and a list of structures"
   },

@@ -1397,9 +1397,9 @@
     "group": "1.21",
     "version": "24w18a",
     "tags": [
-      "painting-variant"
+      "painting"
     ],
-    "content": "Painting variants regsitry are now loaded from data packs. The definition is as follows:\n* `width` - width of painting between 1 and 16\n* `height` - height of painting between 1 and 16\n* `asset_id` - id of sprite in the `paintings` atlas"
+    "content": "Painting variants are now loaded from data packs from the `painting_variant` folder. The definition is as follows:\n* `width` - width of painting between 1 and 16\n* `height` - height of painting between 1 and 16\n* `asset_id` - id of sprite in the `paintings` atlas"
   },
   {
     "group": "1.21",
@@ -2694,6 +2694,212 @@
       "command"
     ],
     "content": "Added new subcommand to `/scoreboard` to control number formatting of scores using a style. The style can be either `blank`, `fixed <text component>`, or `styled <style>`. It has syntax:\n* `scoreboard objectives modify <objective> numberformat <format>`: Sets the default number format for an objective\n* `scoreboard objectives modify <objective> numberformat`: Clears the default number format\n* `scoreboard players display numberformat <targets> <score> <format>`: Sets the number format for a specific score holder\n* `scoreboard players display numberformat <targets> <score>`: Clears the number format"
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 49."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 35."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "feature-flag"
+    ],
+    "content": "Added experimental feature flags `minecart_improvements` and `redstone_experiments`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "attribute",
+      "breaking"
+    ],
+    "content": "Attribute IDs no longer have `generic.`, `player.`, and `zombie.` prefixes."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "attribute"
+    ],
+    "content": "Added attribute `tempt_range`, with a range between 0 and 2048, and default of 10. It can be used to change the range, in blocks, at which temptable mobs can be tempted."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "nbt",
+      "entity",
+      "breaking"
+    ],
+    "content": "Added field `explosion_power` to entities `tnt` and `tnt_minecart`. It is a float between 0 and 128, defaulting to 4."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "command",
+      "chat"
+    ],
+    "content": "Invalid selector patterns in chat components will now cause commands to fail to parse, instead of resolving to an empty string."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `minecartMaxSpeed` game rule, which allows an integer between 1 and 1000."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Made shearing of sheep, mooshrooms and snow golems data driven by loot tables."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "instrument"
+    ],
+    "content": "Added data-driven instruments, which are stored in the `instrument` folder. It has fields `sound_event`, `use_duration`, `range`, and `description`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "painting"
+    ],
+    "content": "Changed painting variants. Added fields `author` and `title`. They are both text components (not stringified)."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `enchantable`. If present (and any enchantments are applicable), this item can be enchanted in an enchanting table. It is an object with a single field `value` (integer at least 1)."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `repairable`. If present, and this item is damageable, this item can be repaired in an anvil using the specified ingredient. It is an object with a single field `items` (item ID, list of item IDs, or item tag)."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Changed inline format of `instrument` component. Added field `description`, which is a text component (not stringified)."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "damage-type"
+    ],
+    "content": "Added damage types `ender_pearl` and `mace_smash`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "worldgen",
+      "biome",
+      "breaking"
+    ],
+    "content": "Removed liquid carvers. Changed biome format. The `carvers` field is now directly a list of carvers."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added item tag `furnace_minecart_fuel`, determinining whether the item can be used to refuel furnace minecart."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added item tag `villager_picks_up`"
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "options"
+    ],
+    "content": "Added `inactivityFpsLimit` client option in `options.txt`, with possible values `minimized` and `afk`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "options"
+    ],
+    "content": "Added server property `pause-when-empty-seconds` to `server.properties`, with default value 60."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "options"
+    ],
+    "content": "Removed server properties `spawn-animals` and `spawn-npcs` from `server.properties`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "network"
+    ],
+    "content": "Added the `client_tick_end` serverbound packet during the play phase, sent when the client finishes processing its current tick."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "network"
+    ],
+    "content": "Added ability for custom servers to override the order that players appear in the tab list."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "network"
+    ],
+    "content": "The client now shares the state of the 'Particles' limiter option to be used by custom servers."
   },
   {
     "group": "1.19.3",

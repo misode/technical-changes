@@ -2258,6 +2258,132 @@
   },
   {
     "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 53."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 38."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "The `tool` context is now also available for loot table types `archaeology`, `vault`, and `shearing`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "loot",
+      "entity"
+    ],
+    "content": "Chickens laying eggs is now controlled by loot table `gameplay/chicken_lay`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "loot",
+      "entity"
+    ],
+    "content": "Armadillos randomly dropping scutes is now controlled by loot table `gameplay/armadillo_shed`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "loot",
+      "entity"
+    ],
+    "content": "Loot given by villagers for the hero of the village effect now also uses loot tables `gameplay/hero_of_the_village/unemployed_gift` and `gameplay/hero_of_the_village/baby_gift`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added item tags `duplicates_allays`, `panda_eats_from_ground`, and `brewing_fuel`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Removed data component `fire_resistant` and replaced it with `damage_resistant`. It now has field `types`, which is a hash-prefixed damage type tag. It controls whether the item in entity form is blocks all damage from these types and prevents the item taking damage when being equipped."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `potion_contents`. Added optional field `custom_name`, which will cause the item name to use translation key `item.minecraft.<item>.effect.<custom_name>`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `equippable`. Added optional fields `swappable` (boolean) and `damage_on_hurt` (boolean), which both default to true."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `death_protection`. If present will protect the holder from dying by restoring a single health point. It has a single field `death_effects`, which has the same format as `on_consume_effects` from the `consumable` component."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "predicate",
+      "loot",
+      "advancement"
+    ],
+    "content": "Added entity sub predicate `salmon`. It has field `variant` which is one of `small`, `medium`, and `large`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "advancement"
+    ],
+    "content": "Renamed the advancement trigger `killed_by_crossbow` to `killed_by_arrow`. Now has a field `fired_from_weapon`, which is an item predicate matching the item used to shoot the arrow."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w37a",
+    "tags": [
+      "assets"
+    ],
+    "content": "The texture of the highlighted slot in a GUI can now be customized using textures `container/slot_highlight_front` and `container/slot_highlight_back`. Likewise, the textures for highlighted slots in a bundler use the textures `container/bundle/slot_highlight_front` and `container/bundle/slot_highlight_back`."
+  },
+  {
+    "group": "1.21.2",
     "version": "24w33a",
     "tags": [
       "pack",
@@ -2469,7 +2595,8 @@
     "version": "24w36a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 52."
   },
@@ -2478,7 +2605,8 @@
     "version": "24w36a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 37."
   },

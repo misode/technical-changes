@@ -2144,7 +2144,8 @@
     "version": "24w34a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 50."
   },
@@ -2461,6 +2462,88 @@
       "network"
     ],
     "content": "The client now shares the state of the 'Particles' limiter option to be used by custom servers."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 51."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "block",
+      "nbt",
+      "trial-spawner"
+    ],
+    "content": "Trial spawner configuration fields `normal_config` and `ominous_config` can now also be defined as a reference to files in the `trial_spawner` folder."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Entity rotation on the X-axis is now clamped between -90 and 90."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "command",
+      "loot"
+    ],
+    "content": "The `/loot` command now returns an error when trying to drop from a block without a loot table (like air)."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "loot",
+      "breaking"
+    ],
+    "content": "Removed the special loot table `empty`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "entity",
+      "loot"
+    ],
+    "content": "Sheep drops now always use the `entities/sheep` loot table."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "entity",
+      "loot"
+    ],
+    "content": "Sheep shearing is now controlled by loot table `shearing/sheep`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "entity",
+      "loot"
+    ],
+    "content": "Mooshroom shearing is now controlled by loot table `shearing/mooshroom`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w35a",
+    "tags": [
+      "loot",
+      "predicate"
+    ],
+    "content": "Added entity sub predicate `sheep`, with two optional fields: `sheared` (boolean) and `color` (string)."
   },
   {
     "group": "1.18",

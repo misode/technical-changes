@@ -50,6 +50,7 @@
     "structure": "`worldgen` changes specifically for structures",
     "tag": "Any change to any tag",
     "text": "Changes to text components, properties, or parsing",
+    "trial-spawner": "Changes to trial spawner configurations",
     "trims": "Changes to the armor trim data system",
     "wolf-variant": "Changes to wolf variant definitions",
     "worldgen": "Overarching tag for all worldgen changes"

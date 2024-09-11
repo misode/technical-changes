@@ -2141,10 +2141,126 @@
   },
   {
     "group": "1.21.2",
-    "version": "24w33a",
+    "version": "24w34a",
     "tags": [
       "pack",
       "breaking"
+    ],
+    "content": "Data pack format has been increased to 50."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 36."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `consumable` which makes an item consumable. It accepts an object with fields `consume_seconds`, `animation`, `sound`, `has_consume_particles`, and `on_consume_effects`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `use_remainder`, which can have a single item stack as value. If present, will replace the item if its stack count has decreased after use."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `use_cooldown`. If present, will apply a cooldown to all items of the same type when it has been used. It is an object with fields `seconds` (positive float) and `cooldownGroup` (resource location). Weird casing is a typo and is corrected in the next snapshot."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Changed the `food` data component to only hold the food stats, it no longer makes the item consumable. Removed fields `eat_seconds`, `using_converts_to`, and `effects`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Removed shader `rendertype_entity_glint_direct` and replaced it with `rendertype_entity_glint`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Removed shader `rendertype_entity_translucent_cull` and replaced it with `rendertype_item_entity_translucent_cull`."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Changed shader program definitions for post-processing effects, defined in `shaders/program`, to be consistent with core shaders:\n* Removed unused field `blend`\n* Removed field `attributes`, instead the `Position` attribute will always be bound\n* Renamed `Time` uniform to `GameTime`\n* The `vertex` and `fragment` references are now resource locations"
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader"
+    ],
+    "content": "Shader source files are no longer required to be in the `shaders/core` subdirectory, this only exists for organization."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader"
+    ],
+    "content": "Added `defines` field to shader programs, which is an object with fields `values` and `flags`. It allows GLSL `#define` directives to be injected into the shader source."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader"
+    ],
+    "content": "The `#moj_import` shader directive now supports namespaced includes with absolute paths. Relative imports behave as before."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w34a",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Moved post-processing effect configurations from `shaders/post` to `post_effect`.\n* Vertex and fragment shaders used by these effects have been moved from `shaders/program` to `shaders/post`.\n* The `name` field has been renamed to `program`, and is now a resource location to the `shaders` folder."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 49."
   },
@@ -2153,7 +2269,8 @@
     "version": "24w33a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 35."
   },

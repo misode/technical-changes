@@ -7421,6 +7421,23 @@
     "group": "1.21.2",
     "version": "24w33a",
     "tags": [
+      "recipe",
+      "breaking"
+    ],
+    "content": "Changed format of ingredients in recipes:\n* `{ \"item\": \"<item id>\" }` is now `\"<item id>\"`\n* `{ \"tag\": \"<tag id>\" }` is now `\"#<tag id>\"`\n* List of ingredients is still allowed, but cannot contain tags"
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
+      "recipe"
+    ],
+    "content": "Changed `smithing_transform` and `smithing_trim` recipe types. The fields `template`, `base`, and `addition` are now optional, instead of allowing an empty list."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
       "nbt",
       "entity",
       "breaking"

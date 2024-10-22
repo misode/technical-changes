@@ -7192,7 +7192,8 @@
     "version": "1.21.2-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 41."
   },
@@ -7755,6 +7756,15 @@
       "shader"
     ],
     "content": "Added core shader `rendertype_armor_translucent`, which is used for the cracks on wolf armor."
+  },
+  {
+    "group": "1.21.2",
+    "version": "1.21.2-pre3",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 42."
   },
   {
     "group": "1.19.1",

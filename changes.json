@@ -7440,8 +7440,7 @@
     "version": "24w33a",
     "tags": [
       "nbt",
-      "entity",
-      "breaking"
+      "entity"
     ],
     "content": "Added field `explosion_power` to entities `tnt` and `tnt_minecart`. It is a float between 0 and 128, defaulting to 4."
   },

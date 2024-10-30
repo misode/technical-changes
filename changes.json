@@ -1885,6 +1885,135 @@
     "content": "The bundled java runtime has been upgraded to 17.0.8."
   },
   {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 58."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 43."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `reset` subcommand to the `/attribute` command:\n* `attribute <target> <attribute> base reset`"
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added optional field `shadow_color` to text component style. It can either be a packed ARGB integer, or a list of 4 floats in the RGBA order."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "particle",
+      "breaking"
+    ],
+    "content": "Changed particle type `trail`. Added required field `duration`, which is a positive float."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "particle"
+    ],
+    "content": "Added particle type `pale_oak_leaves`."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "feature-flag"
+    ],
+    "content": "Removed feature flag `winter_drop`."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Changed NBT of `tnt_minecart`:\n* Renamed field `TNTFuse` to `fuse`\n* Added optional field `explosion_speed_factor` (float between 0 and 128)"
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "block-entity",
+      "component"
+    ],
+    "content": "Items with the `block_entity_data` component will now only set the data if `id` matches the block entity type that was placed."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed biome effects field `music`. It now is a weighted list of music objects. The list is also allowed to be empty."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added optional field `music_volume` (float) to biome effects."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed feature `simple_block`. Added optional field `schedule_tick`, which is a boolean."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "The `toast/system` texture has been changed to use a nine-sliced texture. The `toast/tutorial` texture was unchanged, but nice-slicing is enabled."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "The `advancements/box_obtained` and `advancements/box_unobtained` textures now have nice-slicing enabled."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w44a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added a new event to the `/jfr` command: `StructureGeneration`."
+  },
+  {
     "group": "1.17",
     "version": "21w05a",
     "tags": [

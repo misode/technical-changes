@@ -7682,6 +7682,14 @@
     "group": "1.21.2",
     "version": "24w33a",
     "tags": [
+      "assets"
+    ],
+    "content": "Added optional field `light_emission` to model elements. It is an integer between 0 and 15 (inclusive)."
+  },
+  {
+    "group": "1.21.2",
+    "version": "24w33a",
+    "tags": [
       "options"
     ],
     "content": "Added `inactivityFpsLimit` client option in `options.txt`, with possible values `minimized` and `afk`."

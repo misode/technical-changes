@@ -2258,7 +2258,7 @@
       "assets",
       "breaking"
     ],
-    "content": "The `toast/system` texture has been changed to use a nine-sliced texture. The `toast/tutorial` texture was unchanged, but nice-slicing is enabled."
+    "content": "The `toast/system` texture has been changed to use a nine-sliced texture. The `toast/tutorial` texture was unchanged, but nine-slicing is enabled."
   },
   {
     "group": "1.21.4",
@@ -2267,7 +2267,7 @@
       "assets",
       "breaking"
     ],
-    "content": "The `advancements/box_obtained` and `advancements/box_unobtained` textures now have nice-slicing enabled."
+    "content": "The `advancements/box_obtained` and `advancements/box_unobtained` textures now have nine-slicing enabled."
   },
   {
     "group": "1.21.4",

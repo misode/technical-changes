@@ -2278,6 +2278,132 @@
     "content": "Added a new event to the `/jfr` command: `StructureGeneration`."
   },
   {
+    "group": "1.21.4",
+    "version": "1.21.4-pre2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 61."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre2",
+    "tags": [
+      "block",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Renamed some block entity fields in `furnace`, `smoker` and `blast_furnace` blocks:\n* `CookTime` \u2192 `cooking_time_spent`\n* `CookTimeTotal` \u2192 `cooking_total_time`\n* `BurnTime` \u2192 `lit_time_remaining`\n* Added field `lit_total_time` (total time the furnace should be lit)"
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 46."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "item"
+    ],
+    "content": "Similarly to block items, spawn eggs now can have a warning in the tooltip if they could execute operator-only commands."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Updated Unifont to `16.0.01`."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Added optional field `hand_animation_on_swap` (boolean) to resource pack item format."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Added tint source `team` with field `default` (RGB color)."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Added field `animation` (float) to `head` special model type for the piglin ears and ender dragon jaw."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Added boolean property `view_entity`."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Renamed string property `holder_type` \u2192 `context_entity_type`"
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Added string property `context_dimension`."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Changed `time` numeric property. Removed field `natural_only` and added `source`, which can be one of `daytime`, `moon_phase`, or `none`."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Changed `compass` numeric property. Added possible value `none` to `target` field."
+  },
+  {
+    "group": "1.21.4",
+    "version": "1.21.4-pre1",
+    "tags": [
+      "assets",
+      "item"
+    ],
+    "content": "Added item model type `empty` which doesn't render anything."
+  },
+  {
     "group": "1.17",
     "version": "21w05a",
     "tags": [

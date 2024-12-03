@@ -2051,9 +2051,28 @@
     "version": "24w46a",
     "tags": [
       "entity",
+      "nbt",
       "breaking"
     ],
-    "content": "Removed entity type `creaking_transient`."
+    "content": "Removed entity type `creaking_transient`. Instead added field `home_pos` to `creaking` entity NBT, which is a list of 3 ints specifying the block position of the creaking heart."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w46a",
+    "tags": [
+      "block",
+      "nbt"
+    ],
+    "content": "Added field `creaking`, which is a UUID specifying the linked creaking mob."
+  },
+  {
+    "group": "1.21.4",
+    "version": "24w46a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added option `bundle` to the `animation` field in the `consumable` item component."
   },
   {
     "group": "1.21.4",

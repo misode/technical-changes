@@ -19,6 +19,7 @@
     "feature-flag": "Experimental features as used in `pack.mcmeta`",
     "font": "Changes to fonts or font/glyph providers",
     "game-event": "Anything regarding game events",
+    "game-test": "Changes to the game test system",
     "gamemode": "Changes to the survival, creative, spectator, or adventure gamemodes",
     "gamerule": "New gamerules",
     "instrument": "Changes to data driven instruments",
@@ -51,7 +52,7 @@
     "tag": "Any change to any tag",
     "text": "Changes to text components, properties, or parsing",
     "trial-spawner": "Changes to trial spawner configurations",
-    "trims": "Changes to the armor trim data system",
-    "wolf-variant": "Changes to wolf variant definitions",
+    "trim": "Changes to the armor trim data system",
+    "variant": "Changes to mob variant definitions",
     "worldgen": "Overarching tag for all worldgen changes"
 }

@@ -7023,10 +7023,92 @@
   },
   {
     "group": "1.21.5",
-    "version": "25w05a",
+    "version": "25w06a",
     "tags": [
       "pack",
       "breaking"
+    ],
+    "content": "Data pack format has been increased to 66."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 51."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `allowFireTicksAwayFromPlayer` gamerule, which defaults to `false`. When `true`, lava and fire ticks may occur outside of an 8 chunk range from a player."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "tag",
+      "data",
+      "breaking"
+    ],
+    "content": "Renamed block tag `#dead_bush_may_place_on` to `#dry_vegetation_may_place_on`."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tag `#edible_for_sheep`, consisting of blocks sheep can regrow their wool after eating."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added item tag `#eggs`, consisting of variants of the egg item."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "entity",
+      "data"
+    ],
+    "content": "The player's armor and off-hand equipment is now also stored in the `equipment` field."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "variant"
+    ],
+    "content": "Chicken variants can now be data-driven, with entries in the `chicken_variant` folder. The file takes fields `model` (one of `normal`, `cold`, and `warm`), `asset_id`, and `spawn_conditions`."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w06a",
+    "tags": [
+      "assets",
+      "texture",
+      "breaking"
+    ],
+    "content": "Moved texture `entity/chicken.png` to `entity/chicken/temperate_chicken.png`."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w05a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 65."
   },
@@ -7035,7 +7117,8 @@
     "version": "25w05a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 50."
   },

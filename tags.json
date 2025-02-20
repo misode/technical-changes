@@ -43,6 +43,7 @@
     "poi": "Any changes to the POI system",
     "predicate": "Anything regarding predicates (overreaches `advancement` and `loot`",
     "recipe": "Changes to the recipe system",
+    "rendering": "Changes to entity, item, block, or etc. rendering",
     "scoreboard": "New statistics or scoreboard command changes",
     "shader": "Shader type changes",
     "sound": "`assets` changes specifically for sound events",

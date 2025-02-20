@@ -1,3 +1,8 @@
+## Table of Contents
+- [About](#about)
+- [Contributing](#contributing)
+- [Github](#github)
+
 # About
 
 This repository is a place to process and tag the Minecraft snapshot changelogs for use on [Misode's Technical Changelogs](https://misode.github.io/changelog/). Each technical change for data packs and resource packs is separated into easy-to-read blurbs, and tagged according to what they affect.
@@ -71,7 +76,7 @@ block data | The following block data fields will no longer stay persistent when
 ```
 - When the data pack or resource pack version changes, make sure to mark the version change in the previous snapshot's changelog as `obsolete`.
 
-# Github
+# GitHub
 
 To contribute a changelog, follow the instructions:
 
@@ -96,9 +101,18 @@ git checkout -b <branch_name>
 
 4. Create your changelog and push the changes with an appropriate commit message.
 ![Commit changes screen](images/github_commit.png)
+![Push changes screen](images/github_push.png)
 Alternatively:
 ```bash
 git add .
 git commit -m "<commit message>"
 git push -u origin <branch_name>
 ```
+
+5. On GitHub, create a pull request for the new branch. Click on "Compare & pull request".
+![Compare & pull request button](images/github_compare.png)
+
+6. Write a title for your pull request (likely just the version your changelog targets), then hit "Create pull request".
+![Create pull request screen](images/github_pr.png)
+
+Now your changes are ready to be reviewed, and eventually merged. Thanks for contributing!

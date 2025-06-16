@@ -966,6 +966,170 @@
     "content": "All equipment-related textures have been moved to subfolders of the `textures/entity/equipment` directory. All armor trim textures have been moved and renamed to subfolders of `textures/trims/entity`."
   },
   {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 72."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 56."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "feature-flag",
+      "pack"
+    ],
+    "content": "Added feature flag `locator_bar`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `useLocatorBar` game rule."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "attribute"
+    ],
+    "content": "Added attributes `waypoint_transmit_range` and `waypoint_receive_range`. They default to `0` for all mobs except for players, which default to `60000000`. Valid values are between `0` and `60000000`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `waypoint` command, with syntax:\n* `waypoint list`\n* `waypoint modify <entity-selector> color <color>`\n* `waypoint modify <entity-selector> color hex <hex-color>`\n* `waypoint modify <entity-selector> color reset`\n* `waypoint modify <entity-selector> fade <fade_start> <alpha_start> <fade_end> <alpha_end>`\n* `waypoint modify <entity-selector> fade reset`"
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `version` command, with no extra arguments. It prints the current version info on the server side."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `datapack create` command, with syntax:\n* `datapack create <id> <name>`"
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "worldgen",
+      "dimension"
+    ],
+    "content": "Added optional field `cloud_height` to dimension types."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "attribute"
+    ],
+    "content": "Added attribute `camera_distance`, which has a default value `4`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed `attribute_modifiers` data component: added optional field `display`, which is an objects with `type` (one of `default`, `hidden`, or `override`). If type is `override`, an extra field `value` is available, which is a text component."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Renamed `area_effect_cloud` NBT field `Particle` to `custom_particle`. When using an `entity_effect` or `tinted_leaves` custom particle, the color will no longer be inherited from the potion contents."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tag `triggers_ambient_desert_dry_vegetation_block_sounds`"
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "tag",
+      "data",
+      "breaking"
+    ],
+    "content": "Renamed block tag `plays_ambient_desert_block_sounds` to `triggers_ambient_desert_sand_block_sounds`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added item tags `happy_ghast_food` and `happy_ghast_tempt_items`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "assets",
+      "texture"
+    ],
+    "content": "The game will now consistently respect the `blur` texture parameter in `.png.mcmeta` files."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "sound",
+      "breaking"
+    ],
+    "content": "Renamed sound event `block.sand.wind` to `block.dry_grass.ambient`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Changed location on the sounds for glow squid, squid, guardian, horse, rabbit and pufferfish from the `entity` folder to the `mob` folder."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "equipment"
+    ],
+    "content": "Added a new `happy_ghast_body` layer type, which renders in the body slot of the happy ghast."
+  },
+  {
     "group": "1.20.3",
     "version": "23w46a",
     "tags": [

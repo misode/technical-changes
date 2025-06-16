@@ -967,10 +967,113 @@
   },
   {
     "group": "1.62.6",
-    "version": "25w15a",
+    "version": "25w17a",
+    "tags": [
+      "feature-flag",
+      "obsolete"
+    ],
+    "content": "Removed feature flag `locator_bar`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w17a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tags `happy_ghast_avoids` and `triggers_ambient_dried_ghast_block_sounds`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w17a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Waypoint style can now be customized in the `waypoint_style` resource pack folder. It has fields `near_distance` and `far_distance` (both integers between `0` and `60000000`), and field `sprites` (list of texture paths inside the folder `gui/sprites/hud/locator_bar_dot`)"
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w17a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Renamed game rule `useLocatorBar` to `locatorBar`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w17a",
+    "tags": [
+      "shader"
+    ],
+    "content": "Removed `FOG_IS_SKY` in the `fog` uniform block by splitting up the sky shader."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
     "tags": [
       "pack",
       "breaking"
+    ],
+    "content": "Data pack format has been increased to 73."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 57."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "component",
+      "item"
+    ],
+    "content": "The `painting/variant` data component no longer allows inline variants."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "texture"
+    ],
+    "content": "The cloud texture `clouds.png` can no longer be colored."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "model"
+    ],
+    "content": "Block model rotations are no longer limited to multiplies of `22.5` and can now be any angle from `-45` to `+45`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "All built-in uniforms are now uniform blocks instead of opaque loose uniforms. Custom uniforms provided to post-process shaders are now uniform blocks. Uniform definitions inside json files are now per-block."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "poi"
+    ],
+    "content": "Added point of interest type `test_instance`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w15a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 72."
   },
@@ -979,7 +1082,8 @@
     "version": "25w15a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 56."
   },
@@ -988,7 +1092,8 @@
     "version": "25w15a",
     "tags": [
       "feature-flag",
-      "pack"
+      "pack",
+      "obsolete"
     ],
     "content": "Added feature flag `locator_bar`."
   },

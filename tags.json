@@ -14,6 +14,7 @@
     "damage-type": "Changing any damage type or tag",
     "data": "Any changes to the vanilla data",
     "debug": "Debug commands or behavior changes",
+    "dimension": "Related to dimensions or dimension types",
     "enchantment": "New enchantments or changes to the custom enchantment system",
     "entity": "New entity or changes to existing",
     "feature-flag": "Experimental features as used in `pack.mcmeta`",

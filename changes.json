@@ -8121,6 +8121,15 @@
       "entity",
       "data"
     ],
+    "content": "The area effect cloud's `Radius` field now defaults to 3.0f if not specified."
+  },
+  {
+    "group": "1.21.5",
+    "version": "25w09a",
+    "tags": [
+      "entity",
+      "data"
+    ],
     "content": "The creeper's `Fuse` field now defaults to 30, and its `ExplosionRadius` field now defaults to 3 if not specified."
   },
   {

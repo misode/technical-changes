@@ -967,6 +967,82 @@
   },
   {
     "group": "1.62.6",
+    "version": "25w18a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 75."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w18a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 59."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w18a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added fields to all mob entities: `home_pos` and `home_radius`. If present, most mobs will limit their pathfinding to stay within the indicated area. Interacting with leashes or riding may change the home position of the mob."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w18a",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Updated Unifont to `16.0.03`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w18a",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Added vanilla font `include/unifont_pua`, containing the previously omitted Unifont glyphs for Private Use Areas. It is not used by default."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w18a",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Changed the `unihex` font provider. The `size_overrides` field is now optional and defaults to an empty list."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w17a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 74."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w17a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 58."
+  },
+  {
+    "group": "1.62.6",
     "version": "25w17a",
     "tags": [
       "feature-flag",
@@ -1009,10 +1085,65 @@
   },
   {
     "group": "1.62.6",
-    "version": "25w16a",
+    "version": "25w19a",
     "tags": [
       "pack",
       "breaking"
+    ],
+    "content": "Data pack format has been increased to 76."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w19a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 60."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w19a",
+    "tags": [
+      "entity",
+      "attribute"
+    ],
+    "content": "The `scale` attribute for the `happy_ghast` now has a limit of `1`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w19a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added field `owner` (UUID) to the entity NBT of `tnt` and `vex` entities."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w19a",
+    "tags": [
+      "assets",
+      "atlas",
+      "breaking"
+    ],
+    "content": "The `mob_effects` atlas has been removed, and sprites in the `textures/mob_effect` folder are now included within the `gui` atlas."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w19a",
+    "tags": [
+      "shader"
+    ],
+    "content": "The fog is now split into environmental and render-distance-based. Environmental fog uses spherical distance to determine its intensity, render distance fog uses cylindrical distance. The resulting fog value for any given vertex is the maximum of both."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w16a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 73."
   },
@@ -1021,7 +1152,8 @@
     "version": "25w16a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 57."
   },

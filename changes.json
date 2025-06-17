@@ -966,515 +966,6 @@
     "content": "All equipment-related textures have been moved to subfolders of the `textures/entity/equipment` directory. All armor trim textures have been moved and renamed to subfolders of `textures/trims/entity`."
   },
   {
-    "group": "1.62.6",
-    "version": "25w18a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Data pack format has been increased to 75."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w18a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Resource pack format has been increased to 59."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w18a",
-    "tags": [
-      "entity",
-      "nbt"
-    ],
-    "content": "Added fields to all mob entities: `home_pos` and `home_radius`. If present, most mobs will limit their pathfinding to stay within the indicated area. Interacting with leashes or riding may change the home position of the mob."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w18a",
-    "tags": [
-      "assets",
-      "font"
-    ],
-    "content": "Updated Unifont to `16.0.03`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w18a",
-    "tags": [
-      "assets",
-      "font"
-    ],
-    "content": "Added vanilla font `include/unifont_pua`, containing the previously omitted Unifont glyphs for Private Use Areas. It is not used by default."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w18a",
-    "tags": [
-      "assets",
-      "font"
-    ],
-    "content": "Changed the `unihex` font provider. The `size_overrides` field is now optional and defaults to an empty list."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Data pack format has been increased to 74."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Resource pack format has been increased to 58."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "feature-flag",
-      "obsolete"
-    ],
-    "content": "Removed feature flag `locator_bar`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "tag",
-      "data"
-    ],
-    "content": "Added block tags `happy_ghast_avoids` and `triggers_ambient_dried_ghast_block_sounds`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "assets"
-    ],
-    "content": "Waypoint style can now be customized in the `waypoint_style` resource pack folder. It has fields `near_distance` and `far_distance` (both integers between `0` and `60000000`), and field `sprites` (list of texture paths inside the folder `gui/sprites/hud/locator_bar_dot`)"
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "gamerule"
-    ],
-    "content": "Renamed game rule `useLocatorBar` to `locatorBar`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w17a",
-    "tags": [
-      "shader"
-    ],
-    "content": "Removed `FOG_IS_SKY` in the `fog` uniform block by splitting up the sky shader."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w19a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Data pack format has been increased to 76."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w19a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Resource pack format has been increased to 60."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w19a",
-    "tags": [
-      "entity",
-      "attribute"
-    ],
-    "content": "The `scale` attribute for the `happy_ghast` now has a limit of `1`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w19a",
-    "tags": [
-      "entity",
-      "nbt"
-    ],
-    "content": "Added field `owner` (UUID) to the entity NBT of `tnt` and `vex` entities."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w19a",
-    "tags": [
-      "assets",
-      "atlas",
-      "breaking"
-    ],
-    "content": "The `mob_effects` atlas has been removed, and sprites in the `textures/mob_effect` folder are now included within the `gui` atlas."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w19a",
-    "tags": [
-      "shader"
-    ],
-    "content": "The fog is now split into environmental and render-distance-based. Environmental fog uses spherical distance to determine its intensity, render distance fog uses cylindrical distance. The resulting fog value for any given vertex is the maximum of both."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Data pack format has been increased to 77."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Resource pack format has been increased to 61."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "jar"
-    ],
-    "content": "Nodes in the commands report from the data generators now have a field `required_level`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "item",
-      "component"
-    ],
-    "content": "Added optional fields `can_be_sheared` (boolean) and `shearing_sound` (sound event) to the `equippable` data component."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "dialog"
-    ],
-    "content": "Added a system to display simple dialogs to users from the server side, stored in the `dialog` folder."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "text"
-    ],
-    "content": "Added new click events to text components:\n* `custom`. When clicked, sends the `custom_click_action` to the server. It has fields `id` (resource location) and `payload` (optional string). It is unused by the vanilla server.\n* `show_dialog`: Shows a dialog when clicked. Has a single field `dialog`, which is a resource location or inline dialog."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "entity",
-      "attribute"
-    ],
-    "content": "Ghasts now have a `flying_speed` attribute that affects their flying speed."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w20a",
-    "tags": [
-      "assets",
-      "texture"
-    ],
-    "content": "Added textures `gui/sprites/icon/music_notes` and `gui/sprites/toast/now_playing`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w21a",
-    "tags": [
-      "pack",
-      "breaking"
-    ],
-    "content": "Data pack format has been increased to 78."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w21a",
-    "tags": [
-      "pack",
-      "breaking"
-    ],
-    "content": "Resource pack format has been increased to 62."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w21a",
-    "tags": [
-      "dialog"
-    ],
-    "content": "Changes to the dialog system."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w21a",
-    "tags": [
-      "assets",
-      "sound"
-    ],
-    "content": "Renamed some sounds in `entity/leashknot`. Added sounds: `entity/leashknot/break`, `mob/horse/armor_unequip`, `mob/horse/saddle_unequip`, and `mob/llama/unequip`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Data pack format has been increased to 73."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Resource pack format has been increased to 57."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "component",
-      "item"
-    ],
-    "content": "The `painting/variant` data component no longer allows inline variants."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "texture"
-    ],
-    "content": "The cloud texture `clouds.png` can no longer be colored."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "model"
-    ],
-    "content": "Block model rotations are no longer limited to multiplies of `22.5` and can now be any angle from `-45` to `+45`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "shader",
-      "breaking"
-    ],
-    "content": "All built-in uniforms are now uniform blocks instead of opaque loose uniforms. Custom uniforms provided to post-process shaders are now uniform blocks. Uniform definitions inside json files are now per-block."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w16a",
-    "tags": [
-      "poi"
-    ],
-    "content": "Added point of interest type `test_instance`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Data pack format has been increased to 72."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "pack",
-      "breaking",
-      "obsolete"
-    ],
-    "content": "Resource pack format has been increased to 56."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "feature-flag",
-      "pack",
-      "obsolete"
-    ],
-    "content": "Added feature flag `locator_bar`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "gamerule"
-    ],
-    "content": "Added `useLocatorBar` game rule."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "attribute"
-    ],
-    "content": "Added attributes `waypoint_transmit_range` and `waypoint_receive_range`. They default to `0` for all mobs except for players, which default to `60000000`. Valid values are between `0` and `60000000`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "command"
-    ],
-    "content": "Added the `waypoint` command, with syntax:\n* `waypoint list`\n* `waypoint modify <entity-selector> color <color>`\n* `waypoint modify <entity-selector> color hex <hex-color>`\n* `waypoint modify <entity-selector> color reset`\n* `waypoint modify <entity-selector> fade <fade_start> <alpha_start> <fade_end> <alpha_end>`\n* `waypoint modify <entity-selector> fade reset`"
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "command"
-    ],
-    "content": "Added the `version` command, with no extra arguments. It prints the current version info on the server side."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "command"
-    ],
-    "content": "Added `datapack create` command, with syntax:\n* `datapack create <id> <name>`"
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "worldgen",
-      "dimension"
-    ],
-    "content": "Added optional field `cloud_height` to dimension types."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "attribute"
-    ],
-    "content": "Added attribute `camera_distance`, which has a default value `4`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "component"
-    ],
-    "content": "Changed `attribute_modifiers` data component: added optional field `display`, which is an objects with `type` (one of `default`, `hidden`, or `override`). If type is `override`, an extra field `value` is available, which is a text component."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "entity",
-      "nbt",
-      "breaking"
-    ],
-    "content": "Renamed `area_effect_cloud` NBT field `Particle` to `custom_particle`. When using an `entity_effect` or `tinted_leaves` custom particle, the color will no longer be inherited from the potion contents."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "tag",
-      "data"
-    ],
-    "content": "Added block tag `triggers_ambient_desert_dry_vegetation_block_sounds`"
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "tag",
-      "data",
-      "breaking"
-    ],
-    "content": "Renamed block tag `plays_ambient_desert_block_sounds` to `triggers_ambient_desert_sand_block_sounds`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "tag",
-      "data"
-    ],
-    "content": "Added item tags `happy_ghast_food` and `happy_ghast_tempt_items`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "assets",
-      "texture"
-    ],
-    "content": "The game will now consistently respect the `blur` texture parameter in `.png.mcmeta` files."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "sound",
-      "breaking"
-    ],
-    "content": "Renamed sound event `block.sand.wind` to `block.dry_grass.ambient`."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "sound"
-    ],
-    "content": "Changed location on the sounds for glow squid, squid, guardian, horse, rabbit and pufferfish from the `entity` folder to the `mob` folder."
-  },
-  {
-    "group": "1.62.6",
-    "version": "25w15a",
-    "tags": [
-      "equipment"
-    ],
-    "content": "Added a new `happy_ghast_body` layer type, which renders in the body slot of the happy ghast."
-  },
-  {
     "group": "1.20.3",
     "version": "23w46a",
     "tags": [
@@ -3848,6 +3339,515 @@
       "worldgen"
     ],
     "content": "Added density function `spline`. It has a field `spline` which is a cubic spline with the same format as the terrain shaper splines, with the exception that `coordinate` is a density function."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w18a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 75."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w18a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 59."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w18a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added fields to all mob entities: `home_pos` and `home_radius`. If present, most mobs will limit their pathfinding to stay within the indicated area. Interacting with leashes or riding may change the home position of the mob."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w18a",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Updated Unifont to `16.0.03`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w18a",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Added vanilla font `include/unifont_pua`, containing the previously omitted Unifont glyphs for Private Use Areas. It is not used by default."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w18a",
+    "tags": [
+      "assets",
+      "font"
+    ],
+    "content": "Changed the `unihex` font provider. The `size_overrides` field is now optional and defaults to an empty list."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 74."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 58."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "feature-flag",
+      "obsolete"
+    ],
+    "content": "Removed feature flag `locator_bar`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tags `happy_ghast_avoids` and `triggers_ambient_dried_ghast_block_sounds`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Waypoint style can now be customized in the `waypoint_style` resource pack folder. It has fields `near_distance` and `far_distance` (both integers between `0` and `60000000`), and field `sprites` (list of texture paths inside the folder `gui/sprites/hud/locator_bar_dot`)"
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Renamed game rule `useLocatorBar` to `locatorBar`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w17a",
+    "tags": [
+      "shader"
+    ],
+    "content": "Removed `FOG_IS_SKY` in the `fog` uniform block by splitting up the sky shader."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w19a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 76."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w19a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 60."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w19a",
+    "tags": [
+      "entity",
+      "attribute"
+    ],
+    "content": "The `scale` attribute for the `happy_ghast` now has a limit of `1`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w19a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added field `owner` (UUID) to the entity NBT of `tnt` and `vex` entities."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w19a",
+    "tags": [
+      "assets",
+      "atlas",
+      "breaking"
+    ],
+    "content": "The `mob_effects` atlas has been removed, and sprites in the `textures/mob_effect` folder are now included within the `gui` atlas."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w19a",
+    "tags": [
+      "shader"
+    ],
+    "content": "The fog is now split into environmental and render-distance-based. Environmental fog uses spherical distance to determine its intensity, render distance fog uses cylindrical distance. The resulting fog value for any given vertex is the maximum of both."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 77."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 61."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "jar"
+    ],
+    "content": "Nodes in the commands report from the data generators now have a field `required_level`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added optional fields `can_be_sheared` (boolean) and `shearing_sound` (sound event) to the `equippable` data component."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Added a system to display simple dialogs to users from the server side, stored in the `dialog` folder."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added new click events to text components:\n* `custom`. When clicked, sends the `custom_click_action` to the server. It has fields `id` (resource location) and `payload` (optional string). It is unused by the vanilla server.\n* `show_dialog`: Shows a dialog when clicked. Has a single field `dialog`, which is a resource location or inline dialog."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "entity",
+      "attribute"
+    ],
+    "content": "Ghasts now have a `flying_speed` attribute that affects their flying speed."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w20a",
+    "tags": [
+      "assets",
+      "texture"
+    ],
+    "content": "Added textures `gui/sprites/icon/music_notes` and `gui/sprites/toast/now_playing`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w21a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 78."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w21a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 62."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w21a",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Changes to the dialog system."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w21a",
+    "tags": [
+      "assets",
+      "sound"
+    ],
+    "content": "Renamed some sounds in `entity/leashknot`. Added sounds: `entity/leashknot/break`, `mob/horse/armor_unequip`, `mob/horse/saddle_unequip`, and `mob/llama/unequip`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 73."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 57."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "component",
+      "item"
+    ],
+    "content": "The `painting/variant` data component no longer allows inline variants."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "texture"
+    ],
+    "content": "The cloud texture `clouds.png` can no longer be colored."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "model"
+    ],
+    "content": "Block model rotations are no longer limited to multiplies of `22.5` and can now be any angle from `-45` to `+45`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "All built-in uniforms are now uniform blocks instead of opaque loose uniforms. Custom uniforms provided to post-process shaders are now uniform blocks. Uniform definitions inside json files are now per-block."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w16a",
+    "tags": [
+      "poi"
+    ],
+    "content": "Added point of interest type `test_instance`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 72."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 56."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "feature-flag",
+      "pack",
+      "obsolete"
+    ],
+    "content": "Added feature flag `locator_bar`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `useLocatorBar` game rule."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "attribute"
+    ],
+    "content": "Added attributes `waypoint_transmit_range` and `waypoint_receive_range`. They default to `0` for all mobs except for players, which default to `60000000`. Valid values are between `0` and `60000000`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `waypoint` command, with syntax:\n* `waypoint list`\n* `waypoint modify <entity-selector> color <color>`\n* `waypoint modify <entity-selector> color hex <hex-color>`\n* `waypoint modify <entity-selector> color reset`\n* `waypoint modify <entity-selector> fade <fade_start> <alpha_start> <fade_end> <alpha_end>`\n* `waypoint modify <entity-selector> fade reset`"
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added the `version` command, with no extra arguments. It prints the current version info on the server side."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `datapack create` command, with syntax:\n* `datapack create <id> <name>`"
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "worldgen",
+      "dimension"
+    ],
+    "content": "Added optional field `cloud_height` to dimension types."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "attribute"
+    ],
+    "content": "Added attribute `camera_distance`, which has a default value `4`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed `attribute_modifiers` data component: added optional field `display`, which is an objects with `type` (one of `default`, `hidden`, or `override`). If type is `override`, an extra field `value` is available, which is a text component."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Renamed `area_effect_cloud` NBT field `Particle` to `custom_particle`. When using an `entity_effect` or `tinted_leaves` custom particle, the color will no longer be inherited from the potion contents."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added block tag `triggers_ambient_desert_dry_vegetation_block_sounds`"
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "tag",
+      "data",
+      "breaking"
+    ],
+    "content": "Renamed block tag `plays_ambient_desert_block_sounds` to `triggers_ambient_desert_sand_block_sounds`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "tag",
+      "data"
+    ],
+    "content": "Added item tags `happy_ghast_food` and `happy_ghast_tempt_items`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "assets",
+      "texture"
+    ],
+    "content": "The game will now consistently respect the `blur` texture parameter in `.png.mcmeta` files."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "sound",
+      "breaking"
+    ],
+    "content": "Renamed sound event `block.sand.wind` to `block.dry_grass.ambient`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Changed location on the sounds for glow squid, squid, guardian, horse, rabbit and pufferfish from the `entity` folder to the `mob` folder."
+  },
+  {
+    "group": "1.21.6",
+    "version": "25w15a",
+    "tags": [
+      "equipment"
+    ],
+    "content": "Added a new `happy_ghast_body` layer type, which renders in the body slot of the happy ghast."
   },
   {
     "group": "1.17",

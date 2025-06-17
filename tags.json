@@ -2,6 +2,7 @@
     "advancement": "Any change to the technical advancement system",
     "api": "Common API changes, such as updates URLs",
     "assets": "Asset changes, such as textures, sounds, or lang",
+    "atlas": "Related to texture atlases",
     "attribute": "Changes to the attribute registry",
     "banner": "Changes to banner patterns",
     "block": "New blocks or changes to block data",

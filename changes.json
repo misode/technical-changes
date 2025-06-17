@@ -1088,7 +1088,8 @@
     "version": "25w19a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 76."
   },
@@ -1097,7 +1098,8 @@
     "version": "25w19a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 60."
   },
@@ -1136,6 +1138,112 @@
       "shader"
     ],
     "content": "The fog is now split into environmental and render-distance-based. Environmental fog uses spherical distance to determine its intensity, render distance fog uses cylindrical distance. The resulting fog value for any given vertex is the maximum of both."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 77."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to 61."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "jar"
+    ],
+    "content": "Nodes in the commands report from the data generators now have a field `required_level`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added optional fields `can_be_sheared` (boolean) and `shearing_sound` (sound event) to the `equippable` data component."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Added a system to display simple dialogs to users from the server side, stored in the `dialog` folder."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added new click events to text components:\n* `custom`. When clicked, sends the `custom_click_action` to the server. It has fields `id` (resource location) and `payload` (optional string). It is unused by the vanilla server.\n* `show_dialog`: Shows a dialog when clicked. Has a single field `dialog`, which is a resource location or inline dialog."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "entity",
+      "attribute"
+    ],
+    "content": "Ghasts now have a `flying_speed` attribute that affects their flying speed."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w20a",
+    "tags": [
+      "assets",
+      "texture"
+    ],
+    "content": "Added textures `gui/sprites/icon/music_notes` and `gui/sprites/toast/now_playing`."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w21a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 78."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w21a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 62."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w21a",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Changes to the dialog system."
+  },
+  {
+    "group": "1.62.6",
+    "version": "25w21a",
+    "tags": [
+      "assets",
+      "sound"
+    ],
+    "content": "Renamed some sounds in `entity/leashknot`. Added sounds: `entity/leashknot/break`, `mob/horse/armor_unequip`, `mob/horse/saddle_unequip`, and `mob/llama/unequip`."
   },
   {
     "group": "1.62.6",

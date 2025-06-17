@@ -3342,6 +3342,14 @@
   },
   {
     "group": "1.21.6",
+    "version": "1.21.6-pre2",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Changed input control type `text`.\n* Contents with special characters will be escaped to fit in a SNBT literal in the output (note: both ' and \" are escaped).\n* For the `multiline` field: If the `height` field is omitted, but `max_lines` is present, the height that will be chosen to fit the maximum number of lines can't exceed `512`."
+  },
+  {
+    "group": "1.21.6",
     "version": "25w18a",
     "tags": [
       "pack",
@@ -3516,6 +3524,68 @@
   },
   {
     "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to 79."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 63."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "text"
+    ],
+    "content": "Changed the `custom` click event. It now carries a full NBT tag instead of a string payload."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Added \"Quick Actions\" keybind (defaults to `G`) that shows the `quick_actions` dialog tag."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "dialog"
+    ],
+    "content": "More dialog changes."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "assets",
+      "model",
+      "breaking"
+    ],
+    "content": "Item models now require `\"oversized_in_gui\": true` in order to render beyond the slot boundaries."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre1",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "The `head` item model type no longer loads textures from the `profile` data component. Added `player_head` item model type to handle player profile texture loading."
+  },
+  {
+    "group": "1.21.6",
     "version": "25w20a",
     "tags": [
       "pack",
@@ -3590,7 +3660,8 @@
     "version": "25w21a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 78."
   },
@@ -3599,7 +3670,8 @@
     "version": "25w21a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 62."
   },
@@ -3619,6 +3691,31 @@
       "sound"
     ],
     "content": "Renamed some sounds in `entity/leashknot`. Added sounds: `entity/leashknot/break`, `mob/horse/armor_unequip`, `mob/horse/saddle_unequip`, and `mob/llama/unequip`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre3",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 80."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre3",
+    "tags": [
+      "advancement"
+    ],
+    "content": "Added trigger type `player_sheared_equipment`. It has conditions: `item`, `entity`, and `player`."
+  },
+  {
+    "group": "1.21.6",
+    "version": "1.21.6-pre3",
+    "tags": [
+      "command"
+    ],
+    "content": "Added new sound category `ui` to the `playsound` command."
   },
   {
     "group": "1.21.6",

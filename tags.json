@@ -33,6 +33,7 @@
     "loading": "Anything regarding the load order, speed, or quality of datapacks",
     "loot": "For changes affecting loot tables",
     "macro": "Changes to the macro function system",
+    "management-protocol": "Changes related to the Minecraft Server Management Protocol",
     "memory": "New memory module types",
     "meta": "Important announcements affecting pack development in some way",
     "mojangmap": "Things regarding Mojang's mappings",

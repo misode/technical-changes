@@ -7180,9 +7180,20 @@
     "version": "25w31a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
-    "content": "Data pack format has been increased to 82.0"
+    "content": "Data pack format has been increased to `82.0`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `65.0`."
   },
   {
     "group": "1.21.9",
@@ -7191,16 +7202,7 @@
       "pack",
       "breaking"
     ],
-    "content": "Resource pack format has been increased to 65.0"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "pack",
-      "breaking"
-    ],
-    "content": "The `supported_formats` field has been removed\n* If your pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required\n* Otherwise, it is not allowed and must be removed"
+    "content": "The `supported_formats` field in `pack.mcmeta` has been removed.\n* If your pack declares support for a pack version with the previous format (data pack < 82 or resource pack < 65), it is still required.\n* Otherwise, it is not allowed and must be removed."
   },
   {
     "group": "1.21.9",
@@ -7208,7 +7210,7 @@
     "tags": [
       "pack"
     ],
-    "content": "The `pack_format` field is now optional\n* If your pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required"
+    "content": "The `pack_format` field in `pack.mcmeta` is now optional.\n* If your pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required."
   },
   {
     "group": "1.21.9",
@@ -7217,16 +7219,7 @@
       "pack",
       "breaking"
     ],
-    "content": "Added required field `min_format` that specifies the minimum version supported\n* A full version is specified as a list of two integers, e.g `[74, 1]`\n* Specifying a single integer is interpreted as that major version, e.g. `74` is the same thing as `[74, 0]`\n* Specifying a list of a single integer is interpreted the same as specifying that integer alone"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "pack",
-      "breaking"
-    ],
-    "content": "Added required field `max_format` that specifies the maximum version supported\n* A full version is specified as a list of two integers, e.g `[74, 1]`\n* Specifying a single integer is interpreted as any minor version, i.e. the minor version is `0x7fffffff`\n* Specifying a list of a single integer is interpreted the same as specifying that integer alone"
+    "content": "Added required fields `min_format` and `max_format` in `pack.mcmeta` that specifies the minimum and maximum version supported.\n* A full version is specified as a list of two integers, e.g `[74, 1]`/\n* Specifying a single integer is interpreted as that major version, e.g. `74` is the same thing as `[74, 0]`.\n* Specifying a list of a single integer is interpreted the same as specifying that integer alone."
   },
   {
     "group": "1.21.9",
@@ -7234,7 +7227,15 @@
     "tags": [
       "pack"
     ],
-    "content": "For overlay entries:\n* The `formats` field for overlay entries has been removed\n  * If your pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions\n  * Otherwise, it is not allowed and must be removed\n* Added required field `min_format` and `max_format` with the same formats the fields above with the same name for the `pack` section"
+    "content": "The `formats` field for overlay entries in `pack.mcmeta` has been removed.\n* If your pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions.\n* Otherwise, it is not allowed and must be removed."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack"
+    ],
+    "content": "Added required fields `min_format` and `max_format` in overlay entries in `pack.mcmeta`, with the same formats the fields with the same name for the `pack` section."
   },
   {
     "group": "1.21.9",
@@ -7242,7 +7243,7 @@
     "tags": [
       "command"
     ],
-    "content": "The `summon` command now fails when trying to summon monsters while the difficulty is set to Peaceful"
+    "content": "The `summon` command now fails when trying to summon monsters while the difficulty is set to Peaceful."
   },
   {
     "group": "1.21.9",
@@ -7250,7 +7251,7 @@
     "tags": [
       "gamerule"
     ],
-    "content": "Removed `spawnChunkRadius` game rule"
+    "content": "Removed `spawnChunkRadius` game rule."
   },
   {
     "group": "1.21.9",
@@ -7258,7 +7259,7 @@
     "tags": [
       "component"
     ],
-    "content": "`blocks_attacks` Item Component\n* If the damage reduced in an attack is 0, for example by angle threshold not matching, the item can no longer get disabled in the attack, nor cause knockback due to blocking"
+    "content": "Changed the `blocks_attacks` item component. If the damage reduced in an attack is 0, for example by angle threshold not matching, the item can no longer get disabled in the attack, nor cause knockback due to blocking."
   },
   {
     "group": "1.21.9",
@@ -7266,7 +7267,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `minecraft:entity_interact` loot table type which takes the following parameters:\n* `target_entity`, the entity being interacted with\n* `interacting_entity`, the optional entity that is interacting with the `target_entity`\n* `tool`, the tool used to interact with `target_entity`"
+    "content": "Added `entity_interact` loot table type. It has required parameters `target_entity`, `interacting_entity`, and `tool`."
   },
   {
     "group": "1.21.9",
@@ -7274,7 +7275,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `minecraft:block_interact` loot table type which takes the following parameters:\n* `block_state`, the block state of the block entity being interacted with\n* `block_entity`, the optional block entity being interacted with\n* `interacting_entity`, the optional entity that is interacting with the `block_state`\n* `tool`, the optional tool used to interact with `block_state`"
+    "content": "Added `block_interact` loot table type. It has required parameters `block_state`, `block_entity`, `interacting_entity`, and `tool`."
   },
   {
     "group": "1.21.9",
@@ -7282,7 +7283,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Fields that specify a target entity in a loot table, such as `entity_properties.entity`, can additionally target the `target_entity` and `interacting_entity` parameter types"
+    "content": "Changed entity predicates. Fields that specify a target entity in a loot table, such as `entity_properties.entity`, can now additionally target the `target_entity` and `interacting_entity` parameter types."
   },
   {
     "group": "1.21.9",
@@ -7290,7 +7291,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `charged_creeper/root` loot table for drops when an entity is killed by a Charged Creeper\n* This loot table dispatches on the mob that was killed, to the following loot tables:\n  * `charged_creeper/piglin`\n  * `charged_creeper/creeper`\n  * `charged_creeper/skeleton`\n  * `charged_creeper/wither_skeleton`\n  * `charged_creeper/zombie`\n* Once any mob killed drops an item from this loot table, other mobs killed by the same Creeper will not drop from this loot table"
+    "content": "Added `charged_creeper/root` loot table for drops when an entity is killed by a charged creeper. Once any mob killed drops an item from this loot table, other mobs killed by the same creeper will not drop from this loot table."
   },
   {
     "group": "1.21.9",
@@ -7298,7 +7299,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `brush/armadillo` loot table for drops when an Armadillo is brushed"
+    "content": "Added `brush/armadillo` loot table for drops when an armadillo is brushed."
   },
   {
     "group": "1.21.9",
@@ -7306,7 +7307,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `gameplay/turtle_grow` loot table for drops when a Turtle grows into an adult"
+    "content": "Added `gameplay/turtle_grow` loot table for drops when a turtle grows into an adult."
   },
   {
     "group": "1.21.9",
@@ -7314,7 +7315,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `harvest/beehive` loot table for drops when a Beehive or Bee Nest is harvested using Shears"
+    "content": "Added `harvest/beehive` loot table for drops when a Beehive or Bee Nest is harvested using shears."
   },
   {
     "group": "1.21.9",
@@ -7322,7 +7323,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `harvest/cave_vine` loot table for drops when a Cave Vine with Glowberries is harvested by interacting with it"
+    "content": "Added `harvest/cave_vine` loot table for drops when a cave vine with glowberries is harvested by interacting with it."
   },
   {
     "group": "1.21.9",
@@ -7330,7 +7331,16 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `carve/pumpkin` loot table for drops when a Pumpkin is carved using Shears"
+    "content": "Added `carve/pumpkin` loot table for drops when a pumpkin is carved using shears."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "The `initial_density_without_jaggedness` field in `noise_settings` definitions has been replaced with a `preliminary_surface_level` field. Instead of a 3D density function it is now a 2D density function that should produce the y-level of the approximate surface."
   },
   {
     "group": "1.21.9",
@@ -7338,7 +7348,7 @@
     "tags": [
       "worldgen"
     ],
-    "content": "The `initial_density_without_jaggedness` field in `noise_settings` definitions has been replaced with a `preliminary_surface_level` field\n* `initial_density_without_jaggedness` was a 3D density function that was used to determine an approximate surface level by scanning for the first point with a density greater than `0.390625`\n* `preliminary_surface_level` is a 2D density function that should produce the y-level of the approximate surface\n* The `minecraft:find_top_surface` density function can be used to replicate the previous scanning"
+    "content": "Added `find_top_surface` density function type, which approximates the topmost surface of a given density function. It has fields: `density`, `upper_bound`, `lower_bound`, and `cell_height`."
   },
   {
     "group": "1.21.9",
@@ -7346,15 +7356,7 @@
     "tags": [
       "worldgen"
     ],
-    "content": "Added `minecraft:find_top_surface`\n* Approximates the topmost surface of a given density function\n* It scans from an upper bound to a lower bound to find the point at which the density changes from negative to positive\n  * The upper bound should be as close to the actual surface for best performance\n  * The upper bound should never be lower than the actual surface\n* Fields:\n  * `density` - density function to approximate the surface of\n  * `upper_bound` - 2D density function providing the highest possible y-value\n  * `lower_bound` - integer, lowest possible y-value\n  * `cell_height` - positive integer defining the grid resolution on which to scan"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "worldgen"
-    ],
-    "content": "Added `minecraft:invert`\n* Resolves to `1/argument`\n* Fields:\n  * `argument` - density function"
+    "content": "Added `invert` density function type, which resolves to `1/argument`. It has one field: `argument`."
   },
   {
     "group": "1.21.9",
@@ -7362,79 +7364,25 @@
     "tags": [
       "structure"
     ],
-    "content": "The `max_distance_from_center` field may now specify a different restriction on the vertical axis from horizontal\n* This can be specified by an object with fields:\n  * `horizontal` - required integer between `1` and `128`\n  * `vertical` - optional integer between `1` and `4096` (default: `4096`)\n  * e.g: `\"max_distance_from_center\": { \"horizontal\": 20, \"vertical\": 500 }`\n* The previous format of a single inline value specifying both horizontal and vertical distance is still supported"
+    "content": "The `max_distance_from_center` structure field may now specify a different restriction on the vertical axis from horizontal as an object with fields `horizontal` and `vertical`."
   },
   {
     "group": "1.21.9",
     "version": "25w31a",
     "tags": [
-      "tag"
+      "tag",
+      "data"
     ],
-    "content": "Added `#copper_chests` - all Copper Chest blocks"
+    "content": "Added block tags `#copper_chests`, `#copper`, `#incorrect_for_copper_tool`, `#copper_golem_statues`."
   },
   {
     "group": "1.21.9",
     "version": "25w31a",
     "tags": [
-      "tag"
+      "tag",
+      "data"
     ],
-    "content": "Added `#copper` - all Copper blocks"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#incorrect_for_copper_tool` - all blocks which will not drop items with a copper tool"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#copper_golem_statues` - all Copper Golem Statue blocks"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#copper_chests` - all Copper Chest block items"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#copper` - all Copper block items"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#copper_tool_materials` - all copper tool materials"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#repairs_copper_armor` - all items which repair copper armor"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w31a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#copper_golem_statues` - all Copper Golem Statue block items"
+    "content": "Added item tags `#copper_chests`, `#copper`, `#copper_tool_materials`, `#repairs_copper_armor`, and `#copper_golem_statues`."
   },
   {
     "group": "1.21.9",
@@ -7474,25 +7422,36 @@
     "tags": [
       "shader"
     ],
-    "content": "Changes to Full Screen Passes\n* The following vertex shaders have been removed, and replaced by `core/screenquad.vsh`:\n  * `core/blit_screen.vsh`\n  * `post/blit.vsh`\n  * `post/blur.vsh`\n  * `post/invert.vsh`\n  * `post/sobel.vsh`\n  * `post/screenquad.vsh`\n* Vertex shaders for post-processing effects, as well as lightmap generation and full screen blits are no longer are passed the `Position` attribute, and instead must assign vertex coordinates by `gl_VertexID`\n* These passes furthermore are only executed with 3 vertices, instead of a full quad"
+    "content": "Changes to full screen passes.\n* The following vertex shaders have been removed, and replaced by `core/screenquad.vsh`: `core/blit_screen.vsh`, `post/blit.vsh`, `post/blur.vsh`, `post/invert.vsh`, `post/sobel.vsh`, and `post/screenquad.vsh`.\n* Vertex shaders for post-processing effects, as well as lightmap generation and full screen blits are no longer are passed the `Position` attribute, and instead must assign vertex coordinates by `gl_VertexID`.\n* These passes furthermore are only executed with 3 vertices, instead of a full quad."
   },
   {
     "group": "1.21.9",
     "version": "25w32a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
-    "content": "Data pack format has been increased to 83.0"
+    "content": "Data pack format has been increased to `83.0`."
   },
   {
     "group": "1.21.9",
     "version": "25w32a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
-    "content": "Resource pack format has been increased to 65.1"
+    "content": "Resource pack format has been increased to `65.1`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Changed the `copper_golem` entity NBT. The `weather_state` field now expects a string id instead of integer id `0` \u2192 `unaffected`, `1` \u2192 `exposed`, `2` \u2192 `weathered`, `3` \u2192 `oxidized`."
   },
   {
     "group": "1.21.9",
@@ -7500,23 +7459,7 @@
     "tags": [
       "text"
     ],
-    "content": "Added a way to use GUI and item sprites in text"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w32a",
-    "tags": [
-      "entity"
-    ],
-    "content": "`copper_golem`\n* The `weather_state` field now expects a string id instead of integer id\n  * `0` \u2192 `unaffected`\n  * `1` \u2192 `exposed`\n  * `2` \u2192 `weathered`\n  * `3` \u2192 `oxidized`"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w32a",
-    "tags": [
-      "text"
-    ],
-    "content": "`object` Text Component\n* New text component with type `object` has been added\n* This component will display a single sprite from sprite atlas as a character\n* Sprites are always rendered as a rectangle, 8x8 pixels in size\n* Format:\n  * `atlas` - namespaced ID of a sprite atlas, default value: `minecraft:blocks`\n  * `sprite` - namespaced ID of a sprite in atlas, for example `item/porkchop`"
+    "content": "Added `object` text component, which will display a single sprite from sprite atlas as a character. Sprites are always rendered as a rectangle, 8x8 pixels in size. It has two fields `atlas` and `sprite`."
   },
   {
     "group": "1.21.9",
@@ -7524,55 +7467,25 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `harvest/sweet_berry_bush` loot table for drops when a Sweet Berry Bush with Sweet Berries is harvested by interacting with it"
+    "content": "Added `harvest/sweet_berry_bush` loot table for drops when a sweet berry bush is harvested by interacting with it."
   },
   {
     "group": "1.21.9",
     "version": "25w32a",
     "tags": [
-      "tag"
+      "tag",
+      "data"
     ],
-    "content": "Added `#chains` - all Chain blocks"
+    "content": "Added block tags `#chains`, `#lanterns`, and `#bars`."
   },
   {
     "group": "1.21.9",
     "version": "25w32a",
     "tags": [
-      "tag"
+      "tag",
+      "data"
     ],
-    "content": "Added `#lanterns` - all Lantern blocks"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w32a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#bars` - all Bar blocks"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w32a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#chains` - all Chain block items"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w32a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#lanterns` - all Lantern block items"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w32a",
-    "tags": [
-      "tag"
-    ],
-    "content": "Added `#bars` - all Bar block items"
+    "content": "Added item tags `#chains`, `#lanterns`, and `#bars`."
   },
   {
     "group": "1.21.9",
@@ -7596,90 +7509,88 @@
     "tags": [
       "particle"
     ],
-    "content": "Added new particle:\n* `copper_fire_flame`"
+    "content": "Added new particle `copper_fire_flame`."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
       "pack",
       "breaking"
     ],
-    "content": "Data pack format has been increased to 84.0"
+    "content": "Data pack format has been increased to `84.0`."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
       "pack",
       "breaking"
     ],
-    "content": "Resource pack format has been increased to 66.0"
+    "content": "Resource pack format has been increased to `66.0`."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
-    "tags": [
-      "component",
-      "block-entity"
-    ],
-    "content": "Player profiles in data components and block entities no longer resolve automatically"
-  },
-  {
-    "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
       "command"
     ],
-    "content": "Added `fetchprofile` command for downloading player profiles\n* New command that has been added to fetch the contents of a player profile from Minecraft servers\n* Since the operation might take some time, it works asynchronously\n  * Results will be printed only when operation finishes, but the game will keep running unpaused\n* After successful completion, a message will be printed that lets users copy the contents of a fully resolved `minecraft:profile` component or `/give @s minecraft:player_head` with said component\n* Since the result is not known at the time of execution, this command always returns `1`\n* Syntax:\n  * `fetchprofile name <player name>` - resolves profile by name (case-insensitive)\n  * `fetchprofile id <uuid>` - resolves profile by id"
+    "content": "Added `fetchprofile` command for downloading player profiles. Works asynchronously and prints results when finished. Syntax:\n* `fetchprofile name <player name>` - resolves profile by name (case-insensitive).\n* `fetchprofile id <uuid>` - resolves profile by id."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
-      "blockstate"
+      "blockstate",
+      "block-entity",
+      "nbt"
     ],
-    "content": "Removed `align_items_to_bottom` block state property from Shelf block\n* It has been replaced with an equally named boolean field on the Shelf block entity\n* Shelves created with this property set in the last snapshot will reset back to the default value (`false`)"
+    "content": "Replaced `align_items_to_bottom` shelf block state property with an equally named boolean field on the block entity."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
-      "component"
+      "component",
+      "block-entity",
+      "breaking"
     ],
-    "content": "Modified `minecraft:profile`\n* Previously contents of this component would permanently change when profile was resolved, i.e. downloaded from Minecraft service \n* To avoid issues with this unexpected change, the resolved value is no longer stored and contents of the profile will always remain unchanged \n* That means this component has now two behaviors:\n  * Static: when it has `properties` field or when both `name` and `id` are present or when both are missing\n    * In this state, profile will always render as-is\n    * If `properties` field is missing, a default skin will be used (selected based on `id`, same as in offline mode)\n    * That means skin will be frozen at the moment of component creation\n    * This option is preferred for decorational uses\n  * Dynamic: when it has either `name` or `id` (but not both)\n    * When an item containing this profile is rendered on the client side, the profile will be resolved to most recent value\n    * This means that this item will always render with current skin of targeted player\n      * Note: if a player changes skin while game is running, change will not be visible unless clients restart\n    * Resolution might happen with a delay, during which item will render with a default skin\n    * Profile name will replace item name only when it's present\n      * Items with just `id` will show default name\n    * Items will dynamic profiles be distinguished from static ones with label in tooltip\n* Items stack based on exact contents, so even if a dynamic component is eventually resolved to the same profile as a static one, they won't stack together\n* Player heads in older maps that have not been loaded in never versions yet will usually be converted to dynamic contents"
+    "content": "The `profile` data component no longer resolve profiles. It now has two behaviors:\n* Static: when it has `properties` field or when both `name` and `id` are present or when both are missing.\n* Dynamic: when it has either `name` or `id` (but not both)."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
-      "block-entity"
+      "block-entity",
+      "breaking"
     ],
-    "content": "Modified `minecraft:skull`\n* `profile` field has been changed to match `minecraft:profile` component\n  * That means that it also becomes immutable and is resolved only when necessary"
+    "content": "Changed `skull` block entity. The `profile` field has been changed to match the `profile` data component. It is also now immutable and is resolved only when necessary."
   },
   {
     "group": "1.21.9",
-    "version": "25w34b",
+    "version": "25w34a",
     "tags": [
       "text"
     ],
-    "content": "Bold and italics styles are ignored when drawing sprites"
+    "content": "Changed the `object` text component. Bold and italics styles are now ignored when drawing sprite."
   },
   {
     "group": "1.21.9",
     "version": "25w33a",
     "tags": [
-      "pack"
+      "pack",
+      "obsolete"
     ],
-    "content": "Data pack format has been increased to 83.1"
+    "content": "Data pack format has been increased to `83.1`."
   },
   {
     "group": "1.21.9",
     "version": "25w33a",
     "tags": [
-      "pack"
+      "pack",
+      "obsolete"
     ],
-    "content": "Resource pack format has been increased to 65.2"
+    "content": "Resource pack format has been increased to `65.2`."
   },
   {
     "group": "1.21.9",
@@ -7687,7 +7598,7 @@
     "tags": [
       "blockstate"
     ],
-    "content": "Added `align_items_to_bottom` block state property to the Shelf block\n* If `false` the items on the Shelf will ignore the vertical translation of the `on_shelf` item display transform and will be rendered vertically aligned to the middle of the Shelf\n* If `true` the items on the Shelf will be rendered upward from the bottom of the Shelf and will respect the vertical translation of the `on_shelf` item display transform\n* Default is `false` (items are aligned to the middle of the Shelf)"
+    "content": "Added `align_items_to_bottom` block state property to the shelf block:\n* If `false` (default) the items on the shelf will ignore the vertical translation of the `on_shelf` item display transform and will be rendered vertically aligned to the middle of the shelf.\n* If `true` the items on the shelf will be rendered upward from the bottom of the shelf and will respect the vertical translation of the `on_shelf` item display transform."
   },
   {
     "group": "1.21.9",
@@ -7695,7 +7606,7 @@
     "tags": [
       "attribute"
     ],
-    "content": "`run_command` Click Event\n* Previously, if the `command` field contained a command that required a signed message (`/say`, `/me`, `/msg`, `/tell`, `/w`, `/teammsg`, `/tm`), it would be silently discarded\n* Instead, a screen will be shown that lets the user insert the command into the chat window or copy the command to their clipboard if the chat window can't be opened"
+    "content": "Changed how the `run_command` click event works for commands that required a signed message (`/say`, `/me`, `/msg`, `/tell`, `/w`, `/teammsg`, `/tm`). Now it will show a screen that lets the user insert the command into the chat window."
   },
   {
     "group": "1.21.9",
@@ -7703,7 +7614,7 @@
     "tags": [
       "enchantment"
     ],
-    "content": "New field: `block_effects` - specifies per-block particles. Each block particle is randomly chosen according to weights. A set limit of block particles is spawned each tick from all explosions that tick.\n* Format: List of entries:\n  * `weight`: Non-negative integer representing the random weight for this entry being chosen\n  * `particle`: The particle to spawn\n  * `scaling`: Optional scaling to apply between explosion center and block position, or `1.0` if not specified\n  * `speed`: Optional scaling to apply to the speed of the particle, or `1.0` if not specified"
+    "content": "Changed `explode` enchantment effect. Added field `block_effects`, which can specify per-block particles. It is a list of entries with fields `weight`, `particle`, `scaling`, and `speed`."
   },
   {
     "group": "1.21.9",
@@ -7711,7 +7622,7 @@
     "tags": [
       "tag"
     ],
-    "content": "Added `#shearable_from_copper_golem` - all items that can be removed from the Copper Golem's head slot via Shears"
+    "content": "Added `#shearable_from_copper_golem` item tag, containing all items that can be removed from the copper golem's head slot via shears."
   },
   {
     "group": "1.21.9",
@@ -7719,7 +7630,7 @@
     "tags": [
       "assets"
     ],
-    "content": "Added a new texture:\n* `environment/end_flash.png`"
+    "content": "Added a new texture `environment/end_flash.png`."
   },
   {
     "group": "1.21.9",
@@ -7727,7 +7638,7 @@
     "tags": [
       "assets"
     ],
-    "content": "Added new sound event:\n* `weather.end_flash`"
+    "content": "Added new sound event `weather.end_flash`./"
   },
   {
     "group": "1.21",

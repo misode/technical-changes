@@ -7168,6 +7168,315 @@
     "content": "Changed the `placed_block`, `item_used_on_block`, and `allay_drop_item_on_block` advancement triggers. All fields are now collapsed into `location` which is no longer just a location predicate. It now accepts a list of loot conditions, just like the `player` condition."
   },
   {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack"
+    ],
+    "content": "Pack versions now have minor versions\n* A minor version increment of the game's pack version is backwards-compatible, meaning all packs made for previous iterations of the same major version will keep working\n* Packs can set compatibility requirements on minor versions in case they rely on resources introduced in a minor version"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 82.0"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 65.0"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "The `supported_formats` field has been removed\n* If your pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required\n* Otherwise, it is not allowed and must be removed"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack"
+    ],
+    "content": "The `pack_format` field is now optional\n* If your pack declares support for a pack version with the previous format (data pack < 82, resource pack < 65), it is still required"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Added required field `min_format` that specifies the minimum version supported\n* A full version is specified as a list of two integers, e.g `[74, 1]`\n* Specifying a single integer is interpreted as that major version, e.g. `74` is the same thing as `[74, 0]`\n* Specifying a list of a single integer is interpreted the same as specifying that integer alone"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Added required field `max_format` that specifies the maximum version supported\n* A full version is specified as a list of two integers, e.g `[74, 1]`\n* Specifying a single integer is interpreted as any minor version, i.e. the minor version is `0x7fffffff`\n* Specifying a list of a single integer is interpreted the same as specifying that integer alone"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "pack"
+    ],
+    "content": "For overlay entries:\n* The `formats` field for overlay entries has been removed\n  * If your pack includes any overlay range that includes a pack version with the previous format (data pack < 82, resource pack < 65), it is still required for all overlay definitions\n  * Otherwise, it is not allowed and must be removed\n* Added required field `min_format` and `max_format` with the same formats the fields above with the same name for the `pack` section"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "command"
+    ],
+    "content": "The `summon` command now fails when trying to summon monsters while the difficulty is set to Peaceful"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Removed `spawnChunkRadius` game rule"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "component"
+    ],
+    "content": "`blocks_attacks` Item Component\n* If the damage reduced in an attack is 0, for example by angle threshold not matching, the item can no longer get disabled in the attack, nor cause knockback due to blocking"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `minecraft:entity_interact` loot table type which takes the following parameters:\n* `target_entity`, the entity being interacted with\n* `interacting_entity`, the optional entity that is interacting with the `target_entity`\n* `tool`, the tool used to interact with `target_entity`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `minecraft:block_interact` loot table type which takes the following parameters:\n* `block_state`, the block state of the block entity being interacted with\n* `block_entity`, the optional block entity being interacted with\n* `interacting_entity`, the optional entity that is interacting with the `block_state`\n* `tool`, the optional tool used to interact with `block_state`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Fields that specify a target entity in a loot table, such as `entity_properties.entity`, can additionally target the `target_entity` and `interacting_entity` parameter types"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `charged_creeper/root` loot table for drops when an entity is killed by a Charged Creeper\n* This loot table dispatches on the mob that was killed, to the following loot tables:\n  * `charged_creeper/piglin`\n  * `charged_creeper/creeper`\n  * `charged_creeper/skeleton`\n  * `charged_creeper/wither_skeleton`\n  * `charged_creeper/zombie`\n* Once any mob killed drops an item from this loot table, other mobs killed by the same Creeper will not drop from this loot table"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `brush/armadillo` loot table for drops when an Armadillo is brushed"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `gameplay/turtle_grow` loot table for drops when a Turtle grows into an adult"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `harvest/beehive` loot table for drops when a Beehive or Bee Nest is harvested using Shears"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `harvest/cave_vine` loot table for drops when a Cave Vine with Glowberries is harvested by interacting with it"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `carve/pumpkin` loot table for drops when a Pumpkin is carved using Shears"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "The `initial_density_without_jaggedness` field in `noise_settings` definitions has been replaced with a `preliminary_surface_level` field\n* `initial_density_without_jaggedness` was a 3D density function that was used to determine an approximate surface level by scanning for the first point with a density greater than `0.390625`\n* `preliminary_surface_level` is a 2D density function that should produce the y-level of the approximate surface\n* The `minecraft:find_top_surface` density function can be used to replicate the previous scanning"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added `minecraft:find_top_surface`\n* Approximates the topmost surface of a given density function\n* It scans from an upper bound to a lower bound to find the point at which the density changes from negative to positive\n  * The upper bound should be as close to the actual surface for best performance\n  * The upper bound should never be lower than the actual surface\n* Fields:\n  * `density` - density function to approximate the surface of\n  * `upper_bound` - 2D density function providing the highest possible y-value\n  * `lower_bound` - integer, lowest possible y-value\n  * `cell_height` - positive integer defining the grid resolution on which to scan"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added `minecraft:invert`\n* Resolves to `1/argument`\n* Fields:\n  * `argument` - density function"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "structure"
+    ],
+    "content": "The `max_distance_from_center` field may now specify a different restriction on the vertical axis from horizontal\n* This can be specified by an object with fields:\n  * `horizontal` - required integer between `1` and `128`\n  * `vertical` - optional integer between `1` and `4096` (default: `4096`)\n  * e.g: `\"max_distance_from_center\": { \"horizontal\": 20, \"vertical\": 500 }`\n* The previous format of a single inline value specifying both horizontal and vertical distance is still supported"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper_chests` - all Copper Chest blocks"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper` - all Copper blocks"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#incorrect_for_copper_tool` - all blocks which will not drop items with a copper tool"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper_golem_statues` - all Copper Golem Statue blocks"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper_chests` - all Copper Chest block items"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper` - all Copper block items"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper_tool_materials` - all copper tool materials"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#repairs_copper_armor` - all items which repair copper armor"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#copper_golem_statues` - all Copper Golem Statue block items"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new block sprites:\n* `copper`\n* `copper_left`\n* `copper_right`\n* `exposed_copper`\n* `exposed_copper_left`\n* `exposed_copper_right`\n* `weathered_copper`\n* `weathered_copper_left`\n* `weathered_copper_right`\n* `oxidized_copper`\n* `oxidized_copper_left`\n* `oxidized_copper_right`\n* `acacia_shelf`\n* `bamboo_shelf`\n* `birch_shelf`\n* `cherry_shelf`\n* `crimson_shelf`\n* `dark_oak_shelf`\n* `jungle_shelf`\n* `mangrove_shelf`\n* `oak_shelf`\n* `pale_oak_shelf`\n* `spruce_shelf`\n* `warped_shelf`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new entity sprites:\n* `copper_golem`\n* `exposed_copper_golem`\n* `weathered_copper_golem`\n* `oxidized_copper_golem`\n* `copper_golem_eyes`\n* `exposed_copper_golem_eyes`\n* `weathered_copper_golem_eyes`\n* `oxidized_copper_golem_eyes`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new item sprites:\n* `copper_axe`\n* `copper_boots`\n* `copper_chestplate`\n* `copper_golem_spawn_egg`\n* `copper_helmet`\n* `copper_hoe`\n* `copper_leggings`\n* `copper_nugget`\n* `copper_pickaxe`\n* `copper_shovel`\n* `copper_sword`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new sound events:\n* `block.copper_chest.open`\n* `block.copper_chest.close`\n* `block.copper_chest_weathered.open`\n* `block.copper_chest_weathered.close`\n* `block.copper_chest_oxidized.open`\n* `block.copper_chest_oxidized.close`\n* `entity.copper_golem.step`\n* `entity.copper_golem.hurt`\n* `entity.copper_golem.death`\n* `entity.copper_golem.spin`\n* `entity.copper_golem_weathered.step`\n* `entity.copper_golem_weathered.hurt`\n* `entity.copper_golem_weathered.death`\n* `entity.copper_golem_weathered.spin`\n* `entity.copper_golem_oxidized.step`\n* `entity.copper_golem_oxidized.hurt`\n* `entity.copper_golem_oxidized.death`\n* `entity.copper_golem_oxidized.spin`\n* `item.armor.equip_copper`\n* `entity.copper_golem.spawn`\n* `entity.copper_golem.no_item_get`\n* `entity.copper_golem.no_item_not_get`\n* `entity.copper_golem.item_drop`\n* `entity.copper_golem.item_no_drop`\n* `entity.copper_golem_become_statue`\n* `block.copper_golem_statue.break`\n* `block.copper_golem_statue.place`\n* `block.copper_golem_statue.hit`\n* `block.copper_golem_statue.fall`\n* `block.copper_golem_statue.step`\n* `block.shelf.activate`\n* `block.shelf.deactivate`\n* `block.shelf.multi_swap`\n* `block.shelf.place_item`\n* `block.shelf.single_swap`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w31a",
+    "tags": [
+      "shader"
+    ],
+    "content": "Changes to Full Screen Passes\n* The following vertex shaders have been removed, and replaced by `core/screenquad.vsh`:\n  * `core/blit_screen.vsh`\n  * `post/blit.vsh`\n  * `post/blur.vsh`\n  * `post/invert.vsh`\n  * `post/sobel.vsh`\n  * `post/screenquad.vsh`\n* Vertex shaders for post-processing effects, as well as lightmap generation and full screen blits are no longer are passed the `Position` attribute, and instead must assign vertex coordinates by `gl_VertexID`\n* These passes furthermore are only executed with 3 vertices, instead of a full quad"
+  },
+  {
     "group": "1.21",
     "version": "24w19a",
     "tags": [

@@ -7599,6 +7599,70 @@
     "content": "Added new particle:\n* `copper_fire_flame`"
   },
   {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "pack"
+    ],
+    "content": "Data pack format has been increased to 83.1"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "pack"
+    ],
+    "content": "Resource pack format has been increased to 65.2"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "blockstate"
+    ],
+    "content": "Added `align_items_to_bottom` block state property to the Shelf block\n* If `false` the items on the Shelf will ignore the vertical translation of the `on_shelf` item display transform and will be rendered vertically aligned to the middle of the Shelf\n* If `true` the items on the Shelf will be rendered upward from the bottom of the Shelf and will respect the vertical translation of the `on_shelf` item display transform\n* Default is `false` (items are aligned to the middle of the Shelf)"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "attribute"
+    ],
+    "content": "`run_command` Click Event\n* Previously, if the `command` field contained a command that required a signed message (`/say`, `/me`, `/msg`, `/tell`, `/w`, `/teammsg`, `/tm`), it would be silently discarded\n* Instead, a screen will be shown that lets the user insert the command into the chat window or copy the command to their clipboard if the chat window can't be opened"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "New field: `block_effects` - specifies per-block particles. Each block particle is randomly chosen according to weights. A set limit of block particles is spawned each tick from all explosions that tick.\n* Format: List of entries:\n  * `weight`: Non-negative integer representing the random weight for this entry being chosen\n  * `particle`: The particle to spawn\n  * `scaling`: Optional scaling to apply between explosion center and block position, or `1.0` if not specified\n  * `speed`: Optional scaling to apply to the speed of the particle, or `1.0` if not specified"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#shearable_from_copper_golem` - all items that can be removed from the Copper Golem's head slot via Shears"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added a new texture:\n* `environment/end_flash.png`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w33a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new sound event:\n* `weather.end_flash`"
+  },
+  {
     "group": "1.21",
     "version": "24w19a",
     "tags": [

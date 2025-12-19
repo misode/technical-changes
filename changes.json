@@ -7600,6 +7600,73 @@
   },
   {
     "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 84.0"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 66.0"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "component",
+      "block-entity"
+    ],
+    "content": "Player profiles in data components and block entities no longer resolve automatically"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `fetchprofile` command for downloading player profiles\n* New command that has been added to fetch the contents of a player profile from Minecraft servers\n* Since the operation might take some time, it works asynchronously\n  * Results will be printed only when operation finishes, but the game will keep running unpaused\n* After successful completion, a message will be printed that lets users copy the contents of a fully resolved `minecraft:profile` component or `/give @s minecraft:player_head` with said component\n* Since the result is not known at the time of execution, this command always returns `1`\n* Syntax:\n  * `fetchprofile name <player name>` - resolves profile by name (case-insensitive)\n  * `fetchprofile id <uuid>` - resolves profile by id"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "blockstate"
+    ],
+    "content": "Removed `align_items_to_bottom` block state property from Shelf block\n* It has been replaced with an equally named boolean field on the Shelf block entity\n* Shelves created with this property set in the last snapshot will reset back to the default value (`false`)"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "component"
+    ],
+    "content": "Modified `minecraft:profile`\n* Previously contents of this component would permanently change when profile was resolved, i.e. downloaded from Minecraft service \n* To avoid issues with this unexpected change, the resolved value is no longer stored and contents of the profile will always remain unchanged \n* That means this component has now two behaviors:\n  * Static: when it has `properties` field or when both `name` and `id` are present or when both are missing\n    * In this state, profile will always render as-is\n    * If `properties` field is missing, a default skin will be used (selected based on `id`, same as in offline mode)\n    * That means skin will be frozen at the moment of component creation\n    * This option is preferred for decorational uses\n  * Dynamic: when it has either `name` or `id` (but not both)\n    * When an item containing this profile is rendered on the client side, the profile will be resolved to most recent value\n    * This means that this item will always render with current skin of targeted player\n      * Note: if a player changes skin while game is running, change will not be visible unless clients restart\n    * Resolution might happen with a delay, during which item will render with a default skin\n    * Profile name will replace item name only when it's present\n      * Items with just `id` will show default name\n    * Items will dynamic profiles be distinguished from static ones with label in tooltip\n* Items stack based on exact contents, so even if a dynamic component is eventually resolved to the same profile as a static one, they won't stack together\n* Player heads in older maps that have not been loaded in never versions yet will usually be converted to dynamic contents"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "block-entity"
+    ],
+    "content": "Modified `minecraft:skull`\n* `profile` field has been changed to match `minecraft:profile` component\n  * That means that it also becomes immutable and is resolved only when necessary"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w34b",
+    "tags": [
+      "text"
+    ],
+    "content": "Bold and italics styles are ignored when drawing sprites"
+  },
+  {
+    "group": "1.21.9",
     "version": "25w33a",
     "tags": [
       "pack"

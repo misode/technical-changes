@@ -7477,6 +7477,128 @@
     "content": "Changes to Full Screen Passes\n* The following vertex shaders have been removed, and replaced by `core/screenquad.vsh`:\n  * `core/blit_screen.vsh`\n  * `post/blit.vsh`\n  * `post/blur.vsh`\n  * `post/invert.vsh`\n  * `post/sobel.vsh`\n  * `post/screenquad.vsh`\n* Vertex shaders for post-processing effects, as well as lightmap generation and full screen blits are no longer are passed the `Position` attribute, and instead must assign vertex coordinates by `gl_VertexID`\n* These passes furthermore are only executed with 3 vertices, instead of a full quad"
   },
   {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to 83.0"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to 65.1"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added a way to use GUI and item sprites in text"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "entity"
+    ],
+    "content": "`copper_golem`\n* The `weather_state` field now expects a string id instead of integer id\n  * `0` \u2192 `unaffected`\n  * `1` \u2192 `exposed`\n  * `2` \u2192 `weathered`\n  * `3` \u2192 `oxidized`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "text"
+    ],
+    "content": "`object` Text Component\n* New text component with type `object` has been added\n* This component will display a single sprite from sprite atlas as a character\n* Sprites are always rendered as a rectangle, 8x8 pixels in size\n* Format:\n  * `atlas` - namespaced ID of a sprite atlas, default value: `minecraft:blocks`\n  * `sprite` - namespaced ID of a sprite in atlas, for example `item/porkchop`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `harvest/sweet_berry_bush` loot table for drops when a Sweet Berry Bush with Sweet Berries is harvested by interacting with it"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#chains` - all Chain blocks"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#lanterns` - all Lantern blocks"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#bars` - all Bar blocks"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#chains` - all Chain block items"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#lanterns` - all Lantern block items"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#bars` - all Bar block items"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new block sprites:\n* `copper_bars`\n* `copper_chain`\n* `copper_lantern`\n* `copper_torch`\n* `exposed_copper_bars`\n* `exposed_copper_chain`\n* `exposed_copper_lantern`\n* `exposed_copper_torch`\n* `oxidized_copper_bars`\n* `oxidized_copper_chain`\n* `oxidized_copper_lantern`\n* `oxidized_copper_torch`\n* `weathered_copper_bars`\n* `weathered_copper_chain`\n* `weathered_copper_lantern`\n* `weathered_copper_torch`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new item sprites:\n* `copper_chain`\n* `copper_lantern`\n* `exposed_copper_chain`\n* `exposed_copper_lantern`\n* `oxidized_copper_chain`\n* `oxidized_copper_lantern`\n* `weathered_copper_chain`\n* `weathered_copper_lantern`"
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w32a",
+    "tags": [
+      "particle"
+    ],
+    "content": "Added new particle:\n* `copper_fire_flame`"
+  },
+  {
     "group": "1.21",
     "version": "24w19a",
     "tags": [

@@ -9024,6 +9024,23 @@
   },
   {
     "group": "1.21.11",
+    "version": "1.21.11-pre4",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `94.1`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre4",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `min_creative_reach` and `max_creative_reach` fields to `attack_range` component for creative mode."
+  },
+  {
+    "group": "1.21.11",
     "version": "1.21.11-pre1",
     "tags": [
       "pack",

@@ -8906,6 +8906,472 @@
     "content": "Resource pack format has been increased to 64."
   },
   {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `89.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `70.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "network"
+    ],
+    "content": "Minecraft Server Management Protocol version has been increased to `1.1.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "network"
+    ],
+    "content": "Added `server/activity` notification to Server Management Protocol, which indicates that a network connection has been initiated. Rate limited to one notification per 30 seconds."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "jar"
+    ],
+    "content": "Added `ClientFps` JFR event."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "network"
+    ],
+    "content": "Experience packets that do not change the player's experience progress or level are no longer sent by the server."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `stopwatch` command for creating stopwatches that track real time. Stopwatches do not depend on game ticks and only run when the server/world is running."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `execute if|unless stopwatch <id> <range>` syntax to compare the elapsed time of a stopwatch with a floating point value range. The stopwatch value is measured in seconds with millisecond accuracy."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `use_effects` component to control player behavior when using an item. Fields: `can_sprint` (boolean, defaults to `false`) and `speed_multiplier` (float `0.0` to `1.0`, defaults to `0.2`)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `minimum_attack_charge` component to set the minimum attack charge on the attack indicator required to attack with an item. Format: float from `0.0` (no charge required) to `1.0` (full charge required)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `damage_type` component to specify the type of damage an item deals. Format: string damage type identifier, e.g. `damage_type='minecraft:spear'`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `kinetic_weapon` component to enable charge-type attacks where damage is dealt along a ray every tick based on relative speed of entities. Fields: `min_reach`, `max_reach`, `hitbox_margin`, `delay_ticks`, `dismount_conditions`, `knockback_conditions`, `damage_conditions`, `forward_movement`, `damage_multiplier`, `sound`, and `hit_sound`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `piercing_weapon` component to enable quick attacks that damage multiple entities along a ray. Fields: `min_reach`, `max_reach`, `hitbox_margin`, `deals_knockback`, `dismounts`, `sound`, and `hit_sound`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `swing_animation` component to specify the swing animation when attacking or interacting. Fields: `type` (string: `none`, `whack`, or `stab`, defaults to `whack`) and `duration` (integer, defaults to `6`)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component",
+      "breaking"
+    ],
+    "content": "Changed `consumable` component. The `animation` field value `spear` has been renamed to `trident`, and a new `spear` animation has been added."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "component"
+    ],
+    "content": "Items with `intangible_projectile` component now show information about it in their tooltip."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "The `AngryAt` field has been renamed to `angry_at`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "The `AngerTime` field has been removed and replaced with `anger_end_time`, containing the time anger ends in game ticks."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "damage-type"
+    ],
+    "content": "Added `spear` damage type."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "predicate"
+    ],
+    "content": "Component predicates now include predicates for checking existence of every component type using the format `{<component_type>: {}}`. The predicate passes as long as the component is present, regardless of value."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "predicate"
+    ],
+    "content": "The `flags` predicate in entity predicates now supports `is_in_water` (when an entity is touching water or a bubble column) and `is_fall_flying` (when an entity is gliding with an elytra)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "predicate"
+    ],
+    "content": "Item predicates in command form now accept empty predicates for any component type to check for component existence. The syntax `*[instrument]` and `*[instrument~{}]` are equivalent."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "Added `post_piercing_attack` enchantment effect component for effects applying after a piercing attack with an item."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "Added `apply_impulse` enchantment entity effect to apply an impulse to the targeted entity. Fields: `direction`, `coordinate_scale` and `magnitude`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "The `play_sound` enchantment entity effect can now support a list of sound event identifiers, one for each enchantment level. If a level exceeds the number of sounds, the last sound is used."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "Added `exponent` that raises the base to the specified power level. Fields: `base` and `power`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#can_glide_through` block tag for climbable blocks that can be glided through without stopping."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#nautilus_taming_items` item tag for items that can tame a nautilus and zombie nautilus."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#nautilus_bucket_food` item tag for bucketed fish items that can feed a tamed nautilus and zombie nautilus."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#nautilus_food` item tag for all items that can feed a tamed nautilus and zombie nautilus."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#spears` item tag for all spear weapons."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#enchantable/lunge` item tag for items that can be enchanted with the lunge enchantment."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#enchantable/melee_weapon` item tag for all primary melee weapons including swords and spears."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Renamed `#enchantable/sword` item tag to `#enchantable/sweeping`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#can_wear_nautilus_armor` entity tag for entities that can equip nautilus armor."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#nautilus_hostiles` entity tag for entities that nautilus will be hostile towards when untamed."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Changed `#not_scary_for_pufferfish` entity tag to include nautilus and zombie nautilus."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#burn_in_daylight` entity tag for entities that burn in daylight."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#lunge_exclusive` enchantment tag for enchantments incompatible with the lunge enchantment."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "font"
+    ],
+    "content": "Unifont has been updated to version 17.0.01."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `darkened_cutout_mipmap` boolean field to texture section of `*.mcmeta` files. Defaults to `false` and is set to `true` for block textures that had mipmaps before (leaves and mangrove roots). When `true` and texture is cutout, mipmaps are darkened to emulate darker interior of the block."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Only mipmaps of level 0 and 1 are now animated for block animated textures."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Glass and glass pane now support translucent textures."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added item sprites: `nautilus_spawn_egg`, `zombie_nautilus_spawn_egg`, `copper_nautilus_armor`, `iron_nautilus_armor`, `golden_nautilus_armor`, `diamond_nautilus_armor`, `netherite_nautilus_armor`, and spear sprites for inventory and in-hand variants."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added UI sprites: `container/slot/nautilus_armor`, `container/slot/spear`, `container/inventory/effect_background`, and `container/inventory/effect_background_ambient`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Removed UI sprites: `container/inventory/effect_background_large` and `container/inventory/effect_background_small`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "atlas"
+    ],
+    "content": "Added `celestials` atlas for objects rendered in the sky. Includes sprites from `<namespace>:textures/environment/celestial/<path>.png`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Moved or split sky textures. `textures/environment/sun.png` moved to `sun`, `textures/environment/end_flash.png` moved to `end_flash`, and `textures/environment/moon_phases` split into individual moon phase sprites in `moon/` folder."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `breath_of_the_nautilus` mob effect sprite."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added entity textures for nautilus, zombie nautilus, baby nautilus, nautilus armor equipment, and nautilus saddle."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events for spears: `item.spear.hit`, `item.spear.use`, and `item.spear.attack`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added special sound events for wooden spear: `item.spear_wood.hit`, `item.spear_wood.use`, and `item.spear_wood.attack`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events for lunge enchantment: `item.spear.lunge_1`, `item.spear.lunge_2`, and `item.spear.lunge_3`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events for nautilus: `entity.baby_nautilus.ambient`, `entity.baby_nautilus.death`, `entity.baby_nautilus.eat`, `entity.baby_nautilus.hurt`, `entity.baby_nautilus.swim`, `entity.nautilus.ambient`, `entity.nautilus.death`, `entity.nautilus.dash`, `entity.nautilus.dash_ready`, `entity.nautilus.eat`, `entity.nautilus.hurt`, `entity.nautilus.swim`, `entity.zombie_nautilus.ambient`, `entity.zombie_nautilus.death`, `entity.zombie_nautilus.dash`, `entity.zombie_nautilus.dash_ready`, `entity.zombie_nautilus.eat`, `entity.zombie_nautilus.hurt`, `entity.zombie_nautilus.swim`, `item.nautilus_armor.equip`, and `item.nautilus_armor.unequip`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added `entity.zombie_horse.angry` sound event for zombie horse."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `swap_animation_scale` option for all item models. Defaults to `1.0` and indicates how fast the item moves up and down when swapping items in hotbar."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w41a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `spear_in_hand` item model for spear when in hand."
+  },
+  {
     "group": "1.21.2",
     "version": "24w36a",
     "tags": [

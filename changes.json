@@ -7516,7 +7516,8 @@
     "version": "25w34a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `84.0`."
   },
@@ -7525,7 +7526,8 @@
     "version": "25w34a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `66.0`."
   },
@@ -7573,6 +7575,181 @@
       "text"
     ],
     "content": "Changed the `object` text component. Bold and italics styles are now ignored when drawing sprite."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `85.0`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `67.0`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "network"
+    ],
+    "content": "Added a server management API (JSON-RPC over WebSocket) for dedicated servers."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options",
+      "breaking"
+    ],
+    "content": "Removed `allow-nether` server property in favor of new game rule `allowEnteringNetherUsingPortals`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options",
+      "breaking"
+    ],
+    "content": "Removed `spawn-monsters` server property in favor of new game rule `spawnMonsters`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options",
+      "breaking"
+    ],
+    "content": "Removed `enable-command-block` server property in favor of new game rule `enableCommandBlocks`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options",
+      "breaking"
+    ],
+    "content": "Removed `pvp` server property in favor of new game rule `pvp`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options"
+    ],
+    "content": "Added `management-server-enabled` server property, which defaults to `false`. Controls whether the Minecraft Server Management Protocol is enabled."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options"
+    ],
+    "content": "Added `management-server-port` server property, which defaults to `25585`. Controls the port for the Minecraft Server Management Protocol."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options"
+    ],
+    "content": "Added `management-server-host` server property, which defaults to `localhost`. Controls the host for the Minecraft Server Management Protocol."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "options"
+    ],
+    "content": "Added `status-heartbeat-interval` server property, which defaults to `0`. Controls the interval for server status notifications to connected clients."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `pvp` game rule, which defaults to `true`. Controls whether players can deal damage to other players."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `allowEnteringNetherUsingPortals` game rule, which defaults to `true`. Controls if the Nether can be entered through portals."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `spawnMonsters` game rule, which defaults to `true`. Controls if monsters should spawn naturally."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "Added `enableCommandBlocks` game rule, which defaults to `true`. Controls if Command Blocks should be enabled or not."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "data"
+    ],
+    "content": "Renamed `chain` to `iron_chain`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Renamed block sprite `chain` to `iron_chain`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Renamed item sprite `chain` to `iron_chain`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "text",
+      "breaking"
+    ],
+    "content": "Updated object text component to support displaying non-character objects as part of text."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added `atlas` object type for text components, which behaves the same as previous `object` component."
+  },
+  {
+    "group": "1.21.9",
+    "version": "25w35a",
+    "tags": [
+      "text"
+    ],
+    "content": "Added `player` object type for text components, which renders player head."
   },
   {
     "group": "1.21.9",

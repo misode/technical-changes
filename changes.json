@@ -9024,6 +9024,106 @@
   },
   {
     "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `94.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `75.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "component",
+      "breaking"
+    ],
+    "content": "The `min_reach`, `max_reach`, and `hitbox_margin` fields have been moved from `piercing_weapon` and `kinetic_weapon` components into a new `attack_range` component."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `attack_range` component to enable custom attack range when using the item. Fields: `min_range`, `max_range`, `hitbox_margin` and `mob_factor`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "tag"
+    ],
+    "content": "Updated `#piglin_preferred_weapons` item tag to include golden spears."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Textures for leather horse armor item and equipment asset have been split into a tinted base layer and an overlay layer."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `alpha_cutoff_bias` field to texture section of `*.mcmeta` files to control alpha bias for cutout textures. Can be increased for textures that become too transparent at distance or decreased if too opaque. Only used for lower mips of cutout textures and has no effect on first mip level or other textures."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added item sprite: `leather_horse_armor_overlay`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added entity texture: `entity/equipment/horse_body/leather_overlay.png`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "sound"
+    ],
+    "content": "Updated swim sounds for nautilus, baby nautilus, and zombie nautilus."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "sound",
+      "breaking"
+    ],
+    "content": "Removed `item.underwater_saddle.equip` sound event."
+  },
+  {
+    "group": "1.21.11",
+    "version": "1.21.11-pre1",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events for nautilus: `entity.baby_nautilus.ambient_land`, `entity.baby_nautilus.death_land`, `entity.baby_nautilus.hurt_land`, `entity.nautilus.ambient_land`, `entity.nautilus.dash_land`, `entity.nautilus.dash_ready_land`, `entity.nautilus.death_land`, `entity.nautilus.hurt_land`, `entity.zombie_nautilus.ambient_land`, `entity.zombie_nautilus.dash_land`, `entity.zombie_nautilus.dash_ready_land`, `entity.zombie_nautilus.death_land`, and `entity.zombie_nautilus.hurt_land`."
+  },
+  {
+    "group": "1.21.11",
     "version": "25w42a",
     "tags": [
       "pack",

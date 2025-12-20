@@ -8907,6 +8907,302 @@
   },
   {
     "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `90.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `70.1`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "network"
+    ],
+    "content": "Minecraft Server Management Protocol now enables authentication from web browsers by passing the token in `Sec-WebSocket-Protocol` header. Requests authenticating this way are subject to `Origin` header checks, which requires configuration of allowed origins using `management-server-allowed-origins`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "command"
+    ],
+    "content": "Resource suggestions now show results in any namespace instead of just within `minecraft`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "command",
+      "breaking"
+    ],
+    "content": "Changed `stopwatch` command syntax. The `id` argument has been moved after the subcommand. Example: `/stopwatch foo:bar create` is now `/stopwatch create foo:bar`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "command"
+    ],
+    "content": "The `stopwatch query` command now returns the queried value and takes in a new optional `scale` argument. The returned value will be scaled by that argument and truncated, defaulting to `1` if omitted."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added Environment Attributes system, providing a data-driven way to control visual and gameplay effects. Environment Attribute values can be provided by dimensions and biomes, with biomes having higher priority."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/fog_color` Environment Attribute to control fog color when camera is not submerged. Format: RGB color, defaults to `#000000`. Replaces biome `effects.fog_color` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/extra_fog` Environment Attribute to control whether dense fog should be used. Format: boolean, defaults to `false`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/water_fog_color` Environment Attribute to control fog color when submerged in water. Format: RGB color, defaults to `#050533`. Replaces biome `effects.water_fog_color` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/water_fog_radius` Environment Attribute to control distance in blocks from camera at which underwater fog reaches maximum density. Format: non-negative float, defaults to `96.0`. Replaces `#has_closer_water_fog` biome tag."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/sky_color` Environment Attribute to control sky color. Only visible for overworld sky. Format: RGB color, defaults to `#000000`. Replaces biome `effects.sky_color` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/cloud_opacity` Environment Attribute to control cloud opacity. If `0`, clouds are disabled and happy ghasts will not regenerate health faster at cloud height. Format: float between `0.0` and `1.0`, defaults to `0.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/cloud_height` Environment Attribute to control height at which clouds appear. Format: float, defaults to `192.33`. Replaces dimension type `cloud_height` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/default_dripstone_particle` Environment Attribute to control default particle dripped from dripstone blocks when no fluid is above. Format: Particle Options, defaults to `{type:\"dripping_dripstone_water\"}`. Replaces dimension type `ultrawarm` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/ambient_particles` Environment Attribute to control ambient particles that randomly spawn around camera. Format: list of objects with `particle` and `probability` fields, defaults to `[]`. Replaces biome `effects.particle` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `audio/background_music` Environment Attribute to control how and which background music is played. Format: object with optional `default`, `underwater`, and `creative` fields, defaults to `{}`. Replaces biome `effects.music` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `audio/music_volume` Environment Attribute to control music volume. Format: float between `0.0` and `1.0`, defaults to `1.0`. Replaces biome `effects.music_volume` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `audio/ambient_sounds` Environment Attribute to control ambient sounds played around camera. Format: object with optional `loop`, `mood`, and `additions` fields, defaults to `{}`. Replaces biome `effects.ambient_sound`, `effects.mood_sound`, and `effects.additions_sound` fields."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/can_start_raid` Environment Attribute to control whether raids can be started by a player with Raid Omen. Format: boolean, defaults to `true`. Replaces dimension type `has_raids` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/water_evaporates` Environment Attribute to control whether water can be placed with buckets and related mechanics. Format: boolean, defaults to `false`. Replaces dimension type `ultrawarm` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/bed_rule` Environment Attribute to control whether beds can be used to sleep and set respawn points. Format: object with `can_sleep`, `can_set_spawn`, optional `explodes`, and optional `error_message` fields. Replaces dimension type `bed_works` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/respawn_anchor_works` Environment Attribute to control whether respawn anchors can be used to set spawn. Format: boolean, defaults to `false`. Replaces dimension type `respawn_anchor_works` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/nether_portal_spawns_piglin` Environment Attribute to control whether nether portal blocks can spawn piglins. Format: boolean, defaults to `false`. Replaces dimension type `natural` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/fast_lava` Environment Attribute to control whether lava should spread faster and further. Format: boolean, defaults to `false`. Can only be specified on dimensions. Replaces dimension type `ultrawarm` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/increased_fire_burnout` Environment Attribute to control whether fire blocks burn out more rapidly. Format: boolean, defaults to `false`. Replaces `#increased_fire_burnout` biome tag."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/piglins_zombify` Environment Attribute to control whether piglins and hoglins should zombify. Format: boolean, defaults to `true`. Replaces dimension type `piglin_safe` field."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/snow_golem_melts` Environment Attribute to control whether snow golems should be damaged. Format: boolean, defaults to `false`. Replaces `#snow_golem_melts` biome tag."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "dimension",
+      "breaking"
+    ],
+    "content": "Many dimension type fields have been migrated to Environment Attributes: `ultrawarm`, `bed_works`, `respawn_anchor_works`, `cloud_height`, `piglin_safe`, and `has_raids`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "dimension"
+    ],
+    "content": "The dimension type `natural` field has not been removed but its functionality has been migrated to `gameplay/nether_portal_spawns_piglin` Environment Attribute."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "data",
+      "breaking"
+    ],
+    "content": "Many biome `effects` subfields have been migrated to Environment Attributes: `fog_color`, `water_fog_color`, `sky_color`, `particle`, `ambient_sound`, `mood_sound`, `additions_sound`, `music`, and `music_volume`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `contact_cooldown_ticks` field to `kinetic_weapon` component. Format: integer, defaults to `10`. Specifies cooldown in ticks after hitting and losing contact with an entity before being able to hit it again."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Removed `#snow_golem_melts` and `#increased_fire_burnout` biome tags. Replaced by `gameplay/snow_golem_melts` and `gameplay/increased_fire_burnout` Environment Attributes."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Removed `#plays_underwater_music` biome tag. Replaced by `only_underwater` field in `audio/background_music` Environment Attribute."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Removed `#has_closer_water_fog` biome tag. Replaced by `visual/water_fog_radius` Environment Attribute."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w42a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added `entity.nautilus.riding` sound event for nautilus."
+  },
+  {
+    "group": "1.21.11",
     "version": "25w41a",
     "tags": [
       "pack",

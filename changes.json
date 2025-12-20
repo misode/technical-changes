@@ -10166,6 +10166,382 @@
     "content": "Added `item.underwater_saddle.equip` sound event for nautilus."
   },
   {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `93.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `73.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "variant"
+    ],
+    "content": "Zombie nautilus variants can now be data-driven, with entries in the `zombie_nautilus_variant` folder. The file takes fields `model` (`normal` or `warm`), `asset_id`, and `spawn_conditions`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "variant"
+    ],
+    "content": "Added coral zombie nautilus mob variant."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "variant"
+    ],
+    "content": "Added spawn condition predicates for variants: `biome` (checks if entity is spawning in specific biomes), `moon_brightness` (checks if moon brightness is within range), and `structures` (checks if entity is spawning in specific structures)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "atlas",
+      "breaking"
+    ],
+    "content": "Item textures were split out of the `blocks` atlas into a separate new `items` atlas. Commands that referenced the `blocks` atlas for item textures now need to reference the `items` atlas instead."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "gamerule"
+    ],
+    "content": "The `max_entity_cramming` game rule limit has been changed to a minimum of `0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "component"
+    ],
+    "content": "The `piercing_weapon` and `kinetic_weapon` components now have bounds on their reach parameters: `min_reach` (`0.0` to `128.0`), `max_reach` (`0.0` to `128.0`), and `hitbox_margin` (`0.0` to `1.0`)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added timelines system, defined in data packs under the `timeline` registry. Timelines specify game behavior based on absolute day time and can optionally repeat over a period. Format: object with optional `period_ticks` and `tracks` fields."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added mob activity type, a string ID from the `activity` built-in registry. Values include: `core`, `idle`, `work`, `play`, `rest`, `meet`, `panic`, `raid`, `pre_raid`, `hide`, `fight`, `celebrate`, `admire_item`, `avoid`, `ride`, `play_dead`, `long_jump`, `ram`, `tongue`, `swim`, `lay_spawn`, `sniff`, `investigate`, `roar`, `emerge`, and `dig`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `blend_to_gray` RGB/ARGB modifier that modifies a color by taking its grayscale form, applying a brightness modifier, and mixing with a factor. Format: object with `brightness` (float `0.0` to `1.0`) and `factor` (float `0.0` to `1.0`) fields."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/sunrise_sunset_color` Environment Attribute to control color and intensity of sunrise and sunset effect. Format: ARGB color, defaults to `#00000000`. Only visible with overworld skybox."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/sun_angle` Environment Attribute to control sun angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/moon_angle` Environment Attribute to control moon angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/star_angle` Environment Attribute to control star angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/moon_phase` Environment Attribute to control moon phase. Format: string ID (`full_moon`, `waning_gibbous`, `third_quarter`, `waning_crescent`, `new_moon`, `waxing_crescent`, `first_quarter`, or `waxing_gibbous`), defaults to `full_moon`. Only visible with overworld skybox."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/star_brightness` Environment Attribute to control brightness of stars in the sky, where `0.5` is normal brightness during night and `0` is fully hidden. Format: float between `0.0` and `1.0`, defaults to `0.0`. Only visible with overworld skybox."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/sky_light_color` Environment Attribute to control visual color of sky light. Format: RGB color, defaults to `#ffffff`. Value passed to `lightmap.fsh` shader as `SkyLightColor`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `visual/sky_light_factor` Environment Attribute to control visual brightness of sky light. Format: float, defaults to `1.0`. Value passed to `lightmap.fsh` shader as `SkyFactor`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `audio/firefly_bush_sounds` Environment Attribute to control whether firefly bushes produce idle sounds when not below an opaque block. Format: boolean, defaults to `false`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/sky_light_level` Environment Attribute to control effective light level of the sky used by mechanics such as mob spawning or daylight detectors. Format: float, defaults to `15.0`. Can only be specified on dimensions."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/eyeblossom_open` Environment Attribute to control whether eyeblossoms open or close. Format: `true`, `false`, or `\"default\"`, defaults to `\"default\"`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/turtle_egg_hatch_chance` Environment Attribute to control chance that a turtle egg will switch to its next hatching state when randomly ticked. Format: float between `0.0` and `1.0` defaults to `0.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/creaking_active` Environment Attribute to control whether creaking heart blocks and their corresponding creaking are active. Format: boolean, defaults to `false`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/surface_slime_spawn_chance` Environment Attribute for additional chance rolled when a natural slime spawn attempt occurs in a biome with the `#allows_surface_slime_spawns` tag. Format: float between `0.0` and `1.0`, defaults to `0.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/cat_waking_up_gift_chance` Environment Attribute to control chance that a cat lying on its owner's bed will drop a gift when the player wakes up. Format: float, defaults to `0.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/bees_stay_in_hive` Environment Attribute to control whether bees try to navigate to their hives and will not exit unless the hive is broken or next to fire. Format: boolean, defaults to `false`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/monsters_burn` Environment Attribute to control whether monsters burn while exposed to the sky. Format: boolean, defaults to `false`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/can_pillager_patrol_spawn` Environment Attribute to control whether pillager patrols can spawn. Format: boolean, defaults to `true`. Replaces `#without_patrol_spawns` biome tag."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/villager_activity` Environment Attribute to control default AI activity for adult villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `pre_raid`, `raid`, `rest`, and `work`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `gameplay/baby_villager_activity` Environment Attribute to control default AI activity for baby villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `play`, `pre_raid`, `raid`, and `rest`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "dimension"
+    ],
+    "content": "Added optional `timelines` field to dimension types to specify which timelines are active. Format: timeline ID, list of timeline IDs, or timeline tag."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "dimension",
+      "breaking"
+    ],
+    "content": "The `natural` field has been fully replaced by the `gameplay/eyeblossom_open` and `gameplay/creaking_active` Environment Attributes."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "dimension",
+      "breaking"
+    ],
+    "content": "The `effects` field has been removed and replaced with `skybox` (rendering type: `none`, `overworld`, or `end`, defaults to `overworld`) and `cardinal_light` (direction of cardinal lighting: `default` or `nether`, defaults to `default`)."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "dimension",
+      "breaking"
+    ],
+    "content": "The `fixed_time` field has been replaced by a `has_fixed_time` boolean that defaults to `false`. Time-based effects are now specified by Environment Attributes."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Removed `#without_patrol_spawns` biome tag. Replaced by `gameplay/can_pillager_patrol_spawn` Environment Attribute."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#spawns_coral_variant_zombie_nautilus` biome tag for biomes where coral variant of zombie nautilus can spawn."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#universal` timeline tag for timelines active in every dimension."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#in_overworld` timeline tag for timelines active in the overworld."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#in_nether` timeline tag for timelines active in the nether."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#in_end` timeline tag for timelines active in the end."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "advancement"
+    ],
+    "content": "Added `spear_mobs` trigger with optional `player` (entity predicate) and `count` (integer, number of mobs hit in a single use of kinetic weapon) fields."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "atlas",
+      "breaking"
+    ],
+    "content": "Item textures were split out of the `blocks` atlas into a separate new `items` atlas that does not have mipmaps. All textures used in an item model must come from the same atlas, and all textures used in a block model must come from the `blocks` atlas."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added item sprite: `netherite_horse_armor`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added entity textures: `entity/equipment/zombie_nautilus_coral.png` and `entity/equipment/horse_body/netherite.png`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w45a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events for parrot: `entity.parrot.imitate.parched`, `entity.parrot.imitate.zombie_horse`, and `entity.parrot.imitate.zombie_nautilus`."
+  },
+  {
     "group": "1.21.2",
     "version": "24w36a",
     "tags": [

@@ -8907,6 +8907,123 @@
   },
   {
     "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `93.1`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `74.0`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added food properties to fish bucket items: `cod_bucket`, `salmon_bucket`, `pufferfish_bucket`, and `tropical_fish_bucket`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `interact_vibrations` field to `use_effects` component to control whether using the item emits `item_interact_start` and `item_interact_finish` game events. Format: boolean, defaults to `true`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "loot",
+      "obsolete"
+    ],
+    "content": "Reverted removal of `contents` as a supported value for the `dynamic` loot pool entry."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Textures used for still water and lava are now hardcoded to `block/water_still` and `block/lava_still`."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "assets"
+    ],
+    "content": "The game will now print a warning if any defined sprites in any atlases share a name."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Beacons no longer support translucent textures."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `gui/container/nautilus` texture used for nautilus inventory UI."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `container/slot/nautilus_armor_inventory` UI sprite for nautilus icon used in nautilus inventory UI."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added `entity.zombie_horse.eat` sound event."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "blockstate"
+    ],
+    "content": "Block model elements can now be rotated around multiple axes. New fields: `x`, `y` and `z`. Existing `axis` and `angle` fields can still be used and take precedence."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "blockstate"
+    ],
+    "content": "Existing restriction for `angle` value limiting them to `[-45, 45]` has been removed. Face names are not influenced by rotation and features like culling will always use original directions."
+  },
+  {
+    "group": "1.21.11",
+    "version": "25w46a",
+    "tags": [
+      "blockstate"
+    ],
+    "content": "Variants in block state dispatch files can now be rotated around Z axis. New optional `z` field has the same format as existing `x` and `y` fields."
+  },
+  {
+    "group": "1.21.11",
     "version": "25w42a",
     "tags": [
       "pack",

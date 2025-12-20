@@ -7881,6 +7881,114 @@
   },
   {
     "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `87.1`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "entity"
+    ],
+    "content": "Mannequins can now have configurable description text via the `description` field."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "entity"
+    ],
+    "content": "Mannequins now accept `profile` component from spawner items."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "command"
+    ],
+    "content": "The `spawnpoint` and `setworldspawn` commands now accept an optional pitch argument."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "command"
+    ],
+    "content": "The `setworldspawn` command is no longer limited to the overworld and can now set world spawn in any dimension, including the Nether."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "command"
+    ],
+    "content": "Server commands now run from the respawn dimension by default instead of always the overworld."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "command"
+    ],
+    "content": "The `fetchprofile` command now prints clickable text to summon a mannequin with the resolved profile."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "component"
+    ],
+    "content": "The `profile` component can now have additional fields that override values used for rendering: `texture`, `cape`, `elytra`, and `model`."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "entity",
+      "breaking"
+    ],
+    "content": "Changed player entity `respawn` object structure. The `angle` field has been renamed to `yaw` and is now required."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "entity",
+      "breaking"
+    ],
+    "content": "Added required `pitch` field to player entity `respawn` object."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "entity",
+      "breaking"
+    ],
+    "content": "The `dimension` field in player entity `respawn` object is now required."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "loot"
+    ],
+    "content": "The `copy_name` loot function `source` field now accepts `direct_attacker`, `target_entity`, and `interacting_entity` context values."
+  },
+  {
+    "group": "1.21.9",
+    "version": "1.21.9-pre1",
+    "tags": [
+      "loot"
+    ],
+    "content": "The `copy_components` loot function `source` field now accepts `this`, `attacker`, `direct_attacker`, `attacking_player`, `target_entity`, `interacting_entity`, and `tool` context values."
+  },
+  {
+    "group": "1.21.9",
     "version": "25w33a",
     "tags": [
       "pack",

@@ -7989,6 +7989,15 @@
   },
   {
     "group": "1.21.9",
+    "version": "1.21.9-pre2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `88.0`."
+  },
+  {
+    "group": "1.21.9",
     "version": "25w33a",
     "tags": [
       "pack",

@@ -93,7 +93,8 @@
     "version": "1.18.2-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 9."
   },
@@ -349,7 +350,8 @@
     "version": "21w39a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 8."
   },
@@ -587,7 +589,8 @@
     "version": "21w37a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 8."
   },
@@ -1123,7 +1126,8 @@
     "version": "1.20.5-pre3",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 41."
   },
@@ -2520,7 +2524,8 @@
     "version": "1.20.5-pre4",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 32."
   },
@@ -2895,7 +2900,8 @@
     "version": "1.20.2-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 18."
   },
@@ -3287,7 +3293,8 @@
     "version": "1.20.2-pre2",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 18."
   },
@@ -3525,7 +3532,8 @@
     "version": "1.16.2-rc1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data and resource pack format has been increased to 6."
   },
@@ -3804,7 +3812,8 @@
     "version": "1.21.4-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 46."
   },
@@ -3911,7 +3920,8 @@
     "version": "1.21.4-pre2",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 61."
   },
@@ -4424,7 +4434,8 @@
     "version": "22w11a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 10."
   },
@@ -4433,7 +4444,8 @@
     "version": "22w11a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 9."
   },
@@ -4928,7 +4940,8 @@
     "version": "1.21.6-pre3",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 80."
   },
@@ -5319,7 +5332,8 @@
     "version": "1.21.6-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 63."
   },
@@ -5498,7 +5512,8 @@
     "version": "1.19.4-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 13."
   },
@@ -5645,7 +5660,8 @@
     "version": "23w06a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 12."
   },
@@ -5897,7 +5913,8 @@
     "version": "1.20.3-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 26."
   },
@@ -5906,7 +5923,8 @@
     "version": "1.20.3-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 22."
   },
@@ -7012,7 +7030,8 @@
     "version": "23w17a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 15."
   },
@@ -7127,7 +7146,8 @@
     "version": "23w18a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 15."
   },
@@ -7172,7 +7192,8 @@
     "version": "25w37a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `87.0`."
   },
@@ -7181,7 +7202,8 @@
     "version": "25w37a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `69.0`."
   },
@@ -7260,7 +7282,8 @@
     "version": "25w31a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "The `supported_formats` field in `pack.mcmeta` has been removed.\n* If your pack declares support for a pack version with the previous format (data pack < 82 or resource pack < 65), it is still required.\n* Otherwise, it is not allowed and must be removed."
   },
@@ -7277,7 +7300,8 @@
     "version": "25w31a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Added required fields `min_format` and `max_format` in `pack.mcmeta` that specifies the minimum and maximum version supported.\n* A full version is specified as a list of two integers, e.g `[74, 1]`/\n* Specifying a single integer is interpreted as that major version, e.g. `74` is the same thing as `[74, 0]`.\n* Specifying a list of a single integer is interpreted the same as specifying that integer alone."
   },
@@ -7489,7 +7513,8 @@
     "version": "25w36a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `86.0`."
   },
@@ -7498,7 +7523,8 @@
     "version": "25w36a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `68.0`."
   },
@@ -7709,7 +7735,8 @@
     "version": "25w35a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `85.0`."
   },
@@ -7718,7 +7745,8 @@
     "version": "25w35a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `67.0`."
   },
@@ -7884,7 +7912,8 @@
     "version": "1.21.9-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `87.1`."
   },
@@ -7992,7 +8021,8 @@
     "version": "1.21.9-pre2",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `88.0`."
   },
@@ -8159,7 +8189,8 @@
     "version": "24w21a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 34."
   },
@@ -8364,7 +8395,8 @@
     "version": "1.21-pre3",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 48."
   },
@@ -8892,7 +8924,8 @@
     "version": "1.21.7-rc2",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 81."
   },
@@ -8901,7 +8934,8 @@
     "version": "1.21.7-rc2",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 64."
   },
@@ -8910,7 +8944,8 @@
     "version": "25w46a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `93.1`."
   },
@@ -8919,7 +8954,8 @@
     "version": "25w46a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `74.0`."
   },
@@ -9044,7 +9080,8 @@
     "version": "1.21.11-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `94.0`."
   },
@@ -9144,7 +9181,8 @@
     "version": "25w42a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `90.0`."
   },
@@ -9153,7 +9191,8 @@
     "version": "25w42a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `70.1`."
   },
@@ -9194,7 +9233,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added Environment Attributes system, providing a data-driven way to control visual and gameplay effects. Environment Attribute values can be provided by dimensions and biomes, with biomes having higher priority."
   },
@@ -9202,7 +9241,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/fog_color` Environment Attribute to control fog color when camera is not submerged. Format: RGB color, defaults to `#000000`. Replaces biome `effects.fog_color` field."
   },
@@ -9210,7 +9249,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/extra_fog` Environment Attribute to control whether dense fog should be used. Format: boolean, defaults to `false`."
   },
@@ -9218,7 +9257,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/water_fog_color` Environment Attribute to control fog color when submerged in water. Format: RGB color, defaults to `#050533`. Replaces biome `effects.water_fog_color` field."
   },
@@ -9226,7 +9265,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/water_fog_radius` Environment Attribute to control distance in blocks from camera at which underwater fog reaches maximum density. Format: non-negative float, defaults to `96.0`. Replaces `#has_closer_water_fog` biome tag."
   },
@@ -9234,7 +9273,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/sky_color` Environment Attribute to control sky color. Only visible for overworld sky. Format: RGB color, defaults to `#000000`. Replaces biome `effects.sky_color` field."
   },
@@ -9242,7 +9281,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/cloud_opacity` Environment Attribute to control cloud opacity. If `0`, clouds are disabled and happy ghasts will not regenerate health faster at cloud height. Format: float between `0.0` and `1.0`, defaults to `0.0`."
   },
@@ -9250,7 +9289,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/cloud_height` Environment Attribute to control height at which clouds appear. Format: float, defaults to `192.33`. Replaces dimension type `cloud_height` field."
   },
@@ -9258,7 +9297,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/default_dripstone_particle` Environment Attribute to control default particle dripped from dripstone blocks when no fluid is above. Format: Particle Options, defaults to `{type:\"dripping_dripstone_water\"}`. Replaces dimension type `ultrawarm` field."
   },
@@ -9266,7 +9305,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/ambient_particles` Environment Attribute to control ambient particles that randomly spawn around camera. Format: list of objects with `particle` and `probability` fields, defaults to `[]`. Replaces biome `effects.particle` field."
   },
@@ -9274,7 +9313,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `audio/background_music` Environment Attribute to control how and which background music is played. Format: object with optional `default`, `underwater`, and `creative` fields, defaults to `{}`. Replaces biome `effects.music` field."
   },
@@ -9282,7 +9321,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `audio/music_volume` Environment Attribute to control music volume. Format: float between `0.0` and `1.0`, defaults to `1.0`. Replaces biome `effects.music_volume` field."
   },
@@ -9290,7 +9329,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `audio/ambient_sounds` Environment Attribute to control ambient sounds played around camera. Format: object with optional `loop`, `mood`, and `additions` fields, defaults to `{}`. Replaces biome `effects.ambient_sound`, `effects.mood_sound`, and `effects.additions_sound` fields."
   },
@@ -9298,7 +9337,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/can_start_raid` Environment Attribute to control whether raids can be started by a player with Raid Omen. Format: boolean, defaults to `true`. Replaces dimension type `has_raids` field."
   },
@@ -9306,7 +9345,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/water_evaporates` Environment Attribute to control whether water can be placed with buckets and related mechanics. Format: boolean, defaults to `false`. Replaces dimension type `ultrawarm` field."
   },
@@ -9314,7 +9353,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/bed_rule` Environment Attribute to control whether beds can be used to sleep and set respawn points. Format: object with `can_sleep`, `can_set_spawn`, optional `explodes`, and optional `error_message` fields. Replaces dimension type `bed_works` field."
   },
@@ -9322,7 +9361,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/respawn_anchor_works` Environment Attribute to control whether respawn anchors can be used to set spawn. Format: boolean, defaults to `false`. Replaces dimension type `respawn_anchor_works` field."
   },
@@ -9330,7 +9369,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/nether_portal_spawns_piglin` Environment Attribute to control whether nether portal blocks can spawn piglins. Format: boolean, defaults to `false`. Replaces dimension type `natural` field."
   },
@@ -9338,7 +9377,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/fast_lava` Environment Attribute to control whether lava should spread faster and further. Format: boolean, defaults to `false`. Can only be specified on dimensions. Replaces dimension type `ultrawarm` field."
   },
@@ -9346,7 +9385,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/increased_fire_burnout` Environment Attribute to control whether fire blocks burn out more rapidly. Format: boolean, defaults to `false`. Replaces `#increased_fire_burnout` biome tag."
   },
@@ -9354,7 +9393,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/piglins_zombify` Environment Attribute to control whether piglins and hoglins should zombify. Format: boolean, defaults to `true`. Replaces dimension type `piglin_safe` field."
   },
@@ -9362,7 +9401,7 @@
     "group": "1.21.11",
     "version": "25w42a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/snow_golem_melts` Environment Attribute to control whether snow golems should be damaged. Format: boolean, defaults to `false`. Replaces `#snow_golem_melts` biome tag."
   },
@@ -9440,7 +9479,8 @@
     "version": "25w44a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `92.0`."
   },
@@ -9449,7 +9489,8 @@
     "version": "25w44a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `72.0`."
   },
@@ -9542,7 +9583,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data",
+      "environment-attribute",
       "breaking"
     ],
     "content": "Renamed `visual/water_fog_radius` Environment Attribute to `visual/water_fog_end_distance`."
@@ -9551,7 +9592,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data",
+      "environment-attribute",
       "breaking"
     ],
     "content": "Removed `visual/extra_fog` Environment Attribute."
@@ -9560,7 +9601,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data",
+      "environment-attribute",
       "breaking"
     ],
     "content": "Replaced `visual/cloud_opacity` Environment Attribute with `visual/cloud_color`."
@@ -9569,7 +9610,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/water_fog_start_distance` Environment Attribute to control distance in blocks from camera at which underwater fog starts. Format: float, defaults to `-8.0`. If negative, fog starts that many blocks behind the camera."
   },
@@ -9577,7 +9618,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/fog_start_distance` Environment Attribute to control distance in blocks from camera at which fog starts when not submerged. Format: float, defaults to `0.0`. If negative, fog starts that many blocks behind the camera."
   },
@@ -9585,7 +9626,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/fog_end_distance` Environment Attribute to control distance in blocks from camera at which fog reaches maximum density when not submerged. Format: non-negative float, defaults to `1024.0`."
   },
@@ -9593,7 +9634,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/sky_fog_end_distance` Environment Attribute to control distance in blocks from camera at which sky fog reaches maximum density when not submerged. Format: non-negative float, defaults to `512.0`. Restricted by Render Distance option."
   },
@@ -9601,7 +9642,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/cloud_fog_end_distance` Environment Attribute to control distance in blocks from camera at which cloud fog reaches maximum density when not submerged. Format: non-negative float, defaults to `2048.0`. Restricted by Cloud Distance option."
   },
@@ -9609,7 +9650,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/cloud_color` Environment Attribute to control color of clouds. Format: ARGB color, defaults to `#00000000`. If fully transparent, clouds are disabled and happy ghasts will not regenerate health faster at cloud height."
   },
@@ -9617,7 +9658,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added slot sources to allow location of any inventory slot to be specified within data packs. Format: object with `type` field and additional type-specific fields."
   },
@@ -9625,7 +9666,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added `empty` slot source type that provides an empty selection containing no slots."
   },
@@ -9633,7 +9674,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added `group` slot source type that merges several slot sources into one. Format: `terms` field with list of slot sources. Can be written inline as a list of slot sources."
   },
@@ -9641,7 +9682,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added `slot_range` slot source type that selects slots within a slot range from entity or block entity inventory. Format: `source` (loot context entity/block entity) and `slots` (slot range like `armor.chest` or `container.*`)."
   },
@@ -9649,7 +9690,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added `contents` slot source type that selects all non-empty slots from inventory component of items. Format: `component` (inventory component to target) and `slot_source` (slot source containing items to target). Allowed components: `bundle_contents`, `charged_projectiles`, and `container`."
   },
@@ -9657,7 +9698,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added `filtered` slot source type that applies a filter to selected slots. Format: `item_filter` (item predicate) and `slot_source` (slot source to filter)."
   },
@@ -9665,7 +9706,7 @@
     "group": "1.21.11",
     "version": "25w44a",
     "tags": [
-      "data"
+      "slot-source"
     ],
     "content": "Added `limit_slots` slot source type that limits number of slots provided. Format: `limit` (integer maximum) and `slot_source` (slot source to limit)."
   },
@@ -9682,7 +9723,8 @@
     "version": "25w44a",
     "tags": [
       "loot",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Removed `contents` as a supported value for dynamic loot entry type. Its behavior is now replicated by the `slots` loot entry type with `slot_range` slot source."
   },
@@ -9844,7 +9886,8 @@
     "version": "25w41a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `89.0`."
   },
@@ -9853,7 +9896,8 @@
     "version": "25w41a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `70.0`."
   },
@@ -10310,7 +10354,8 @@
     "version": "25w43a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `91.0`."
   },
@@ -10319,7 +10364,8 @@
     "version": "25w43a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `71.0`."
   },
@@ -10404,7 +10450,8 @@
     "version": "25w45a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `93.0`."
   },
@@ -10413,7 +10460,8 @@
     "version": "25w45a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `73.0`."
   },
@@ -10494,7 +10542,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/sunrise_sunset_color` Environment Attribute to control color and intensity of sunrise and sunset effect. Format: ARGB color, defaults to `#00000000`. Only visible with overworld skybox."
   },
@@ -10502,7 +10550,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/sun_angle` Environment Attribute to control sun angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
   },
@@ -10510,7 +10558,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/moon_angle` Environment Attribute to control moon angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
   },
@@ -10518,7 +10566,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/star_angle` Environment Attribute to control star angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
   },
@@ -10526,7 +10574,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/moon_phase` Environment Attribute to control moon phase. Format: string ID (`full_moon`, `waning_gibbous`, `third_quarter`, `waning_crescent`, `new_moon`, `waxing_crescent`, `first_quarter`, or `waxing_gibbous`), defaults to `full_moon`. Only visible with overworld skybox."
   },
@@ -10534,7 +10582,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/star_brightness` Environment Attribute to control brightness of stars in the sky, where `0.5` is normal brightness during night and `0` is fully hidden. Format: float between `0.0` and `1.0`, defaults to `0.0`. Only visible with overworld skybox."
   },
@@ -10542,7 +10590,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/sky_light_color` Environment Attribute to control visual color of sky light. Format: RGB color, defaults to `#ffffff`. Value passed to `lightmap.fsh` shader as `SkyLightColor`."
   },
@@ -10550,7 +10598,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `visual/sky_light_factor` Environment Attribute to control visual brightness of sky light. Format: float, defaults to `1.0`. Value passed to `lightmap.fsh` shader as `SkyFactor`."
   },
@@ -10558,7 +10606,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `audio/firefly_bush_sounds` Environment Attribute to control whether firefly bushes produce idle sounds when not below an opaque block. Format: boolean, defaults to `false`."
   },
@@ -10566,7 +10614,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/sky_light_level` Environment Attribute to control effective light level of the sky used by mechanics such as mob spawning or daylight detectors. Format: float, defaults to `15.0`. Can only be specified on dimensions."
   },
@@ -10574,7 +10622,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/eyeblossom_open` Environment Attribute to control whether eyeblossoms open or close. Format: `true`, `false`, or `\"default\"`, defaults to `\"default\"`."
   },
@@ -10582,7 +10630,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/turtle_egg_hatch_chance` Environment Attribute to control chance that a turtle egg will switch to its next hatching state when randomly ticked. Format: float between `0.0` and `1.0` defaults to `0.0`."
   },
@@ -10590,7 +10638,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/creaking_active` Environment Attribute to control whether creaking heart blocks and their corresponding creaking are active. Format: boolean, defaults to `false`."
   },
@@ -10598,7 +10646,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/surface_slime_spawn_chance` Environment Attribute for additional chance rolled when a natural slime spawn attempt occurs in a biome with the `#allows_surface_slime_spawns` tag. Format: float between `0.0` and `1.0`, defaults to `0.0`."
   },
@@ -10606,7 +10654,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/cat_waking_up_gift_chance` Environment Attribute to control chance that a cat lying on its owner's bed will drop a gift when the player wakes up. Format: float, defaults to `0.0`."
   },
@@ -10614,7 +10662,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/bees_stay_in_hive` Environment Attribute to control whether bees try to navigate to their hives and will not exit unless the hive is broken or next to fire. Format: boolean, defaults to `false`."
   },
@@ -10622,7 +10670,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/monsters_burn` Environment Attribute to control whether monsters burn while exposed to the sky. Format: boolean, defaults to `false`."
   },
@@ -10630,7 +10678,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/can_pillager_patrol_spawn` Environment Attribute to control whether pillager patrols can spawn. Format: boolean, defaults to `true`. Replaces `#without_patrol_spawns` biome tag."
   },
@@ -10638,7 +10686,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/villager_activity` Environment Attribute to control default AI activity for adult villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `pre_raid`, `raid`, `rest`, and `work`."
   },
@@ -10646,7 +10694,7 @@
     "group": "1.21.11",
     "version": "25w45a",
     "tags": [
-      "data"
+      "environment-attribute"
     ],
     "content": "Added `gameplay/baby_villager_activity` Environment Attribute to control default AI activity for baby villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `play`, `pre_raid`, `raid`, and `rest`."
   },
@@ -11059,7 +11107,8 @@
     "version": "1.21.2-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 57."
   },
@@ -11105,7 +11154,8 @@
     "version": "1.21.2-pre3",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 42."
   },
@@ -12677,7 +12727,8 @@
     "version": "1.21.5-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 71."
   },
@@ -12686,7 +12737,8 @@
     "version": "1.21.5-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 55."
   },
@@ -13644,7 +13696,8 @@
     "version": "22w45a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 12."
   },
@@ -14676,7 +14729,8 @@
     "version": "20w46a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to 7."
   },
@@ -15315,7 +15369,8 @@
     "version": "20w45a",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to 7."
   },

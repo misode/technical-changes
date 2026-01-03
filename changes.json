@@ -9063,7 +9063,8 @@
     "version": "1.21.11-pre4",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `94.1`."
   },
@@ -9090,7 +9091,8 @@
     "version": "1.21.11-pre1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `75.0`."
   },
@@ -15468,5 +15470,211 @@
       "worldgen"
     ],
     "content": "Added feature `geode`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `95.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `76.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "jar"
+    ],
+    "content": "The game now requires Java 25. The included Java distribution is now the Microsoft build of OpenJDK 25."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "meta"
+    ],
+    "content": "If a server's disk space is low, a toast will now be shown to server operators."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "data"
+    ],
+    "content": "Villager trades can now be data-driven, with entries in the `villager_trade` folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "data"
+    ],
+    "content": "Trade sets can now be data-driven, with entries in the `trade_set` folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "nbt",
+      "entity"
+    ],
+    "content": "Piglin inventory slots can now be accessed using `piglin.*` similar to how villager inventories can be accessed using `villager.*`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `swing` command that enables swinging of entity arms. Syntax: `/swing <entity selector> <mainhand|offhand>`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added `visual/block_light_tint` attribute to control the tint of block light. Default value: `#FFD88C`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added `visual/ambient_light_color` attribute to define both the ambient light tint and brightness. Default values: Overworld `#0A0A0A`, Nether `#302821`, End `#3f473f`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added `visual/night_vision_color` attribute to control night vision color. Default value: `#999999`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "component"
+    ],
+    "content": "Added `additional_trade_cost` transient component to modify count needed in a villager trade."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `villager_trade` loot table type which takes parameters `this` (the entity offering the trade) and `origin` (the block position of the entity at its feet)."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `set_random_dyes` item modifier that additively adds dyes to an item's `dyed_color` data component if the item is in the `#dyeable` tag. Field: `number_of_dyes`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `set_random_potion` item modifier that randomly sets the `potion_contents` data component on an item. Field: `options`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "loot"
+    ],
+    "content": "Changed `enchant_with_levels` item modifier. Now also takes field `include_additional_cost_component` (boolean, defaults to `false`)."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "loot"
+    ],
+    "content": "Changed `enchant_randomly` item modifier. Now also takes field `include_additional_cost_component` (boolean, defaults to `false`)."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "predicate"
+    ],
+    "content": "Added `food` sub-predicate to player entity predicates. Fields: `level` and `saturation`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "predicate"
+    ],
+    "content": "Added `sum` number provider that returns the sum of a list of number providers. Field: `summands`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "The `post_piercing_attack` component no longer only works for a player if that player has a certain food level."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added several villager trade tags representing groups of villager trades from which villagers and wandering traders derive their trading pools."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "tag",
+      "enchantment",
+      "breaking"
+    ],
+    "content": "Removed the following enchantment tags: `trades/desert_special`, `trades/jungle_special`, `trades/plains_special`, `trades/savanna_special`, `trades/snow_special`, `trades/swamp_special`, and `trades/taiga_special`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#tradeable` potion tag for all potion effects that can appear in villager trades."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "The `lightmap.fsh` shader was significantly modified. The `LightmapInfo` uniform now has two new fields: `BlockLightTint` and `NightVisionColor`. The `AmbientLightFactor` field was removed. The `DarkenWorldFactor` was renamed to `BossOverlayWorldDarkeningFactor`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-1",
+    "tags": [
+      "shader"
+    ],
+    "content": "Text and items rendered in UI now use a separate 1x1 white lightmap texture, so the lightmap shader does not always have to keep the 15, 15 pixel purely white."
   }
 ]

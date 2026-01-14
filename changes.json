@@ -15476,6 +15476,7 @@
     "version": "26.1-snapshot-1",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `95.0`."
@@ -15485,6 +15486,7 @@
     "version": "26.1-snapshot-1",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `76.0`."
@@ -15676,5 +15678,109 @@
       "shader"
     ],
     "content": "Text and items rendered in UI now use a separate 1x1 white lightmap texture, so the lightmap shader does not always have to keep the 15, 15 pixel purely white."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `96.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `77.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "data",
+      "variant"
+    ],
+    "content": "Changed wolf sound variant definitions. The `sound_events` field in `wolf_sound_variant` has been renamed to `adult_sounds`, and a new `baby_sounds` field was added."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "nbt",
+      "entity"
+    ],
+    "content": "The `current_explosion_impact_pos` and `current_impulse_context_reset_grace_time` fields have been moved from players to all mobs and armor stands."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "nbt",
+      "entity",
+      "breaking"
+    ],
+    "content": "Removed the `ignore_fall_damage_from_current_explosion` field from players."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added `#metal_nuggets` item tag, which includes copper, iron, and gold nuggets."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new entity textures for baby animals, including variants."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Renamed entity textures to standardize naming conventions."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Moved entity textures into subdirectories for better organization."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for baby cats: `entity.baby_cat.ambient`, `entity.baby_cat.hiss`, `entity.baby_cat.hurt`, `entity.baby_cat.death`, `entity.baby_cat.eat`, `entity.baby_cat.beg_for_food`, `entity.baby_cat.purr`, `entity.baby_cat.purreow`, and `entity.baby_cat.stray_ambient`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for baby pigs: `entity.baby_pig.ambient`, `entity.baby_pig.hurt`, `entity.baby_pig.death`, and `entity.baby_pig.step`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-2",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for baby wolves: `entity.baby_wolf.ambient`, `entity.baby_wolf.growl`, `entity.baby_wolf.death`, `entity.baby_wolf.hurt`, `entity.baby_wolf.pant`, `entity.baby_wolf.whine`, and `entity.baby_wolf.step`."
   }
 ]

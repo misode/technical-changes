@@ -15681,6 +15681,238 @@
   },
   {
     "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `97.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `78.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `world_clock` registry for defining World Clocks in data packs under `data/<namespace>/world_clock/<id>.json`. World Clocks contain an internal time that increases every tick and can be paused or resumed."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `clock` field to timelines. This field is required and specifies which World Clock ID the timeline is tied to. To match previous behavior, the `overworld` clock can be used."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "data"
+    ],
+    "content": "Added optional `time_markers` field to timelines. This field is an optional map between namespaced Time Marker IDs and either an int or a Time Marker object with fields `ticks` and optional `show_in_commands`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "data"
+    ],
+    "content": "Time Markers assign a particular name to a specific (optionally repeating) point in time for a specific World Clock. Time Markers replace the previously predetermined names that could be used by `/time set`, such as `day` or `night`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `wake_up_from_sleep` Time Marker, which is the time to advance the dimension's default clock to when players in that dimension wake up after sleeping."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "data"
+    ],
+    "content": "Added `roll_village_siege` Time Marker, which is the time of the dimension's default clock at which the random chance for a Zombie Village siege to occur should be evaluated."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed `/swing` command. Both arguments can now be omitted and will fall back to defaults: the entity selector will be `@s` if omitted, and which hand to swing will be `mainhand` if omitted."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "command",
+      "breaking"
+    ],
+    "content": "Changed `/time` command to be based on World Clocks. A clock can be optionally specified as an input with `time of <clock> ...`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "command",
+      "breaking"
+    ],
+    "content": "Changed return value from `/time set` and `/time add` subcommands. The return value is now the total elapsed ticks of the clock instead of the current time of day."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed `/time` command syntax."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "game-test",
+      "breaking"
+    ],
+    "content": "Replaced `time_of_day` field in Game Test Environments with `clock_time`. Added new required field `clock`, which specifies the clock within which to set time."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "predicate"
+    ],
+    "content": "Added `clock` field to `time_check` loot predicate. This field specifies which World Clock ID the time check should be done for."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "recipe"
+    ],
+    "content": "The `result` field is now more consistent across all recipe types that contain it. It will now accept short form (e.g. `\"minecraft:foo\"`, which is equivalent to `{\"id\":\"minecraft:foo\", \"count\": 1}`)."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "dimension"
+    ],
+    "content": "Added `default_clock` field to dimension types. This optional field specifies the default clock that will be used for the `/time` command."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added `#supports_vegetation` block tag, which provides support for different grass, flowers, bushes and saplings."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added `#supports_crops` block tag, which provides support for crops at all growth stages."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added the following block tags:\n* `#supports_stem_crops`\n* `#supports_pumpkin_stem`\n* `#supports_melon_stem`\n* `#supports_sugar_cane`\n* `#supports_sugar_cane_adjacently`\n* `#supports_cactus`\n* `#supports_chorus_plant`\n* `#supports_chorus_flower`\n* `#supports_nether_sprouts`\n* `#supports_azalea`\n* `#supports_warped_fungus`\n* `#supports_crimson_fungus`\n* `#supports_mangrove_propagule`\n* `#supports_hanging_mangrove_propagule`\n* `#supports_nether_wart`\n* `#supports_warped_roots`\n* `#supports_crimson_roots`\n* `#supports_wither_rose`\n* `#supports_cocoa`\n* `#supports_lily_pad`\n* `#supports_frogspawn`\n* `#support_override_cactus_flower`"
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added the following block tags which determine blocks that cannot support specific categories of vegetation:\n* `#cannot_support_seagrass`\n* `#cannot_support_kelp`"
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block",
+      "breaking"
+    ],
+    "content": "Renamed the following block tags for consistency:\n* `#dry_vegetation_may_place_on` \u2192 `#supports_dry_vegetation`\n* `#bamboo_plantable_on` \u2192 `#supports_bamboo`\n* `#small_dripleaf_placeable` \u2192 `#supports_small_dripleaf`\n* `#big_dripleaf_placeable` \u2192 `#supports_big_dripleaf`\n* `#mushroom_grow_block` \u2192 `#overrides_mushroom_light_requirement`\n* `#snow_layer_can_survive_on` \u2192 `#support_override_snow_layer`\n* `#snow_layer_cannot_survive_on` \u2192 `#cannot_support_snow_layer`"
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added `#grows_crops` block tag, which defines blocks beneath that allow crops to grow."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added the following block tags to define which blocks can start particular types of bubble columns:\n* `#enables_bubble_column_drag_down` - magma block by default\n* `#enables_bubble_column_push_up` - soul sand by default"
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "fluid"
+    ],
+    "content": "Added the following fluid tags to determine which fluids can support blocks:\n* `#supports_lily_pad`\n* `#supports_frogspawn`"
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "fluid"
+    ],
+    "content": "Added `#supports_sugar_cane_adjacently` fluid tag, which defines fluids that satisfy adjacency support requirements for sugar cane."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "tag",
+      "fluid"
+    ],
+    "content": "Added `#bubble_columns_can_occupy` fluid tag to define which fluids a bubble column can occupy. Water is the default."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-3",
+    "tags": [
+      "assets"
+    ],
+    "content": "The tripwire texture is now rendered as alpha cutout instead of transparent."
+  },
+  {
+    "group": "26.1",
     "version": "26.1-snapshot-2",
     "tags": [
       "pack",

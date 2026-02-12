@@ -12205,6 +12205,162 @@
     "content": "Added new sound events for baby horses."
   },
   {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "pack",
+      "obsolete",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `99.1`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "pack",
+      "obsolete",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `81.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "jar"
+    ],
+    "content": "The internals of how chunk geometry data is stored in GPU memory and how they are rendered has been changed."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "data",
+      "variant"
+    ],
+    "content": "Cat sound variants can now be data-driven, with entries in the `cat_sound_variant` folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "data",
+      "variant"
+    ],
+    "content": "Pig sound variants can now be data-driven, with entries in the `pig_sound_variant` folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "data",
+      "variant"
+    ],
+    "content": "Cow sound variants can now be data-driven, with entries in the `cow_sound_variant` folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "data",
+      "variant"
+    ],
+    "content": "Chicken sound variants can now be data-driven, with entries in the `chicken_sound_variant` folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "assets"
+    ],
+    "content": "Updated `mule_baby.png` and `donkey_baby.png` to fit model properly."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Changed block model format. Any block model can now support cutout or translucent (partially transparent pixels) textures."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Changed the format of the `textures` map in block models. Non-string entries will now be rejected, instead of interpreted as strings."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new baby entity textures."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound variants for adult cats, adult chickens, adult cows, and adult pigs."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for cats."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for pigs."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for chickens."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added new sound events for cows."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "sound",
+      "instrument"
+    ],
+    "content": "Added new sound events for the trumpet instrument."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-7",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "The `block.vsh` and `terrain.vsh` shaders no longer receive the `Normal` vertex attribute."
+  },
+  {
     "group": "1.21.5",
     "version": "25w09a",
     "tags": [

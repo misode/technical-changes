@@ -11547,6 +11547,370 @@
   },
   {
     "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `99.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `80.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "dimension",
+      "breaking"
+    ],
+    "content": "All default dimensions are now stored in the `dimensions` subfolder. The top level `data` folder is now only for data shared across dimensions."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Player storage has been moved to the `players` subdirectory."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "The world resource pack (`resources.zip`) has been moved to the `resourcepacks` subdirectory."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Data saved in the `data` folder is now namespaced. All data is now stored in a namespace subfolder in the corresponding data folder."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Command storage is now stored in namespace subfolders instead of having a namespace suffix."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "`chunks.dat` has been renamed to `chunk_tickets.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Data for maps is now stored in the `data/minecraft/maps` subfolder. Map index files have been renamed to only the number. `idcounts.dat` has been renamed to `last_id.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "There is no more `raids_end.dat` special case. The end now uses `raids.dat` as well."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "structure",
+      "breaking"
+    ],
+    "content": "Structures saved by structure blocks have been moved from `generated/namespace/structures` to `generated/namespace/structure`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "tag",
+      "breaking"
+    ],
+    "content": "Changed `level.dat` structure:\n* The `Player` tag has been replaced with a `singleplayer_uuid` tag, which references the player data file to use.\n* Difficulty-related settings have been moved into a `difficulty_settings` tag.\n* `Difficulty` is renamed to `difficulty` and is now a string instead of an integer.\n* `DifficultyLocked` is renamed to `locked`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Data for the ender dragon fight has been moved out of `level.dat` to `dimensions/minecraft/the_end/data/minecraft/ender_dragon_fight.dat`. The ender dragon fight can now be activated in other dimensions."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Wandering trader data has been moved out of `level.dat` to `data/minecraft/wandering_trader.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "`CustomBossEvents` has been moved out of `level.dat` to `data/minecraft/custom_boss_events.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "Weather-related data has been moved out of `level.dat` to `data/minecraft/weather.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "`ScheduledEvents` has been moved out of `level.dat` to `data/minecraft/scheduled_events.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "`game_rules` has been moved out of `level.dat` to `data/minecraft/game_rules.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "`WorldGenSettings` has been moved out of `level.dat` to `data/minecraft/world_gen_settings.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "storage",
+      "breaking"
+    ],
+    "content": "`world_clocks` has been moved out of `level.dat` to `data/minecraft/world_clocks.dat`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed rule-based block state providers so that their fallback is optional and can be empty."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "`forest_rock` feature has been renamed to `block_blob`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed `block_blob` feature configuration to support parameters: `state` (the block the rock is made of) and `can_place_on`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "`ice_spike` feature has been renamed to `spike`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed `spike` feature configuration to support parameters: `state` (the block the spike is made of), `can_place_on`, and `can_replace`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed `huge_red_mushroom` and `huge_brown_mushroom` feature configurations. Added parameter `can_place_on`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed `alter_ground` tree decorator configuration. `provider` is now a rule-based block state provider."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed tree feature configuration. Replaced the `force_dirt` and `dirt_provider` parameters with a single `below_trunk_provider` rule-based block state provider."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "dimension"
+    ],
+    "content": "Added `has_ender_dragon_fight` boolean field to dimension types. Controls whether it is possible for an ender dragon fight to exist in the dimension."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag",
+      "block",
+      "breaking"
+    ],
+    "content": "Split apart `#dirt` into multiple block tags:\n* `#dirt` (contains dirt, coarse dirt, and rooted dirt).\n* `#mud` (contains mud and muddy mangrove roots).\n* `#moss_blocks` (contains moss block and pale moss block).\n* `#grass_blocks` (contains grass block, mycelium, and podzol)."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added `#substrate_overworld` block tag, which contains `#dirt`, `#mud`, `#moss_blocks`, and `#grass_blocks`. Used as a collection for world generation conditions."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added block tags `#beneath_tree_podzol_replaceable` and `#beneath_bamboo_podzol_replaceable`, which define which ground blocks beneath an applicable tree or bamboo can be replaced with podzol."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added `#cannot_replace_below_tree_trunk` block tag, which contains `#dirt`, `#mud`, `#moss_blocks`, and podzol."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added block tags `#forest_rock_can_place_on`, `#huge_brown_mushroom_can_place_on`, and `#huge_red_mushroom_can_place_on`, defining which blocks their feature can be placed on."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag",
+      "block"
+    ],
+    "content": "Added `#ice_spike_replaceable` block tag, defining which blocks an ice spike feature can replace."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added item tags `#mud`, `#moss_blocks`, and `#grass_blocks`, which mirror their block tag contents."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound event `entity.baby_chicken.step`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new entity textures for baby animals."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "The `core/rendertype_item_entity_translucent_cull` shaders have been removed in favor of `core/entity`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "The `core/rendertype_entity_alpha` and `core/rendertype_entity_decal` shaders have been replaced by a `DISSOLVE` flag implemented by `core/entity`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-6",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Rendering of items (in UI and in the world) has been split from `core/entity` into new `core/item` shaders."
+  },
+  {
+    "group": "26.1",
     "version": "26.1-snapshot-3",
     "tags": [
       "pack",

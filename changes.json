@@ -11043,6 +11043,7 @@
     "version": "26.1-snapshot-5",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `98.0`."
@@ -11052,6 +11053,7 @@
     "version": "26.1-snapshot-5",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `79.0`."
@@ -11550,6 +11552,7 @@
     "version": "26.1-snapshot-6",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `99.0`."
@@ -11559,6 +11562,7 @@
     "version": "26.1-snapshot-6",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `80.0`."
@@ -12148,6 +12152,7 @@
     "version": "26.1-snapshot-4",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `97.1`."
@@ -12157,6 +12162,7 @@
     "version": "26.1-snapshot-4",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `78.1`."
@@ -12209,7 +12215,6 @@
     "version": "26.1-snapshot-7",
     "tags": [
       "pack",
-      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `99.1`."
@@ -12219,7 +12224,6 @@
     "version": "26.1-snapshot-7",
     "tags": [
       "pack",
-      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `81.0`."

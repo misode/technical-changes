@@ -11040,6 +11040,91 @@
   },
   {
     "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `99.2`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `81.1`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "command"
+    ],
+    "content": "Added new `entity` subcommand to `/fetchprofile` that prints profile information from an entity in the world."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "text",
+      "breaking"
+    ],
+    "content": "The `selector` field in `minecraft:selector` text components no longer accepts trailing data after a selector."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "text"
+    ],
+    "content": "Tags resolved with the `minecraft:nbt` text component when the `interpret` field is set to `false` are now pretty-printed instead of being flattened into a single text component."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "text",
+      "breaking"
+    ],
+    "content": "Contents of the `nbt` and `block` fields in `minecraft:nbt` text components are no longer silently rejected when parsing fails."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "text",
+      "breaking"
+    ],
+    "content": "The `entity` field in `minecraft:nbt` text components no longer accepts trailing data after a selector."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "text"
+    ],
+    "content": "Added `plain` option to `minecraft:nbt` text components to remove styling from pretty-printed text. The `plain` and `interpret` options can't both be enabled at the same time."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new UI sprite `gui/sprites/widget/preedit.png` for IME preedit overlay background."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-snapshot-8",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added new entity textures for baby hoglins, zoglins, striders, sniffers and pandas."
+  },
+  {
+    "group": "26.1",
     "version": "26.1-snapshot-5",
     "tags": [
       "pack",
@@ -12215,6 +12300,7 @@
     "version": "26.1-snapshot-7",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `99.1`."
@@ -12224,6 +12310,7 @@
     "version": "26.1-snapshot-7",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `81.0`."

@@ -10937,6 +10937,7 @@
     "version": "26.1-snapshot-11",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `100.0`."
@@ -10946,6 +10947,7 @@
     "version": "26.1-snapshot-11",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Resource pack format has been increased to `83.0`."
@@ -11141,6 +11143,23 @@
       "assets"
     ],
     "content": "Updated textures for baby zombies, baby husks, and gurgles to use smaller heads."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-3",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `101.1`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed `count` placement modifier: the `count` field is now limited to a range of `0` to `4096`, up from `256`."
   },
   {
     "group": "26.1",
@@ -11843,6 +11862,185 @@
       "shader"
     ],
     "content": "Text and items rendered in UI now use a separate 1x1 white lightmap texture, so the lightmap shader does not always have to keep the 15, 15 pixel purely white."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-2",
+    "tags": [
+      "text"
+    ],
+    "content": "Text components in server status messages nested more than 16 times will now be discarded and replaced with an ellipsis."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "pack",
+      "obsolete",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `101.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `84.0`."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "text"
+    ],
+    "content": "Changed the `selector`, `nbt`, and `object` text component formats."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `time rate` command syntax: `time [of <clock>] rate <rate>`. Sets the rate multiplier at which the given clock advances."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed `provides_banner_patterns` data component: the component now also accepts an ID or a list of IDs in addition to a tag."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed `blocks_attacks` data component: the `bypassed_by` field now also accepts an ID or a list of IDs in addition to a tag."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed `damage_resistant` data component: the `types` field now also accepts an ID or a list of IDs in addition to a tag."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "loot",
+      "instrument"
+    ],
+    "content": "Changed `set_instrument` loot function: the `options` field now also accepts an ID or a list of IDs in addition to a tag."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "predicate",
+      "environment-attribute"
+    ],
+    "content": "Added `environment_attribute_check` loot predicate. Exactly matches the value of an Environment Attribute at a given position."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added `environment_attribute` number provider. Fetches and provides the value of an Environment Attribute that can be represented as a number."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "worldgen",
+      "breaking",
+      "tag"
+    ],
+    "content": "Features spawned from bone meal are no longer restricted to the flower feature type."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed the `flower`, `flower_no_bonemeal`, and `random_patch` feature types."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added `trapezoid` int provider. Selects a random value with a trapezoid distribution."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "tag",
+      "worldgen"
+    ],
+    "content": "Added configured feature tag `#can_spawn_from_bone_meal`. Features added in a biome with this tag can be spawned when using bone meal in that biome."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "text"
+    ],
+    "content": "Changed `object` text component: added optional `fallback` field containing a text component to display when the object component cannot be rendered."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "text",
+      "breaking"
+    ],
+    "content": "Changed `object` text component: objects of type `player` (player heads) can no longer be used in server status messages (MotD)."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Updated textures for Pup to fix issues with overlapping textures."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Added `end_cube` special item model type, which renders a cube with the same texture effects as the end portal and end gateway blocks."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "assets"
+    ],
+    "content": "Improved block state rendering for end gateway and end portal blocks shown in block display entities."
+  },
+  {
+    "group": "26.1",
+    "version": "26.1-pre-1",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Removed the `core/rendertype_translucent_moving_block` shaders in favor of `core/block`."
   },
   {
     "group": "26.1",

@@ -3134,6 +3134,7 @@
     "version": "26.2-snapshot-5",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `104.0`."
@@ -3183,7 +3184,8 @@
     "group": "26.2",
     "version": "26.2-snapshot-5",
     "tags": [
-      "data"
+      "data",
+      "obsolete"
     ],
     "content": "Entries in the `sulfur_cube_archetype` registry have a new optional field `explosion_fuse`."
   },
@@ -3322,6 +3324,101 @@
       "particle"
     ],
     "content": "Added new `geyser_base`, `geyser_poof` and `geyser_plume` particle textures."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `105.0`."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "entity"
+    ],
+    "content": "Added `hot` and `slow_bouncy` entries to the `sulfur_cube_archetype` registry."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "entity",
+      "breaking"
+    ],
+    "content": "Entry format for the `sulfur_cube_archetype` registry has been updated:\n* `explosion_fuse` has been replaced by `explosion`: if present, the Sulfur Cube of this archetype will explode.\n* Added `contact_damage`: if present, the Sulfur Cube of this archetype will deal damage to entities when they come in contact with it.\n* Added `knockback_modifiers`: a field that contains various modifier fields for the Sulfur Cube's knockback magnitude and direction."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "nbt",
+      "entity",
+      "breaking"
+    ],
+    "content": "Removed the `HurtByTimestamp` tag from living entities. `ticks_since_last_hurt_by_mob` should be used instead."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added new `is_3d` field to the `noise_threshold` surface rule condition. If true, the noise will be evaluated in 3D."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed the `noise_gradient` surface rule. It can be replaced with `noise_threshold`."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added `weighted_random_selector` feature type, which randomly selects one of the given features to generate based on their weights."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "The `large_dripstone` feature has been updated:\n* The maximum allowed value for `column_radius` has been reduced from `19` to `16` to prevent features from reaching beyond neighboring chunks.\n* The wind offset is now also clamped to ensure the full dripstone (radius + wind) stays within neighboring chunk bounds."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added new fields to the `root_system` feature:\n* `level_test_distance` indicating how far away from the origin the root system will check the existing terrain.\n* `max_level_deviation` indicating how far the ground level can deviate from the original ground level at these test positions."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "worldgen",
+      "structure"
+    ],
+    "content": "The `block_rot` structure processor now evaluates the block state produced by previous block processors in the chain."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-6",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added the `hot` and `slow_bouncy` item tags for items that can be placed inside a Sulfur Cube to determine its archetype."
   },
   {
     "group": "26.2",

@@ -8234,6 +8234,39 @@
   },
   {
     "group": "26.2",
+    "version": "26.2-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `106.0`."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-8",
+    "tags": [
+      "damage-type"
+    ],
+    "content": "Added new `sulfur_cube_hot` damage type."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-8",
+    "tags": [
+      "command"
+    ],
+    "content": "The `publish` command now takes an additional boolean, specifying whether the server should be opened to online multiplayer or just local multiplayer."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-snapshot-8",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `unpublish` command, which unpublishes the integrated server if one is present."
+  },
+  {
+    "group": "26.2",
     "version": "26.2-snapshot-2",
     "tags": [
       "debug"
@@ -8810,17 +8843,20 @@
     "group": "26.2",
     "version": "26.2-snapshot-7",
     "tags": [
-      "pack"
+      "pack",
+      "obsolete",
+      "breaking"
     ],
-    "content": "Data pack version has been updated to `105.1`."
+    "content": "Data pack format has been increased to `105.1`."
   },
   {
     "group": "26.2",
     "version": "26.2-snapshot-7",
     "tags": [
-      "pack"
+      "pack",
+      "breaking"
     ],
-    "content": "Resource pack version has been updated to `87.0`."
+    "content": "Resource pack format has been increased to `87.0`."
   },
   {
     "group": "26.2",

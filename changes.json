@@ -9156,6 +9156,7 @@
     "version": "26.2-pre-1",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `106.1`."
@@ -9298,6 +9299,15 @@
       "meta"
     ],
     "content": "Added new required telemetry event `graphics_capabilities`, which posts on startup and reports the capabilities of the graphics device used to play the game."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-pre-2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `107.0`."
   },
   {
     "group": "26.2",

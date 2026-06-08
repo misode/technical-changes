@@ -9029,6 +9029,32 @@
   },
   {
     "group": "26.2",
+    "version": "26.2-pre-4",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `107.1`."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-pre-4",
+    "tags": [
+      "particle"
+    ],
+    "content": "The `particle_render_stats` debug output now includes counts of different particle groups, as well as the total."
+  },
+  {
+    "group": "26.2",
+    "version": "26.2-pre-4",
+    "tags": [
+      "tag",
+      "entity"
+    ],
+    "content": "Added `#not_affected_by_geysers` entity tag, containing entities that are not affected by the upward impulse applied by geyser eruptions."
+  },
+  {
+    "group": "26.2",
     "version": "26.2-snapshot-3",
     "tags": [
       "pack",
@@ -9305,6 +9331,7 @@
     "version": "26.2-pre-2",
     "tags": [
       "pack",
+      "obsolete",
       "breaking"
     ],
     "content": "Data pack format has been increased to `107.0`."

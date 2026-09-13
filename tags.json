@@ -40,6 +40,7 @@
     "mojangmap": "Things regarding Mojang's mappings",
     "nbt": "NBT changes to blocks, items, entities, etc",
     "network": "Changes to server and client communication",
+    "number-provider": "Changes to number providers (now context int or context float)",
     "obsolete": "Changes made in the snapshot cycle that do not apply to the full release",
     "options": "Changes to the `server.properties` or `options.txt` files",
     "pack": "Changes to the `pack.mcmeta` file, or the structure of a pack",

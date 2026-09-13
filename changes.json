@@ -3714,6 +3714,154 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `113.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `94.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "commands",
+      "breaking"
+    ],
+    "content": "Removed the `gamemode` argument from the `/publish` command. Instead the default game mode of the world should be set using the `/defaultgamemode` command, while player-specific game modes should be set using the `/gamemode` command."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `cooking_fuel`:\n* `burn_time` and `speed_multiplier` can now also be an inline number provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `brewing_fuel`:\n* `uses` and `speed_multiplier` can now also be an inline number provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `compostable`:\n* `layers` can now also be an inline number provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added entity NBT `invulnerable_time` which makes a mob temporarily invulnerable for a specific number of ticks."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "loot"
+    ],
+    "content": "Changed `block_interact` loot type: the `origin` context is now available as the center of the block being interacted with."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "noise",
+      "breaking"
+    ],
+    "content": "Changed format of the `worldgen/noise` format:\n* Renamed `firstOctave` \u2192 `base_octave`.\n* Added `base_amplitude`: optional non-negative float, defaults to `1`.\n* Added `octave_count`: int between 1 and 32.\n* Added `normalize`: optional boolean or `\"legacy\"`, defaults to `true`.\n* Renamed `amplitudes` \u2192 `amplitude_modifiers`: optional list of floats, length must match `octave_count`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `pow` with fields `base` and `exponent`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density functions `sqrt`, `log`, `sign` with field `input`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `distance_to_point` with fields `point` (list of 3 ints) and `metric` (one of `euclidean`, `euclidean_squared`, `manhattan`, or `chebyshev`)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Removed density function `y_clamped_gradient` and replaced it with `gradient`:\n* `axis`: one of `x`, `y`, or `z`.\n* `tiling`: one of `clamp_to_edge`, `repeat`, or `mirrored_repeat`.\n* `from_coordinate`: int.\n* `to_coordinate`: int.\n* `from_value`: float.\n* `to_value`: float."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `slice` with fields `axis` (one of `x`, `y`, `z`), `coordinate` (int), and `input` (density function)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Renamed density function `end_islands` \u2192 `end_outer_islands`. No longer computes the density of the main island."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Changed the format of equipment assets:\n* Replaced `trim_palette_replacements` with `trim_overrides`: list of objects with fields `when` (object with `material`, `pattern`), `texture`, `palette`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-5",
     "tags": [
       "pack",

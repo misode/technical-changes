@@ -2902,6 +2902,253 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `110.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `91.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "command"
+    ],
+    "content": "Added command `/posteffect`, which allows adding or removing post effects to players. Syntax:\n* `/posteffect add <player> <posteffect>`\n* `/posteffect clear <player>`\n* `/posteffect list <target>`\n* `/posteffect remove <player> <posteffect>`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "command"
+    ],
+    "content": "The `/place feature` command now allows inline feature definitions."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "environment-attribute",
+      "breaking"
+    ],
+    "content": "Changed environment attribute `gameplay/bed_rule`:\n* Renamed field `explodes` \u2192 `destroy_on_use`.\n* Added `destroy_on_leave`, an optional boolean."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added environment attribute `gameplay/straw_bed_rule`, with the same format as `gameplay/bed_rule`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed format of data component `block_transformer`: added optional boolean `update_from_neighbors`, whether the transformed block should update based on neighboring blocks, defaults to `true`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `compostable`, with field `layers`: namespaced ID to a number provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "loot",
+      "predicate",
+      "data"
+    ],
+    "content": "Vanilla loot tables now reference predicates for checking if a tool has silk touch and is shears instead of inlining a copy of those checks. Added vanilla predicates: `tool/can_silk_touch`, `tool/can_shear`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Changed data component predicate `potion_contents`. Its format is now an object with optional fields:\n* `potions`: potions to match (same as previous format).\n* `effects`: collection predicate of mob effect predicates."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Number providers can now be defined as data pack files in the folder `number_provider`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Added number provider `number_dispatcher`, which has fields `cases` (list of object with `condition` predicate and `number_provider`), and `default` number provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Added number provider `conditional_value`, which has fields `condition` (predicate), `on_true` (number provider), and `on_false` (number provider)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Added number provider `weighted_list`, with field `distribution` (weighted list of number providers)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "recipe"
+    ],
+    "content": "Added recipe type `brewing` controlling brewing stand recipes. With fields:\n* `input`: ingredient with required field `item` and optional field `potion_contents` (the 3 items you put at the bottom of the brewing stand).\n* `reagent`: ingredient with required field `item` and optional field `potion_contents` (the item you put at the top of the brewing stand).\n* `output`: item stack of the resulting item."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed feature types `coral_mushroom`, `kelp`, `seagrass`, and `sea_pickle`. They can be implemented with other more configurable feature types."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed feature types `coral_claw` and `coral_tree`: added required field `feature`, which is a placed feature placed."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added placement modifier `cuboid`, which repeats a feature in a cuboid shape. It has fields `xz_size` (int provider between 1 and 16), `y_size` (int provider between 1 and 16), `include_interior` (optional boolean), and `include_edges` (optional boolean)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added placement modifier `random_chance`, with field `chance` (float between 0 and 1)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed block state provider `copy_properties_provider`: renamed `source_block_state_provider` \u2192 `source`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added block state provider `random_block_provider`, with field `blocks` (block ID, list of block IDs, or block tag)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed `rotated_block_provider`. Now works on any block with `axis` or `facing` properties. Changed fields:\n* Changed `state`: now a block state provider instead of a block state.\n* Added optional `direction`, if omitted, a random direction is chose."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added rule test `any_of`, with field `rules`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added rule test `not`, with field `rule`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tags `#sculk_growth_inhibitors`, `#cats_can_sit_on`, `#cats_can_lie_on`, `#speeds_up_zombie_villager_curing`, `#villagers_can_sleep_on_bed`, `#villager_babies_can_jump_on_bed`, `#height_specific_ore_replaceables`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "tag"
+    ],
+    "content": "Renamed item tag `#dowses_campfires` \u2192 `#douses_campfires`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added structure tag `#abandoned_camp`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Removed `shade` from block model elements. Replaced with optional field `shade_direction_override` (direction)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "assets",
+      "shader"
+    ],
+    "content": "Resource pack can now define always-on `minecraft:end_of_frame` post effect, which will be applied before any other post effect."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-1",
     "tags": [
       "pack",

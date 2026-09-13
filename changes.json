@@ -3714,6 +3714,120 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `115.0` (skipping `114.0`)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `95.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "block",
+      "blockstate",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Changed format of block states:\n* Renamed `Name` \u2192 `id`\n* Renamed `Properties` \u2192 `properties`\n* The default block state of a block can now also be referred to in a compact form directly by the block ID."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed the `/swing` command:\n* When used on a player, the player's attack strength will no longer be reset.\n* Added optional argument to set the swing animation to play, one of `whack`, `stab`, defaults to `whack`.\n* Added optional argument to set the duration of the swing animation, defaults to `6t`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Removed data component `swing_animation`. Replaced with data components `attack_animation` and `interact_animation`: object with fields `type` (one of `whack`, `stab`) and `duration` (positive integer in ticks)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Removed data component `map_color`, since maps are no longer drawn as a tinted overlay."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Changed loot function `exploration_map`:\n* Removed field `map_color`.\n* No longer changes the item ID from `map` to `filled_map`, instead `filled_map` should now be specified in the loot entry or villager trade itself.\n* If no matching structure is found, the item is left without `map_id` component, use `filtered` with `discard_item` to drop those."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Density functions and noises are no longer evaluated with double-precision floating point values, but instead with single-precision. This affects all intermediate steps, not just the final result."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tags `#concrete_stairs` and `#concrete_slabs`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added item tags `#concrete_stairs`, `#concrete_slabs`, `#cloneable_maps`, and `#extendable_maps`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "assets",
+      "breaking"
+    ],
+    "content": "Removed texture `item/filled_map_markings.png`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-7",
+    "tags": [
+      "assets",
+      "item",
+      "breaking"
+    ],
+    "content": "Removed item model tint source `map_color`, since the data component no longer exists."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-6",
     "tags": [
       "pack",
@@ -3736,7 +3850,7 @@
     "group": "26.3",
     "version": "26.3-snapshot-6",
     "tags": [
-      "commands",
+      "command",
       "breaking"
     ],
     "content": "Removed the `gamemode` argument from the `/publish` command. Instead the default game mode of the world should be set using the `/defaultgamemode` command, while player-specific game modes should be set using the `/gamemode` command."

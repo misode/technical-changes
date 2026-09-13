@@ -3714,6 +3714,45 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-5",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `112.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-5",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `93.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-5",
+    "tags": [
+      "loot",
+      "predicate",
+      "item-modifier"
+    ],
+    "content": "Element lists now allows mixing inline values and references, for example `[{type:\"set_count\", ...}, \"example:some_modifier\"]`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-5",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed feature `sculk_patch`: removed fields `extra_rare_growths` and `catalyst_chance`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-1",
     "tags": [
       "pack",

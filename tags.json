@@ -14,6 +14,7 @@
     "component": "Changes to data components",
     "damage-type": "Changing any damage type or tag",
     "data": "Any changes to the vanilla data",
+    "datagen": "Changes to the data generation report format",
     "debug": "Debug commands or behavior changes",
     "dialog": "Changes to custom dialogs",
     "dimension": "Related to dimensions or dimension types",

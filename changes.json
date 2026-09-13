@@ -3467,6 +3467,146 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `119.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `97.1`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider",
+      "breaking"
+    ],
+    "content": "Split the `number_provider` registry into `context_int_provider` and `context_float_provider` to avoid accidental loss of precision due to mixing of float and integer operations."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider",
+      "breaking"
+    ],
+    "content": "Split some number providers into both context int and context float provider:\n* `constant`\n* `uniform`\n* `storage`\n* `add` (renamed from `sum`)\n* `mul` (renamed from `product`)\n* `min` (renamed from `minimum`)\n* `max` (renamed from `maximum`)\n* `avg` (renamed from `average`)\n* `weighted_list`\n* `conditional`\n* `number_dispatcher`\n* `environment_attribute`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider",
+      "breaking"
+    ],
+    "content": "Moved some number providers only to context int providers:\n* `binomial`\n* `score`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider",
+      "breaking"
+    ],
+    "content": "Moved number provider `enchantment_level` only to context float provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Added new context int provider types:\n* `abs` with field `input`.\n* `from_float` with field `input`.\n* `mod` with fields `left` and `right`.\n* `floor_mod` with fields `left` and `right`.\n* `environment_attribute` with field `attribute` (unusable because there are no integer environment attributes).\n* `negate` with field `input`.\n* `pow` with fields `base` and `exponent`.\n* `div` with fields `left` and `right`.\n* `floor_div` with fields `left` and `right`.\n* `sub` with fields `left` and `right`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Added new context float provider types:\n* `abs` with field `input`.\n* `ceil` with field `input`.\n* `cos` with field `input`.\n* `sub` with fields `left` and `right`.\n* `floor` with field `input`.\n* `from_int` with field `input`.\n* `length` with field `inputs`.\n* `mod` with fields `left` and `right`.\n* `negate` with field `input`.\n* `pow` with fields `base` and `exponent`.\n* `div` with fields `left` and `right`.\n* `round` with field `input`.\n* `sin` with field `input`.\n* `sqrt` with field `input`.\n* `truncate` with field `input`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed `/compute` command to take into account number provider split. Syntax is now:\n* `/compute <target> integer <context_int_provider>`\n* `/compute <target> float <context_float_provider> [<scale>]`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed `/data ... compute` command. Syntax is now:\n* `... compute <target> integer <context_int_provider>`\n* `... compute <target> float <context_float_provider>`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "loot",
+      "predicate",
+      "breaking"
+    ],
+    "content": "Removed loot condition `value_check` and replaced with `int_value_check` and `float_value_check`, both with fields `value` and `test`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "recipe",
+      "breaking"
+    ],
+    "content": "The `cookingtime` field in all cooking recipes is no longer optional. For smokers and blast furnace this value should be twice the previous value, because speedup is handled by the `cooking_fuel` component. If field was missing, should be set to `200`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Block state providers can now be defined as data pack files in the `worldgen/block_state_provider` folder. An inline block state is now also an accepted shorthand form."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Renamed block state providers:\n* `copy_properties_provider` \u2192 `copy_properties`.\n* `dual_noise_provider` \u2192 `dual_noise`.\n* `noise_provider` \u2192 `noise`.\n* `noise_threshold_provider` \u2192 `noise_threshold`.\n* `randomized_int_state_provider` \u2192 `randomized_int`.\n* `rule_based_state_provider` \u2192 `rule_based`.\n* `simple_state_provider` \u2192 `simple`.\n* `weighted_state_provider` \u2192 `weighted`.\n* `random_block_provider` \u2192 `random_block`.\n* `rotated_block_provider` \u2192 `rotated`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed behavior of `rule_based` block state provider. If a rule yields no results, the following rules will be evaluated."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added item tag `#furnace_fuel_bottom_takeable`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-3",
     "tags": [
       "pack",
@@ -3711,6 +3851,24 @@
       "shader"
     ],
     "content": "Resource pack can now define always-on `minecraft:end_of_frame` post effect, which will be applied before any other post effect."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-2",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `120.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-2",
+    "tags": [
+      "tag"
+    ],
+    "content": "Renamed structure tag `#on_abandoned_camp_windswept` \u2192 `#on_abandoned_camp_windswept_forest`."
   },
   {
     "group": "26.3",

@@ -3976,6 +3976,59 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `116.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `96.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed feature type `desert_well`. Vanilla now uses the `template` feature type for it."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed feature type `template`: added optional field `processors`, which is a structure processor ID, list IDs, or tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added placement modifier `randomly_selected`, which randomly selects a placement modifier from a list. It has one field `placements` (non-empty list of placement modifiers)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added block predicate `volume_match`, which checks that every block in a volume matches a given block predicate. It has fields `min` (list of 3 ints between -16 and 16), `max` (list of 3 ints between -16 and 16), and `match` (block predicate to test on each position)."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-5",
     "tags": [
       "pack",

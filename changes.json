@@ -3252,6 +3252,14 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "game-test"
+    ],
+    "content": "Removed game test environment `dimension`. Instead each test instance has a `dimension`, which can be any identifier instead of just `overworld`, `nether`, or `end`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-2",
     "tags": [
       "pack",
@@ -3318,7 +3326,7 @@
     "tags": [
       "worldgen"
     ],
-    "content": "Added block state provider `copy_properties_provider`, which copies common block properties to the resulting state. It has once field `block_state_provider` (block state provider)."
+    "content": "Added block state provider `copy_properties_provider`, which copies common block properties to the resulting state. It has one field `source_block_state_provider` (block state provider)."
   },
   {
     "group": "26.3",
@@ -3467,6 +3475,14 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-2",
+    "tags": [
+      "api"
+    ],
+    "content": "The game no longer hardcodes API endpoints. Instead, the game sends a GET request to the delivery service at `https://discovery.minecraftservices.com/minecraft/client`, which returns all services and their endpoints."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-pre-3",
     "tags": [
       "pack",
@@ -3568,6 +3584,15 @@
       "command"
     ],
     "content": "Changed `/compute` command to take into account number provider split. Syntax is now:\n* `/compute <target> integer <context_int_provider>`\n* `/compute <target> float <context_float_provider> [<scale>]`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-pre-1",
+    "tags": [
+      "number-provider",
+      "command"
+    ],
+    "content": "The `/compute` command now fails if the result is `Infinity`, `-Infinity`, `NaN`, or an error occurs. While number providers used outside of commands return `0` in those cases."
   },
   {
     "group": "26.3",
@@ -3682,6 +3707,15 @@
       "environment-attribute"
     ],
     "content": "Added environment attribute `gameplay/straw_bed_rule`, with the same format as `gameplay/bed_rule`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-3",
+    "tags": [
+      "entity",
+      "nbt"
+    ],
+    "content": "Added entity type `cushion`. It has entity NBT field `color`."
   },
   {
     "group": "26.3",
@@ -4118,6 +4152,16 @@
     "group": "26.3",
     "version": "26.3-snapshot-6",
     "tags": [
+      "command",
+      "recipe",
+      "breaking"
+    ],
+    "content": "The `/recipe` command no longer supports hardcoded recipes (type starts with minecraft:crafting_special_). These recipes will always be unlocked when limited_crafting is true."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-6",
+    "tags": [
       "item",
       "component"
     ],
@@ -4282,6 +4326,32 @@
     "group": "26.3",
     "version": "26.3-snapshot-10",
     "tags": [
+      "command"
+    ],
+    "content": "The `/execute as` command no longer evaluates the entity name every time it is used, improving performance."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "command"
+    ],
+    "content": "The `/clear <targets> <item> 0` command no longer synchronizes the target's inventory."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "entity",
+      "nbt",
+      "obsolete"
+    ],
+    "content": "Changed `drowned` entity NBT: no longer has fields `angry_at` and `anger_end_time`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
       "item",
       "component"
     ],
@@ -4374,6 +4444,15 @@
     "group": "26.3",
     "version": "26.3-snapshot-10",
     "tags": [
+      "worldgen",
+      "loading"
+    ],
+    "content": "The `noise`, `surface` and `carvers` chunk generation statuses were combined into one `terrain` status."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
       "tag"
     ],
     "content": "Added block tags `#nether_portal_frame`, and `#conduit_effect_block`."
@@ -4397,6 +4476,15 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "game-test",
+      "command"
+    ],
+    "content": "The `/test locate` command now locates tests in all dimensions instead of just the current dimension."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-8",
     "tags": [
       "pack",
@@ -4414,6 +4502,16 @@
       "obsolete"
     ],
     "content": "Resource pack format has been increased to `96.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-8",
+    "tags": [
+      "entity",
+      "nbt",
+      "obsolete"
+    ],
+    "content": "Changed `drowned` entity NBT: added fields `angry_at` and `anger_end_time`."
   },
   {
     "group": "26.3",
@@ -4628,6 +4726,16 @@
       "breaking"
     ],
     "content": "Changes data component `trim_material` to match new format of material definitions."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-1",
+    "tags": [
+      "entity",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Removed the `AssignProfessionWhenSpawned` tag from villagers."
   },
   {
     "group": "26.3",
@@ -4863,6 +4971,23 @@
       "trim"
     ],
     "content": "Added optional `trim_palette_replacements` field to equipment assets, controlling which trim material palettes should be replaced for this equipment asset (formerly controlled by `override_armor_assets` in the trim material)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-1",
+    "tags": [
+      "game-test"
+    ],
+    "content": "Tests now use the `flat_all_dimensions` world preset."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-1",
+    "tags": [
+      "game-test",
+      "obsolete"
+    ],
+    "content": "Added game test environment `dimension`, with field `dimension` (one of `overworld`, `nether`, or `end`)."
   },
   {
     "group": "1.20.5",

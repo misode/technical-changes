@@ -3714,6 +3714,82 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `117.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "advancement"
+    ],
+    "content": "Visible root advancements (that have a `display` not no `parent`) are now required to specify a `background` field. And only root advancements can have a `background` field."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "slot-source"
+    ],
+    "content": "Changed slot source `group`: can only use an inline definition in a top-level file."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "loot",
+      "item-modifier"
+    ],
+    "content": "Changed loot function `sequence`: can only use an inline definition in a top-level file."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "number-provider",
+      "breaking"
+    ],
+    "content": "Changed number provider `sum`: renamed field `summands` \u2192 `operands`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "number-provider"
+    ],
+    "content": "Added number providers `product`, `minimum`, `maximum`, and `average`: with field `operands`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tags `#uncarvable`, `#dangerous_for_teleportation`, `#cat_does_not_teleport_to`, `#enderman_does_not_teleport_to`, `#shulker_does_not_teleport_to`, and `#consumable_does_not_teleport_to`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added item tag `#brewing_potion_inputs`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-9",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added potion tags `#douses_fire`, `#hurts_water_sensitive_entities`, `#extinguishes_entities`, and `#rehydrates_axolotls`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-7",
     "tags": [
       "pack",

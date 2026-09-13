@@ -4052,6 +4052,168 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `118.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `97.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "command",
+      "component"
+    ],
+    "content": "Re-added the `none` swing animation type to the `/swing` command and the `attack_animation` and `interact_animation` data components."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "command"
+    ],
+    "content": "Added `/compute` command which evaluates number providers, with contexts `origin` and `this`. Syntax `/compute <target> <provider> [<scale>|integer]`, with:\n* `<target>`: one of `default`, `block <pos>`, or `entity <selector>`.\n* `<provider>`: a number provider ID or inline value.\n* `<scale>`: optional scale value to multiply the final result."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "command"
+    ],
+    "content": "Added new source to `/data modify` command: `compute`, with syntax `compute <target> <provider> [integer]` working the same as in `/compute`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `teleport_randomly` consume effect: added optional field `directional_particles` boolean, whether to show a particle trail into the direction of the teleportation, defaults to `true`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data component `block_transformer`: contents have been moved to a separate registry. Component must now always refer to a `block_transformer` file instead of an inline definition."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Changed data components `attack_animation` and `interact_animation`: `duration field is now a non-negative integer."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Changed loot function `set_loot_table`:\n* Removed unused field `type`.\n* Renamed `tag` (previously `name`) to `loot_table_id`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "component"
+    ],
+    "content": "Block transformers can now be defined as data pack files in the `block_transformer` folder, with the same format as the `block_transformer` data component."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed noise settings:\n* Renamed `preliminary_surface_level` \u2192 `chunk_surface_level` in the noise router.\n* Removed `noise.size_horizontal` and `noise.size_vertical`, these are now specified in the `interpolated` density function.\n* Removed `ore_veins_enabled` field and replaced it with the `ore_vein` material rule.\n* Added optional `debug_functions` field, which is a list of objects with fields `label` (string) and `function` (density function)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added `ore_vein` material rule, with fields `ore_block`, `raw_ore_block`, `filler_block`, `raw_ore_chance`, `density`, `richness`, `filler_gap`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Removed density function `shifted_noise`. Instead 3 optional fields are added to the `noise` density function: `shift_x`, `shift_y`, and `shift_z`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Changed density function `interpolated`: added fields `cell_size_xz` and `cell_size_y`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Renamed density function `cache_once` \u2192 `cache`. Removed `cache_2d`, `cache_all_in_cell`, and `flat_cache`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tags `#nether_portal_frame`, and `#conduit_effect_block`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Renamed structure tags:\n* Renamed `#on_woodland_explorer_maps` \u2192 `#on_woodland_mansion_maps`\n* Renamed `#on_ocean_explorer_maps` \u2192 `#on_ocean_monument_maps`\n* Renamed `#on_jungle_explorer_maps` \u2192 `#on_jungle_pyramid_maps`\n* Renamed `#on_swamp_explorer_maps` \u2192 `#on_swamp_hut_maps`\n* Renamed `#on_trial_explorer_map` \u2192 `#on_buried_trial_chambers_map`"
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-10",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added fluid tags `#axolotl_try_find_liquid`, `#dolphin_try_find_liquid`, `#frog_try_find_land_near_liquid`, and `#entity_floatable`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-8",
     "tags": [
       "pack",

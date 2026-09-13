@@ -2687,6 +2687,571 @@
   },
   {
     "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `111.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `92.0`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "predicate",
+      "item-modifier",
+      "advancement",
+      "number-provider",
+      "recipe",
+      "slot-source"
+    ],
+    "content": "Loot table and related folders now have dedicated registry. Most fields now accept a namespaced ID, or inline value. Places that accepted lists now also accept a list of namespaced IDs, a list of inline values, or a has-prefixed tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "predicate",
+      "item-modifier",
+      "slot-source",
+      "breaking"
+    ],
+    "content": "Removed predicate, item modifier, and slot source type `reference`. Instead they can be references by using a namespaced ID string."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "command"
+    ],
+    "content": "Changed `/spreadplayers` command. Whether a block is safe to spread a player to is now controlled by the `#entities_can_teleport_to` block tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added environment attribute `gameplay/natural_mob_spawns`. It is an object with fields:\n* `spawns_by_category`: map of spawn category to weighted list of spawn data.\n* `spawn_costs`: map of entity type to object with fields `energy_budget` and `charge`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added environment attribute `gameplay/creature_world_gen_spawn_probability`, which is a float between 0 and 1 (left-inclusive). It sets the probability to run an iteration in which mobs defined to spawn in the creature mob category will spawn during world generation. Defaults to `0.1`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Changed environment attribute `visual/ambient_particles`:\n* Now supports interpolation between timeline keyframes (probabilities will be crossfaded).\n* Added new modifier: `append`, which concatenaes all elements with extra layers."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "item",
+      "component"
+    ],
+    "content": "Added data component `cooking_fuel`, with fields `burn_type` (namespaced ID to number provider) and `speed_multiplier` (namespaced ID to number provider)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "tag",
+      "item",
+      "component",
+      "breaking"
+    ],
+    "content": "Removed item tag `#brewing_fuel`. Replaced with the `brewing_fuel` data component instead: It has fields `uses` (namespaced ID to number provider) and `speed_multiplier` (namespaced ID to number provider)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "component"
+    ],
+    "content": "Added data components `sign_text_front` and `sign_text_back`. The format is the same as `front_text` and `back_text` on sign block entities."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "component"
+    ],
+    "content": "Added data component `waxed`, which is a marker for blocks with contents that are waxed."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "component"
+    ],
+    "content": "Added data component `cushion/color`, which is applied to cushion entities when they get placed using an item. It can be one of the 16 dye colors."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "component"
+    ],
+    "content": "Added data component `villager_food`, representing a items that villagers can eat. It is an object with field `nutrition` (positive integer)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "component"
+    ],
+    "content": "Added data component `mob_visibility`, representing the visibility percentage provided by an item with the appropriate `equippable` component, modifying the range at which mobs are able to detect an entity. It is an object with fields `targeting_entity` (entity ID, list of entity IDs, or entity tag) and `visibility` (float between 0 and 10)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "block",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Changed `sign` and `hanging_sign` block entities. By default, commands and other click events are no longer executed when clicked and text is no longer resolved by default. Added optional boolean `allow_op_features` to restore previous behavior."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "block",
+      "nbt",
+      "component"
+    ],
+    "content": "Signs will now accept and return the `sign_text_front`, `sign_text_back`, and `waxed` data components."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "block",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Changed `brewing_stand` block entity:\n* Changed `BrewTime` from short \u2192 int.\n* Changed `Fuel` from byte \u2192 int.\n* Added `total_brew_time` int.\n* Added `total_fuel` int.\n* Added `speed_multiplier` float."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "block",
+      "nbt",
+      "breaking"
+    ],
+    "content": "Changed `furnace`, `smoker`, and `blast_furnace` block entities:\n* Changed `cooking_time_spent` from short \u2192 int.\n* Changed `cooking_total_time` from short \u2192 int.\n* Changed `lit_time_remaining` from short \u2192 int.\n* Changed `lit_total_time` from short \u2192 int.\n* Added `speed_multiplier` float."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "loot"
+    ],
+    "content": "Changed advancement rewards. The `loot` field now also accepts an inline value, list of loot table IDs, or a loot table tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Advancement trigger condition fields that accepted an entity predicate or a list of loot conditions are now stricter:\n* Entity predicate shorthand format has been removed, instead the `entity_properties` condition has to be explicitly used now.\n* A list of conditions is no longer allowed, instead the `all_of` condition has to be explicitly used now."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed `bee_nest_destroyed` advancement trigger:\n* Renamed `block` \u2192 `blocks`, now also accepts a list of blocks, or block tag.\n* Added `state` field that matches block state properties."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed `brewed_potion` advancement trigger:\n* The `potion` field now accepts a `potion_contents` data component (object with `potions` and `effects`)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed `enter_block` and `slide_down_block` advancement triggers:\n* Renamed `block` \u2192 `blocks`, now also accepts a list of blocks, or block tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed `player_generates_container_loot` advancement trigger:\n* Renamed `loot_table` \u2192 `loot_tables`, now also accepts a list of loot table IDs, or loot table tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed `crafter_recipe_crafted` and `recipe_crafted` advancement triggers:\n* Renamed `recipe_id` \u2192 `recipes`, now also accepts a list of recipe IDs, or recipe tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "advancement",
+      "breaking"
+    ],
+    "content": "Changed `recipe_unlocked` and `recipe_crafted` advancement triggers:\n* Renamed `recipe` \u2192 `recipes`, now also accepts a list of recipe IDs, or recipe tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "slot-source"
+    ],
+    "content": "Changed slot source `group` (and also the shorthand form):\n* `terms`: now also accepts a slot source ID, a list of slot source IDs, or a slot source tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "slot-source"
+    ],
+    "content": "Changed slot sources `filtered`, `contents`, and `limit_slot`:\n* `slot_source`: now also accepts a slot source ID."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot"
+    ],
+    "content": "The `rolls` and `bonus_rolls` fields in loot table pools now also accept a reference to a number provider."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot"
+    ],
+    "content": "Added `container_process` loot table type, which takes parameters: `container`, `block_entity`, `block_state`, `origin`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot"
+    ],
+    "content": "Changed `advancement_location` loot table type: block entities are now available in context and can be matched by conditions like `match_block`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "predicate",
+      "breaking"
+    ],
+    "content": "Renamed loot table pool field `conditions` \u2192 `condition`, now accepts an inline value or predicate namespaced ID. It no longer includes a short form list, instead `all_of` must be used explicitly."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Renamed loot table pool field `functions` \u2192 `modifier`, now accepts an inline value (including short form of `sequence`), or  item modifier namespaced ID. This field is now also available on `alternatives`, `sequence`, and `group` loot entries."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "breaking"
+    ],
+    "content": "Changed `tag` loot table entry:\n* Renamed field `name` \u2192 `items`, now also accepts a single item ID or list of item IDs."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot"
+    ],
+    "content": "Changed `loot_table` loot table entry:\n* Changed `value`: now also accepts a list of loot table IDs, or a loot table tag.\n* Added `expand`: working the same as in the `tag` loot table entry."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Changed item modifier (loot function) format:\n* Renamed `function` \u2192 `type`.\n* Renamed `conditions` \u2192 `condition`, now accepts an inline value or namespaced predicate ID. No longer allows a list of conditions, instead `all_of` must be used explicitly."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Changed loot function `set_loot_table`:\n* Renamed `map` \u2192 `tag`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Changed loot function `exploration_map`:\n* Field `destination` is no longer optional, and now also allows a list of structure IDs, or structure tag."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "item-modifier",
+      "breaking"
+    ],
+    "content": "Removed loot function `reference`. Any field that takes a loot function now also accepts an item modifier ID."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "predicate",
+      "breaking"
+    ],
+    "content": "Changed predicate (loot condition) format:\n* Renamed `condition` \u2192 `type`.\n* Removed predicate shorthand list form, instead `all_of` must be used explicitly."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "predicate",
+      "breaking"
+    ],
+    "content": "Removed loot condition `reference`. Any field that takes a loot condition now also accepts a predicate ID."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "predicate",
+      "breaking"
+    ],
+    "content": "Removed loot condition `block_state_property`. Replaced with loot condition `match_block`, which has the same fields as a block predicate."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "loot",
+      "number-provider",
+      "breaking"
+    ],
+    "content": "Number providers now always need to specify the `type` field. Previously this defaulted to `uniform`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "recipe",
+      "breaking"
+    ],
+    "content": "The cooking time in `smoker` and `blast_furnace` recipes should now match the same value as the normal furnace recipe (usually `200`). Cooking time speedup is now handled through the number provider used by the `furnace_fuel` data component."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed biome fields `spawners`, `spawn_costs`, and `creature_spawn_probability`. Replaced with new environment attributes."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed feature types `nether_forest_vegetation`, `twisting_vines`, and `weeping_vines`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changes to noise settings:\n* The `final_density` field no longer has the `beardifier` density function implicity added to the result.\n* Removed field `aquifers_enabled` and replaced it with optional `aquifers` object.\n* Removed field `ore_veins_enabled` and replaced it with optional `ore_vein` list of objects.\n* Removed noise router fields `barrier`, `fluid_level_floodedness`, `fluid_level_spread`, `lava`, `vein_toggle`, `vein_ridged`, and `vein_gap`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Changed density function `constant`: renamed `argument` \u2192 `value`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Changed density functions `add`, `mul`, `min`, and `max`: renamed `argument1` \u2192 `left` and `argument2` \u2192 `right`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Changed density functions `abs`, `square`, `cube`, `half_negative`, `quarter_negative`, `squeeze`, `interpolated`, `flat_cache`, `cache_2d`, `cache_once`, `cache_all_in_cell`, and `blend_density`: renamed `argument` \u2192 `input`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Changed density functions `shift_a`, `shift_b`, and `shift`: renamed `argument` \u2192 `noise`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `sub` with fields `left` and `right`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `div` with fields `left` and `right`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Renamed density function `invert` to `reciprocal`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `negate` with field `input`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `lerp` with density function fields `alpha`, `first`, and `second`."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density functions `floor`, `round`, `ceil`, and `truncate` with fields `input` and `multiple` (integer to round to, defaults to 1)."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `beardifier` without fields."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "trade",
+      "breaking"
+    ],
+    "content": "Renamed villager trade field `given_item_modifiers` to `given_item_modifier`. Unlike other fields, this does not support namespaced IDs referencing other files."
+  },
+  {
+    "group": "26.3",
+    "version": "26.3-snapshot-4",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tag `#cushion_uses_collision_shape`."
+  },
+  {
+    "group": "26.3",
     "version": "26.3-snapshot-2",
     "tags": [
       "pack",
@@ -3344,7 +3909,7 @@
     "tags": [
       "loot"
     ],
-    "content": "Added `command_slot_source` loot table context type, which takes parameters: `container`, `origin`, `this_entity`."
+    "content": "Added `command_slot_source` loot table type, which takes parameters: `container`, `origin`, `this_entity`."
   },
   {
     "group": "26.3",
@@ -15958,7 +16523,7 @@
     "group": "26.1",
     "version": "26.1-snapshot-1",
     "tags": [
-      "data"
+      "trade"
     ],
     "content": "Villager trades can now be data-driven, with entries in the `villager_trade` folder."
   },
@@ -15966,7 +16531,7 @@
     "group": "26.1",
     "version": "26.1-snapshot-1",
     "tags": [
-      "data"
+      "trade"
     ],
     "content": "Trade sets can now be data-driven, with entries in the `trade_set` folder."
   },

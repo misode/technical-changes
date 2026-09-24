@@ -15,7 +15,7 @@
     "damage-type": "Changing any damage type or tag",
     "data": "Any changes to the vanilla data",
     "datagen": "Changes to the data generation report format",
-    "debug": "Debug commands or behavior changes",
+    "debug": "Debug flags or debug command changes",
     "density": "Changes to density functions",
     "dialog": "Changes to custom dialogs",
     "dimension": "Related to dimensions or dimension types",

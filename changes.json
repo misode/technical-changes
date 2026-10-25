@@ -226,7 +226,7 @@
       "environment-attribute",
       "breaking"
     ],
-    "content": "Renamed `visual/water_fog_radius` Environment Attribute to `visual/water_fog_end_distance`."
+    "content": "Renamed `visual/water_fog_radius` environment attribute to `visual/water_fog_end_distance`."
   },
   {
     "group": "1.21.11",
@@ -235,7 +235,7 @@
       "environment-attribute",
       "breaking"
     ],
-    "content": "Removed `visual/extra_fog` Environment Attribute."
+    "content": "Removed `visual/extra_fog` environment attribute."
   },
   {
     "group": "1.21.11",
@@ -244,7 +244,7 @@
       "environment-attribute",
       "breaking"
     ],
-    "content": "Replaced `visual/cloud_opacity` Environment Attribute with `visual/cloud_color`."
+    "content": "Replaced `visual/cloud_opacity` environment attribute with `visual/cloud_color`."
   },
   {
     "group": "1.21.11",
@@ -252,7 +252,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/water_fog_start_distance` Environment Attribute to control distance in blocks from camera at which underwater fog starts. Format: float, defaults to `-8.0`. If negative, fog starts that many blocks behind the camera."
+    "content": "Added `visual/water_fog_start_distance` environment attribute to control distance in blocks from camera at which underwater fog starts. Format: float, defaults to `-8.0`. If negative, fog starts that many blocks behind the camera."
   },
   {
     "group": "1.21.11",
@@ -260,7 +260,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/fog_start_distance` Environment Attribute to control distance in blocks from camera at which fog starts when not submerged. Format: float, defaults to `0.0`. If negative, fog starts that many blocks behind the camera."
+    "content": "Added `visual/fog_start_distance` environment attribute to control distance in blocks from camera at which fog starts when not submerged. Format: float, defaults to `0.0`. If negative, fog starts that many blocks behind the camera."
   },
   {
     "group": "1.21.11",
@@ -268,7 +268,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/fog_end_distance` Environment Attribute to control distance in blocks from camera at which fog reaches maximum density when not submerged. Format: non-negative float, defaults to `1024.0`."
+    "content": "Added `visual/fog_end_distance` environment attribute to control distance in blocks from camera at which fog reaches maximum density when not submerged. Format: non-negative float, defaults to `1024.0`."
   },
   {
     "group": "1.21.11",
@@ -276,7 +276,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/sky_fog_end_distance` Environment Attribute to control distance in blocks from camera at which sky fog reaches maximum density when not submerged. Format: non-negative float, defaults to `512.0`. Restricted by Render Distance option."
+    "content": "Added `visual/sky_fog_end_distance` environment attribute to control distance in blocks from camera at which sky fog reaches maximum density when not submerged. Format: non-negative float, defaults to `512.0`. Restricted by Render Distance option."
   },
   {
     "group": "1.21.11",
@@ -284,7 +284,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/cloud_fog_end_distance` Environment Attribute to control distance in blocks from camera at which cloud fog reaches maximum density when not submerged. Format: non-negative float, defaults to `2048.0`. Restricted by Cloud Distance option."
+    "content": "Added `visual/cloud_fog_end_distance` environment attribute to control distance in blocks from camera at which cloud fog reaches maximum density when not submerged. Format: non-negative float, defaults to `2048.0`. Restricted by Cloud Distance option."
   },
   {
     "group": "1.21.11",
@@ -292,7 +292,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/cloud_color` Environment Attribute to control color of clouds. Format: ARGB color, defaults to `#00000000`. If fully transparent, clouds are disabled and happy ghasts will not regenerate health faster at cloud height."
+    "content": "Added `visual/cloud_color` environment attribute to control color of clouds. Format: ARGB color, defaults to `#00000000`. If fully transparent, clouds are disabled and happy ghasts will not regenerate health faster at cloud height."
   },
   {
     "group": "1.21.11",
@@ -1423,7 +1423,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/sunrise_sunset_color` Environment Attribute to control color and intensity of sunrise and sunset effect. Format: ARGB color, defaults to `#00000000`. Only visible with overworld skybox."
+    "content": "Added `visual/sunrise_sunset_color` environment attribute to control color and intensity of sunrise and sunset effect. Format: ARGB color, defaults to `#00000000`. Only visible with overworld skybox."
   },
   {
     "group": "1.21.11",
@@ -1431,7 +1431,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/sun_angle` Environment Attribute to control sun angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
+    "content": "Added `visual/sun_angle` environment attribute to control sun angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
   },
   {
     "group": "1.21.11",
@@ -1439,7 +1439,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/moon_angle` Environment Attribute to control moon angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
+    "content": "Added `visual/moon_angle` environment attribute to control moon angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
   },
   {
     "group": "1.21.11",
@@ -1447,7 +1447,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/star_angle` Environment Attribute to control star angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
+    "content": "Added `visual/star_angle` environment attribute to control star angle in degrees, clockwise from east to west. Format: float, defaults to `0.0`. Only visible with overworld skybox."
   },
   {
     "group": "1.21.11",
@@ -1455,7 +1455,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/moon_phase` Environment Attribute to control moon phase. Format: string ID (`full_moon`, `waning_gibbous`, `third_quarter`, `waning_crescent`, `new_moon`, `waxing_crescent`, `first_quarter`, or `waxing_gibbous`), defaults to `full_moon`. Only visible with overworld skybox."
+    "content": "Added `visual/moon_phase` environment attribute to control moon phase. Format: string ID (`full_moon`, `waning_gibbous`, `third_quarter`, `waning_crescent`, `new_moon`, `waxing_crescent`, `first_quarter`, or `waxing_gibbous`), defaults to `full_moon`. Only visible with overworld skybox."
   },
   {
     "group": "1.21.11",
@@ -1463,7 +1463,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/star_brightness` Environment Attribute to control brightness of stars in the sky, where `0.5` is normal brightness during night and `0` is fully hidden. Format: float between `0.0` and `1.0`, defaults to `0.0`. Only visible with overworld skybox."
+    "content": "Added `visual/star_brightness` environment attribute to control brightness of stars in the sky, where `0.5` is normal brightness during night and `0` is fully hidden. Format: float between `0.0` and `1.0`, defaults to `0.0`. Only visible with overworld skybox."
   },
   {
     "group": "1.21.11",
@@ -1471,7 +1471,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/sky_light_color` Environment Attribute to control visual color of sky light. Format: RGB color, defaults to `#ffffff`. Value passed to `lightmap.fsh` shader as `SkyLightColor`."
+    "content": "Added `visual/sky_light_color` environment attribute to control visual color of sky light. Format: RGB color, defaults to `#ffffff`. Value passed to `lightmap.fsh` shader as `SkyLightColor`."
   },
   {
     "group": "1.21.11",
@@ -1479,7 +1479,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/sky_light_factor` Environment Attribute to control visual brightness of sky light. Format: float, defaults to `1.0`. Value passed to `lightmap.fsh` shader as `SkyFactor`."
+    "content": "Added `visual/sky_light_factor` environment attribute to control visual brightness of sky light. Format: float, defaults to `1.0`. Value passed to `lightmap.fsh` shader as `SkyFactor`."
   },
   {
     "group": "1.21.11",
@@ -1487,7 +1487,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `audio/firefly_bush_sounds` Environment Attribute to control whether firefly bushes produce idle sounds when not below an opaque block. Format: boolean, defaults to `false`."
+    "content": "Added `audio/firefly_bush_sounds` environment attribute to control whether firefly bushes produce idle sounds when not below an opaque block. Format: boolean, defaults to `false`."
   },
   {
     "group": "1.21.11",
@@ -1495,7 +1495,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/sky_light_level` Environment Attribute to control effective light level of the sky used by mechanics such as mob spawning or daylight detectors. Format: float, defaults to `15.0`. Can only be specified on dimensions."
+    "content": "Added `gameplay/sky_light_level` environment attribute to control effective light level of the sky used by mechanics such as mob spawning or daylight detectors. Format: float, defaults to `15.0`. Can only be specified on dimensions."
   },
   {
     "group": "1.21.11",
@@ -1503,7 +1503,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/eyeblossom_open` Environment Attribute to control whether eyeblossoms open or close. Format: `true`, `false`, or `\"default\"`, defaults to `\"default\"`."
+    "content": "Added `gameplay/eyeblossom_open` environment attribute to control whether eyeblossoms open or close. Format: `true`, `false`, or `\"default\"`, defaults to `\"default\"`."
   },
   {
     "group": "1.21.11",
@@ -1511,7 +1511,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/turtle_egg_hatch_chance` Environment Attribute to control chance that a turtle egg will switch to its next hatching state when randomly ticked. Format: float between `0.0` and `1.0` defaults to `0.0`."
+    "content": "Added `gameplay/turtle_egg_hatch_chance` environment attribute to control chance that a turtle egg will switch to its next hatching state when randomly ticked. Format: float between `0.0` and `1.0` defaults to `0.0`."
   },
   {
     "group": "1.21.11",
@@ -1519,7 +1519,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/creaking_active` Environment Attribute to control whether creaking heart blocks and their corresponding creaking are active. Format: boolean, defaults to `false`."
+    "content": "Added `gameplay/creaking_active` environment attribute to control whether creaking heart blocks and their corresponding creaking are active. Format: boolean, defaults to `false`."
   },
   {
     "group": "1.21.11",
@@ -1527,7 +1527,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/surface_slime_spawn_chance` Environment Attribute for additional chance rolled when a natural slime spawn attempt occurs in a biome with the `#allows_surface_slime_spawns` tag. Format: float between `0.0` and `1.0`, defaults to `0.0`."
+    "content": "Added `gameplay/surface_slime_spawn_chance` environment attribute for additional chance rolled when a natural slime spawn attempt occurs in a biome with the `#allows_surface_slime_spawns` tag. Format: float between `0.0` and `1.0`, defaults to `0.0`."
   },
   {
     "group": "1.21.11",
@@ -1535,7 +1535,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/cat_waking_up_gift_chance` Environment Attribute to control chance that a cat lying on its owner's bed will drop a gift when the player wakes up. Format: float, defaults to `0.0`."
+    "content": "Added `gameplay/cat_waking_up_gift_chance` environment attribute to control chance that a cat lying on its owner's bed will drop a gift when the player wakes up. Format: float, defaults to `0.0`."
   },
   {
     "group": "1.21.11",
@@ -1543,7 +1543,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/bees_stay_in_hive` Environment Attribute to control whether bees try to navigate to their hives and will not exit unless the hive is broken or next to fire. Format: boolean, defaults to `false`."
+    "content": "Added `gameplay/bees_stay_in_hive` environment attribute to control whether bees try to navigate to their hives and will not exit unless the hive is broken or next to fire. Format: boolean, defaults to `false`."
   },
   {
     "group": "1.21.11",
@@ -1551,7 +1551,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/monsters_burn` Environment Attribute to control whether monsters burn while exposed to the sky. Format: boolean, defaults to `false`."
+    "content": "Added `gameplay/monsters_burn` environment attribute to control whether monsters burn while exposed to the sky. Format: boolean, defaults to `false`."
   },
   {
     "group": "1.21.11",
@@ -1559,7 +1559,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/can_pillager_patrol_spawn` Environment Attribute to control whether pillager patrols can spawn. Format: boolean, defaults to `true`. Replaces `#without_patrol_spawns` biome tag."
+    "content": "Added `gameplay/can_pillager_patrol_spawn` environment attribute to control whether pillager patrols can spawn. Format: boolean, defaults to `true`. Replaces `#without_patrol_spawns` biome tag."
   },
   {
     "group": "1.21.11",
@@ -1567,7 +1567,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/villager_activity` Environment Attribute to control default AI activity for adult villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `pre_raid`, `raid`, `rest`, and `work`."
+    "content": "Added `gameplay/villager_activity` environment attribute to control default AI activity for adult villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `pre_raid`, `raid`, `rest`, and `work`."
   },
   {
     "group": "1.21.11",
@@ -1575,7 +1575,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/baby_villager_activity` Environment Attribute to control default AI activity for baby villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `play`, `pre_raid`, `raid`, and `rest`."
+    "content": "Added `gameplay/baby_villager_activity` environment attribute to control default AI activity for baby villagers. Format: mob activity, defaults to `idle`. Supported activities: `core`, `hide`, `idle`, `meet`, `panic`, `play`, `pre_raid`, `raid`, and `rest`."
   },
   {
     "group": "1.21.11",
@@ -1592,7 +1592,7 @@
       "dimension",
       "breaking"
     ],
-    "content": "The `natural` field has been fully replaced by the `gameplay/eyeblossom_open` and `gameplay/creaking_active` Environment Attributes."
+    "content": "The `natural` field has been fully replaced by the `gameplay/eyeblossom_open` and `gameplay/creaking_active` environment attributes."
   },
   {
     "group": "1.21.11",
@@ -1610,7 +1610,7 @@
       "dimension",
       "breaking"
     ],
-    "content": "The `fixed_time` field has been replaced by a `has_fixed_time` boolean that defaults to `false`. Time-based effects are now specified by Environment Attributes."
+    "content": "The `fixed_time` field has been replaced by a `has_fixed_time` boolean that defaults to `false`. Time-based effects are now specified by environment attributes."
   },
   {
     "group": "1.21.11",
@@ -1619,7 +1619,7 @@
       "tag",
       "breaking"
     ],
-    "content": "Removed `#without_patrol_spawns` biome tag. Replaced by `gameplay/can_pillager_patrol_spawn` Environment Attribute."
+    "content": "Removed `#without_patrol_spawns` biome tag. Replaced by `gameplay/can_pillager_patrol_spawn` environment attribute."
   },
   {
     "group": "1.21.11",
@@ -1761,7 +1761,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added Environment Attributes system, providing a data-driven way to control visual and gameplay effects. Environment Attribute values can be provided by dimensions and biomes, with biomes having higher priority."
+    "content": "Added environment attributes system, providing a data-driven way to control visual and gameplay effects. environment attribute values can be provided by dimensions and biomes, with biomes having higher priority."
   },
   {
     "group": "1.21.11",
@@ -1769,7 +1769,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/fog_color` Environment Attribute to control fog color when camera is not submerged. Format: RGB color, defaults to `#000000`. Replaces biome `effects.fog_color` field."
+    "content": "Added `visual/fog_color` environment attribute to control fog color when camera is not submerged. Format: RGB color, defaults to `#000000`. Replaces biome `effects.fog_color` field."
   },
   {
     "group": "1.21.11",
@@ -1777,7 +1777,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/extra_fog` Environment Attribute to control whether dense fog should be used. Format: boolean, defaults to `false`."
+    "content": "Added `visual/extra_fog` environment attribute to control whether dense fog should be used. Format: boolean, defaults to `false`."
   },
   {
     "group": "1.21.11",
@@ -1785,7 +1785,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/water_fog_color` Environment Attribute to control fog color when submerged in water. Format: RGB color, defaults to `#050533`. Replaces biome `effects.water_fog_color` field."
+    "content": "Added `visual/water_fog_color` environment attribute to control fog color when submerged in water. Format: RGB color, defaults to `#050533`. Replaces biome `effects.water_fog_color` field."
   },
   {
     "group": "1.21.11",
@@ -1793,7 +1793,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/water_fog_radius` Environment Attribute to control distance in blocks from camera at which underwater fog reaches maximum density. Format: non-negative float, defaults to `96.0`. Replaces `#has_closer_water_fog` biome tag."
+    "content": "Added `visual/water_fog_radius` environment attribute to control distance in blocks from camera at which underwater fog reaches maximum density. Format: non-negative float, defaults to `96.0`. Replaces `#has_closer_water_fog` biome tag."
   },
   {
     "group": "1.21.11",
@@ -1801,7 +1801,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/sky_color` Environment Attribute to control sky color. Only visible for overworld sky. Format: RGB color, defaults to `#000000`. Replaces biome `effects.sky_color` field."
+    "content": "Added `visual/sky_color` environment attribute to control sky color. Only visible for overworld sky. Format: RGB color, defaults to `#000000`. Replaces biome `effects.sky_color` field."
   },
   {
     "group": "1.21.11",
@@ -1809,7 +1809,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/cloud_opacity` Environment Attribute to control cloud opacity. If `0`, clouds are disabled and happy ghasts will not regenerate health faster at cloud height. Format: float between `0.0` and `1.0`, defaults to `0.0`."
+    "content": "Added `visual/cloud_opacity` environment attribute to control cloud opacity. If `0`, clouds are disabled and happy ghasts will not regenerate health faster at cloud height. Format: float between `0.0` and `1.0`, defaults to `0.0`."
   },
   {
     "group": "1.21.11",
@@ -1817,7 +1817,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/cloud_height` Environment Attribute to control height at which clouds appear. Format: float, defaults to `192.33`. Replaces dimension type `cloud_height` field."
+    "content": "Added `visual/cloud_height` environment attribute to control height at which clouds appear. Format: float, defaults to `192.33`. Replaces dimension type `cloud_height` field."
   },
   {
     "group": "1.21.11",
@@ -1825,7 +1825,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/default_dripstone_particle` Environment Attribute to control default particle dripped from dripstone blocks when no fluid is above. Format: Particle Options, defaults to `{type:\"dripping_dripstone_water\"}`. Replaces dimension type `ultrawarm` field."
+    "content": "Added `visual/default_dripstone_particle` environment attribute to control default particle dripped from dripstone blocks when no fluid is above. Format: Particle Options, defaults to `{type:\"dripping_dripstone_water\"}`. Replaces dimension type `ultrawarm` field."
   },
   {
     "group": "1.21.11",
@@ -1833,7 +1833,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `visual/ambient_particles` Environment Attribute to control ambient particles that randomly spawn around camera. Format: list of objects with `particle` and `probability` fields, defaults to `[]`. Replaces biome `effects.particle` field."
+    "content": "Added `visual/ambient_particles` environment attribute to control ambient particles that randomly spawn around camera. Format: list of objects with `particle` and `probability` fields, defaults to `[]`. Replaces biome `effects.particle` field."
   },
   {
     "group": "1.21.11",
@@ -1841,7 +1841,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `audio/background_music` Environment Attribute to control how and which background music is played. Format: object with optional `default`, `underwater`, and `creative` fields, defaults to `{}`. Replaces biome `effects.music` field."
+    "content": "Added `audio/background_music` environment attribute to control how and which background music is played. Format: object with optional `default`, `underwater`, and `creative` fields, defaults to `{}`. Replaces biome `effects.music` field."
   },
   {
     "group": "1.21.11",
@@ -1849,7 +1849,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `audio/music_volume` Environment Attribute to control music volume. Format: float between `0.0` and `1.0`, defaults to `1.0`. Replaces biome `effects.music_volume` field."
+    "content": "Added `audio/music_volume` environment attribute to control music volume. Format: float between `0.0` and `1.0`, defaults to `1.0`. Replaces biome `effects.music_volume` field."
   },
   {
     "group": "1.21.11",
@@ -1857,7 +1857,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `audio/ambient_sounds` Environment Attribute to control ambient sounds played around camera. Format: object with optional `loop`, `mood`, and `additions` fields, defaults to `{}`. Replaces biome `effects.ambient_sound`, `effects.mood_sound`, and `effects.additions_sound` fields."
+    "content": "Added `audio/ambient_sounds` environment attribute to control ambient sounds played around camera. Format: object with optional `loop`, `mood`, and `additions` fields, defaults to `{}`. Replaces biome `effects.ambient_sound`, `effects.mood_sound`, and `effects.additions_sound` fields."
   },
   {
     "group": "1.21.11",
@@ -1865,7 +1865,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/can_start_raid` Environment Attribute to control whether raids can be started by a player with Raid Omen. Format: boolean, defaults to `true`. Replaces dimension type `has_raids` field."
+    "content": "Added `gameplay/can_start_raid` environment attribute to control whether raids can be started by a player with Raid Omen. Format: boolean, defaults to `true`. Replaces dimension type `has_raids` field."
   },
   {
     "group": "1.21.11",
@@ -1873,7 +1873,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/water_evaporates` Environment Attribute to control whether water can be placed with buckets and related mechanics. Format: boolean, defaults to `false`. Replaces dimension type `ultrawarm` field."
+    "content": "Added `gameplay/water_evaporates` environment attribute to control whether water can be placed with buckets and related mechanics. Format: boolean, defaults to `false`. Replaces dimension type `ultrawarm` field."
   },
   {
     "group": "1.21.11",
@@ -1881,7 +1881,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/bed_rule` Environment Attribute to control whether beds can be used to sleep and set respawn points. Format: object with `can_sleep`, `can_set_spawn`, optional `explodes`, and optional `error_message` fields. Replaces dimension type `bed_works` field."
+    "content": "Added `gameplay/bed_rule` environment attribute to control whether beds can be used to sleep and set respawn points. Format: object with `can_sleep`, `can_set_spawn`, optional `explodes`, and optional `error_message` fields. Replaces dimension type `bed_works` field."
   },
   {
     "group": "1.21.11",
@@ -1889,7 +1889,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/respawn_anchor_works` Environment Attribute to control whether respawn anchors can be used to set spawn. Format: boolean, defaults to `false`. Replaces dimension type `respawn_anchor_works` field."
+    "content": "Added `gameplay/respawn_anchor_works` environment attribute to control whether respawn anchors can be used to set spawn. Format: boolean, defaults to `false`. Replaces dimension type `respawn_anchor_works` field."
   },
   {
     "group": "1.21.11",
@@ -1897,7 +1897,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/nether_portal_spawns_piglin` Environment Attribute to control whether nether portal blocks can spawn piglins. Format: boolean, defaults to `false`. Replaces dimension type `natural` field."
+    "content": "Added `gameplay/nether_portal_spawns_piglin` environment attribute to control whether nether portal blocks can spawn piglins. Format: boolean, defaults to `false`. Replaces dimension type `natural` field."
   },
   {
     "group": "1.21.11",
@@ -1905,7 +1905,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/fast_lava` Environment Attribute to control whether lava should spread faster and further. Format: boolean, defaults to `false`. Can only be specified on dimensions. Replaces dimension type `ultrawarm` field."
+    "content": "Added `gameplay/fast_lava` environment attribute to control whether lava should spread faster and further. Format: boolean, defaults to `false`. Can only be specified on dimensions. Replaces dimension type `ultrawarm` field."
   },
   {
     "group": "1.21.11",
@@ -1913,7 +1913,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/increased_fire_burnout` Environment Attribute to control whether fire blocks burn out more rapidly. Format: boolean, defaults to `false`. Replaces `#increased_fire_burnout` biome tag."
+    "content": "Added `gameplay/increased_fire_burnout` environment attribute to control whether fire blocks burn out more rapidly. Format: boolean, defaults to `false`. Replaces `#increased_fire_burnout` biome tag."
   },
   {
     "group": "1.21.11",
@@ -1921,7 +1921,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/piglins_zombify` Environment Attribute to control whether piglins and hoglins should zombify. Format: boolean, defaults to `true`. Replaces dimension type `piglin_safe` field."
+    "content": "Added `gameplay/piglins_zombify` environment attribute to control whether piglins and hoglins should zombify. Format: boolean, defaults to `true`. Replaces dimension type `piglin_safe` field."
   },
   {
     "group": "1.21.11",
@@ -1929,7 +1929,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `gameplay/snow_golem_melts` Environment Attribute to control whether snow golems should be damaged. Format: boolean, defaults to `false`. Replaces `#snow_golem_melts` biome tag."
+    "content": "Added `gameplay/snow_golem_melts` environment attribute to control whether snow golems should be damaged. Format: boolean, defaults to `false`. Replaces `#snow_golem_melts` biome tag."
   },
   {
     "group": "1.21.11",
@@ -1938,7 +1938,7 @@
       "dimension",
       "breaking"
     ],
-    "content": "Many dimension type fields have been migrated to Environment Attributes: `ultrawarm`, `bed_works`, `respawn_anchor_works`, `cloud_height`, `piglin_safe`, and `has_raids`."
+    "content": "Many dimension type fields have been migrated to environment attributes: `ultrawarm`, `bed_works`, `respawn_anchor_works`, `cloud_height`, `piglin_safe`, and `has_raids`."
   },
   {
     "group": "1.21.11",
@@ -1946,7 +1946,7 @@
     "tags": [
       "dimension"
     ],
-    "content": "The dimension type `natural` field has not been removed but its functionality has been migrated to `gameplay/nether_portal_spawns_piglin` Environment Attribute."
+    "content": "The dimension type `natural` field has not been removed but its functionality has been migrated to `gameplay/nether_portal_spawns_piglin` environment attribute."
   },
   {
     "group": "1.21.11",
@@ -1955,7 +1955,7 @@
       "data",
       "breaking"
     ],
-    "content": "Many biome `effects` subfields have been migrated to Environment Attributes: `fog_color`, `water_fog_color`, `sky_color`, `particle`, `ambient_sound`, `mood_sound`, `additions_sound`, `music`, and `music_volume`."
+    "content": "Many biome `effects` subfields have been migrated to environment attributes: `fog_color`, `water_fog_color`, `sky_color`, `particle`, `ambient_sound`, `mood_sound`, `additions_sound`, `music`, and `music_volume`."
   },
   {
     "group": "1.21.11",
@@ -1972,7 +1972,7 @@
       "tag",
       "breaking"
     ],
-    "content": "Removed `#snow_golem_melts` and `#increased_fire_burnout` biome tags. Replaced by `gameplay/snow_golem_melts` and `gameplay/increased_fire_burnout` Environment Attributes."
+    "content": "Removed `#snow_golem_melts` and `#increased_fire_burnout` biome tags. Replaced by `gameplay/snow_golem_melts` and `gameplay/increased_fire_burnout` environment attributes."
   },
   {
     "group": "1.21.11",
@@ -1981,7 +1981,7 @@
       "tag",
       "breaking"
     ],
-    "content": "Removed `#plays_underwater_music` biome tag. Replaced by `only_underwater` field in `audio/background_music` Environment Attribute."
+    "content": "Removed `#plays_underwater_music` biome tag. Replaced by `only_underwater` field in `audio/background_music` environment attribute."
   },
   {
     "group": "1.21.11",
@@ -1990,7 +1990,7 @@
       "tag",
       "breaking"
     ],
-    "content": "Removed `#has_closer_water_fog` biome tag. Replaced by `visual/water_fog_radius` Environment Attribute."
+    "content": "Removed `#has_closer_water_fog` biome tag. Replaced by `visual/water_fog_radius` environment attribute."
   },
   {
     "group": "1.21.11",
@@ -10776,7 +10776,7 @@
       "predicate",
       "environment-attribute"
     ],
-    "content": "Added `environment_attribute_check` loot predicate. Exactly matches the value of an Environment Attribute at a given position."
+    "content": "Added `environment_attribute_check` loot predicate. Exactly matches the value of an environment attribute at a given position."
   },
   {
     "group": "26.1",
@@ -10784,7 +10784,7 @@
     "tags": [
       "environment-attribute"
     ],
-    "content": "Added `environment_attribute` number provider. Fetches and provides the value of an Environment Attribute that can be represented as a number."
+    "content": "Added `environment_attribute` number provider. Fetches and provides the value of an environment attribute that can be represented as a number."
   },
   {
     "group": "26.1",
@@ -19229,10 +19229,45 @@
   },
   {
     "group": "26.4",
-    "version": "26.4-snapshot-1",
+    "version": "26.4-snapshot-2",
     "tags": [
       "pack",
       "breaking"
+    ],
+    "content": "Data pack format has been increased to `122.1`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-2",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `99.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-2",
+    "tags": [
+      "environment-attribute"
+    ],
+    "content": "Added `visual/has_sky_occluder` environment attribute to control fog color when camera is not submerged. Format: boolean, defaults to `false`. Determines whether the sky occluder is enabled for the environment. The sky occluder will occlude the sky box up until a certain angle with fog color with a smooth occlusion border."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-2",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added `below_heightmap` worldgen block predicate. It has one field `heightmap`, the heightmap type to compare against."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-1",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
     ],
     "content": "Data pack format has been increased to `122.0`."
   },
@@ -19241,7 +19276,8 @@
     "version": "26.4-snapshot-1",
     "tags": [
       "pack",
-      "breaking"
+      "breaking",
+      "obsolete"
     ],
     "content": "Resource pack format has been increased to `98.0`."
   },

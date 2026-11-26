@@ -20727,6 +20727,118 @@
   },
   {
     "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `128.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Resource pack format has been increased to `104.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "options"
+    ],
+    "content": "Added `key-rotation-period-seconds` to `server.properties`. It specifies the minimum time before server connection keys are recreated and defaults to `60`. `0` creates a unique ephemeral key for every connection."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "command"
+    ],
+    "content": "Added support for local 2D coordinates in the form `^<left> ^<forwards>` in `/forceload`, `/spreadplayers`, and `/worldborder center`. Rotation is interpreted around the Y axis."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "dispense-behavior"
+    ],
+    "content": "Added the `dispense_behavior` registry and folder for data-driven dispenser behavior sequences. Registry entries contain behavior entries with a `type` and type-specific fields. Added dispense behavior types:\n* `brush_armadillo`\n* `charge_respawn_anchor`\n* `convert_to_mud`\n* `drop_item`\n* `empty_bucket`\n* `equip`\n* `equip_chest`\n* `equip_sulfur_cube`\n* `fill_bottle`\n* `fill_bucket`\n* `grow_plant`\n* `ignite`\n* `insert_into_container`\n* `place_armor_stand`\n* `place_block`\n* `place_boat`\n* `place_minecart`\n* `shear`\n* `spawn_golem_from_carved_pumpkin`\n* `spawn_mob`\n* `spawn_tnt`\n* `spawn_wither_from_wither_skeleton_skull`\n* `transform_block`"
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "component"
+    ],
+    "content": "Added data component `dispense_behavior`, whose value is a `dispense_behavior` registry entry ID or an inline list of dispense behaviors."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "component",
+      "nbt",
+      "entity"
+    ],
+    "content": "Boat and minecart items now include the `entity_data` component by default. Dispensing or using the item fails if the entity type does not match the item behavior's requirements."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "block-transformer"
+    ],
+    "content": "Added block transformer `honeycomb`, used to wax blocks from dispensers."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "particle",
+      "breaking"
+    ],
+    "content": "The `current_down` particle now has a `radius` field for the radius around the position in which particles spawn."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "particle"
+    ],
+    "content": "The `bubble_column_up` particle now has an optional `pop_chance` field between `0.0` and `1.0`, defaulting to `0.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "dialog"
+    ],
+    "content": "Dialog inputs now show red text and a warning tooltip when they appear to contain an email address."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "lang",
+      "assets",
+      "breaking"
+    ],
+    "content": "Resource packs can no longer replace language keys beginning with `menu.custom_options` or `menu.custom_screen_info`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-9",
+    "tags": [
+      "shader"
+    ],
+    "content": "Updated `core/terrain.fsh` to support the separate improved fog setting."
+  },
+  {
+    "group": "26.4",
     "version": "26.4-snapshot-2",
     "tags": [
       "pack",
@@ -20917,6 +21029,126 @@
   },
   {
     "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `126.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `102.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "command"
+    ],
+    "content": "The `/effect` command now accepts mob effect tags."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "command",
+      "breaking"
+    ],
+    "content": "Time arguments now fail if a value in ticks is greater than `2147483647`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "debug"
+    ],
+    "content": "Debug worlds can now be modified with block placement, breaking, and commands. Blocks no longer update automatically, and must be viewed by creating a new debug world."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "debug"
+    ],
+    "content": "Debug worlds now include an adult and, when applicable, baby version of every entity type. They are tick-frozen on load and start with `Normal` difficulty."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "debug",
+      "gamerule"
+    ],
+    "content": "Debug worlds now disable `advance_time`, `advance_weather`, `spawn_wandering_traders`, and `tnt_explodes` by default."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "tag",
+      "obsolete"
+    ],
+    "content": "Removed unused entity type tags `#swimming` and `#flying`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "block-sound-set"
+    ],
+    "content": "Removed unused block sound set `twisting_vines`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-7",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound event `entity.parrot.imitate.frostbite`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-release-1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `128.1`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-release-1",
+    "tags": [
+      "command"
+    ],
+    "content": "Commands issued through the server console are now rejected while the server is starting."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-release-1",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed data component `tooltip_display`. Added optional field `split_lines`, which allows items to opt-out of tooltip line splitting and word wrapping, defaults to `true`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-release-1",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed density function `upscale`. The axis processing order is now X, Z, Y instead of Z, X, Y."
+  },
+  {
+    "group": "26.4",
     "version": "26.4-snapshot-3",
     "tags": [
       "pack",
@@ -20954,8 +21186,7 @@
     "group": "26.4",
     "version": "26.4-snapshot-3",
     "tags": [
-      "block",
-      "sound"
+      "block-sound-set"
     ],
     "content": "Added `block_sound_set` registry and data pack folder. It has optional fields:\n* `volume`: float between `1e-5` and `10`, defaults to `1`\n* `pitch`: float between `1e-5` and `2`, defaults to `2`\n* `break_sound`: sound event\n* `step_sound`: sound event\n* `place_sound`: sound event\n* `hit_sound`: sound event\n* `fall_sound`: sound event"
   },
@@ -20995,7 +21226,8 @@
     "group": "26.4",
     "version": "26.4-snapshot-3",
     "tags": [
-      "tag"
+      "tag",
+      "block-sound-set"
     ],
     "content": "Added block sound set tag `#sounds_wooden`."
   },
@@ -21014,7 +21246,489 @@
     "tags": [
       "particle"
     ],
-    "content": "Added particle type `freezing`, without any fields."
+    "content": "Added particle type `freezing`, emitted by entities affected by the freezing mob effect. It has no fields."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-3",
+    "tags": [
+      "debug"
+    ],
+    "content": "Added the `chunk_section_status` debug option to show the rendering status of chunks around the player."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-3",
+    "tags": [
+      "debug"
+    ],
+    "content": "Split the chunk load overlay out of `visualize_chunks_on_server` into the `chunk_load_status` debug option."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-3",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events `entity.frostbite.ambient`, `entity.frostbite.death`, `entity.frostbite.hurt`, `entity.frostbite.step`, `block.ice.break`, `block.ice.fall`, `block.ice.hit`, `block.ice.place`, `block.ice.step`, `block.ice_crystal.break`, `block.ice_crystal.fall`, `block.ice_crystal.hit`, `block.ice_crystal.place`, `block.ice_crystal.step`, `block.icicle.break`, `block.icicle.fall`, `block.icicle.hit`, `block.icicle.place`, `block.icicle.step`, `block.icicle.land`, `entity.ice_ball.break`, and `entity.ice_ball.throw`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `125.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `100.2`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "network",
+      "breaking"
+    ],
+    "content": "Login encryption and compression must now be explicitly enabled by the server with `login_finished` or `apply_options`, and the client acknowledges the change with `login_acknowledged` or `options_applied`. Packet settings take effect only after acknowledgement."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "component"
+    ],
+    "content": "Made the `sound` field of the `consumable` data component fully optional; it defaults to `entity.generic.eat`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "component"
+    ],
+    "content": "Made the `equip_sound` and `shearing_sound` fields of the `equippable` data component optional, they default to `item.armor.equip_generic` and `item.shears.snip`, respectively."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Changed ore and scattered ore feature placement. Blocks discarded due to air exposure are no longer passed to the next replacement rule."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "worldgen",
+      "density",
+      "breaking"
+    ],
+    "content": "Renamed density function `interpolated` to `upscale`. It samples the input at a reduced resolution and has `x`, `y`, and `z` axis configurations with a `mode` and integer `cell_size` between `1` and `64`. Supported modes are `nearest_neighbor`, `interpolate_linear`, `interpolate_cosine`, `interpolate_cubic`, and `b_spline_cubic`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added biome tag `#spawns_ice_variants_underground` for biomes that allow cold variants to spawn without sky access."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Renamed biome tag `#spawns_strays_without_powder_snow` to `#spawns_cold_variants_underground`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Replaced entity type tag `#ignores_poison_and_regen` with `#immune_to_poison` and `#immune_to_regeneration`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "tag",
+      "breaking"
+    ],
+    "content": "Renamed entity type tag `#freeze_immune_entity_types` to `#immune_to_freezing`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-5",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added entity type tags `#immune_to_wither` and `#immune_to_weakness` for mobs immune to those effects."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `127.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `103.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "network"
+    ],
+    "content": "The entity position synchronization packet now includes full-precision head rotation."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "shader",
+      "breaking"
+    ],
+    "content": "Terrain vertex data in `terrain.vsh` is now fetched from a texel buffer instead of traditional vertex buffers. The packing of terrain chunk section mesh vertex data has changed."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "loading",
+      "breaking"
+    ],
+    "content": "Most validation issues in loot tables, predicates, item modifiers, slot sources, context float/int providers, villager trades, advancement triggers, and enchantment effect component requirements no longer prevent elements from loading."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "loading",
+      "breaking"
+    ],
+    "content": "Recursive validated elements and elements missing required context values are now errors that can prevent pack loading or command compilation. Elements are only validated if they have no conditions or all required context values are available."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "datagen",
+      "breaking"
+    ],
+    "content": "The `command` report format now places argument `properties` in `argument`, `parser` is now `argument.type` and it includes suggestion information. The `loot_context_requirements.json` report now describes the context values allowed for validated elements."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "command"
+    ],
+    "content": "Added command argument type `pattern` for matching regular expression patterns. This is only useful for server-side mods."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "loot",
+      "breaking"
+    ],
+    "content": "Split the `command` context into `command_predicate` and `command_modifier`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tags `#triggers_ambient_ice_block_sounds` and `#triggers_ambient_ice_crystal_sounds` for blocks that trigger their respective ambient sounds."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "shader"
+    ],
+    "content": "Order-independent transparency shaders now use subpasses. Added `core/blit_depth_bounds.fsh` and changed `core/oit_composite.fsh`, `core/oit_depth_bounds_cull.fsh`, `include/oit_depth_sample.glsl`, and `include/oit_sample.glsl`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "shader"
+    ],
+    "content": "Boat water masks are now rendered to a separate target sampled during terrain rendering instead of the terrain depth buffer. Changed `core/rendertype_water_mask.fsh` and `core/terrain.fsh`, and removed `core/blit_depth.fsh`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-8",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound event `entity.frostbite.throw`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `125.1`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `101.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "data"
+    ],
+    "content": "Added optional `location_based_effects` to sulfur cube archetypes. Each entry has the same format as a location-based enchantment effect, and level-based values are always evaluated with level `1`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Changed density function `gradient`. The `from_coordinate` and `to_coordinate` fields now accept vertical anchors when `axis` is `y`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "worldgen",
+      "density"
+    ],
+    "content": "Added density function `domain_warp`, which applies coordinate offsets to an input density function. It has optional `offset_x`, `offset_y`, and `offset_z` density functions, defaulting to `0.0`, and at least one offset must be specified."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "worldgen",
+      "structure"
+    ],
+    "content": "Added optional `corner_constraint` to structure pool elements. It is a list of constraints containing `density_function`, `acceptable_density`, optional `padding` (integer from `0` to `8`, defaulting to `0`), optional `corners` (`all`, `top`, or `bottom`, defaulting to `all`), and `required_corners`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added fluid tag `#swimmable` for fluids in which players can swim."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added item tag `#sulfur_cube_archetype/cold` for items that can turn a sulfur cube into the cold archetype."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "tag",
+      "obsolete"
+    ],
+    "content": "Added entity type tags `#swimming` and `#flying` for entities considered to be swimming or flying."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-6",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound event `block.ice_crystal.ambient`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Data pack format has been increased to `124.0`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "pack",
+      "breaking",
+      "obsolete"
+    ],
+    "content": "Resource pack format has been increased to `100.1`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "network"
+    ],
+    "content": "The server now more consistently disconnects clients if a packet they send causes an error."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "sound",
+      "breaking"
+    ],
+    "content": "Removed sound event `intentionally_empty`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "data"
+    ],
+    "content": "Changed sulfur cube archetypes. Made the `hit_sound` and `push_sound` fields in `sound_settings` optional."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "variant"
+    ],
+    "content": "Changed chicken, cow, pig, and wolf sound variants. Made `ambient_sound`, `hurt_sound`, `death_sound`, and `step_sound` optional, including adult and baby variants."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "variant"
+    ],
+    "content": "Changed pig sound variants. Made field `eat_sound` optional."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "variant"
+    ],
+    "content": "Changed wolf sound variants. Made fields `growl_sound`, `pant_sound`, and `whine_sound` optional."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "variant"
+    ],
+    "content": "Changed cat sound variants. Made fields `stray_ambient_sound`, `eat_sound`, `beg_for_food_sound`, `purr_sound`, and `purreow_sound` optional."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "worldgen",
+      "breaking"
+    ],
+    "content": "Removed fluid types `flowing_water` and `flowing_lava`. They now use `level` (integer from 1 to 8) and `source` (boolean) fields."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Updated the `matching_fluids` block predicate with a `state` field for matching fluid state properties. Values may be integers, booleans, strings, or objects with optional `min` and `max` properties."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "enchantment"
+    ],
+    "content": "Changed the `explode` enchantment effect. Made fields `small_particle`, `large_particle`, and `sound` optional."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Added the `crevasse` feature type, which carves a tapered crevasse through exposed terrain. It has fields `max_width`, `max_length`, `min_footprint`, `cursor_surface_search_range`, `column_surface_search_range`, `twistiness`, `tapering`, `turn_factor`, `carve_depth`, `fill_depth`, `surface_block`, `fill_block`, `carvable_blocks`, and `acceptable_barrier`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tag `#jukebox_containers` for blocks usable as a jukebox playlist source."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added block tag `#face_occluding_ice_blocks` for ice blocks that enable face culling when placed next to each other."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "tag"
+    ],
+    "content": "Added entity type tag `#does_not_break_brittle_ice` for mobs that do not break brittle ice when stepping on it."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "block-sound-set"
+    ],
+    "content": "Renamed block sound set `amethyst` to `amethyst_block`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-snapshot-4",
+    "tags": [
+      "sound"
+    ],
+    "content": "Added sound events `block.blue_ice.break`, `block.blue_ice.fall`, `block.blue_ice.hit`, `block.blue_ice.place`, `block.blue_ice.step`, `block.brittle_ice.break`, `block.brittle_ice.fall`, `block.brittle_ice.hit`, `block.brittle_ice.place`, `block.brittle_ice.step`, `block.brittle_ice.crack`, `block.frosted_ice.break`, `block.frosted_ice.fall`, `block.frosted_ice.hit`, `block.frosted_ice.place`, `block.frosted_ice.step`, `block.ice.ambient`, `block.packed_ice.break`, `block.packed_ice.fall`, `block.packed_ice.hit`, `block.packed_ice.place`, `block.packed_ice.step`, and `entity.drowned.converted_to_zombie`."
   },
   {
     "group": "1.16.2",

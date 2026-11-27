@@ -20875,6 +20875,39 @@
   },
   {
     "group": "26.4",
+    "version": "26.4-pre-1",
+    "tags": [
+      "pack",
+      "breaking"
+    ],
+    "content": "Data pack format has been increased to `128.1`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-1",
+    "tags": [
+      "command"
+    ],
+    "content": "Commands issued through the server console are now rejected while the server is starting."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-1",
+    "tags": [
+      "component"
+    ],
+    "content": "Changed data component `tooltip_display`. Added optional field `split_lines`, which allows items to opt-out of tooltip line splitting and word wrapping, defaults to `true`."
+  },
+  {
+    "group": "26.4",
+    "version": "26.4-pre-1",
+    "tags": [
+      "worldgen"
+    ],
+    "content": "Changed density function `upscale`. The axis processing order is now X, Z, Y instead of Z, X, Y."
+  },
+  {
+    "group": "26.4",
     "version": "26.4-snapshot-1",
     "tags": [
       "pack",
@@ -21113,39 +21146,6 @@
       "sound"
     ],
     "content": "Added sound event `entity.parrot.imitate.frostbite`."
-  },
-  {
-    "group": "26.4",
-    "version": "26.4-pre-release-1",
-    "tags": [
-      "pack",
-      "breaking"
-    ],
-    "content": "Data pack format has been increased to `128.1`."
-  },
-  {
-    "group": "26.4",
-    "version": "26.4-pre-release-1",
-    "tags": [
-      "command"
-    ],
-    "content": "Commands issued through the server console are now rejected while the server is starting."
-  },
-  {
-    "group": "26.4",
-    "version": "26.4-pre-release-1",
-    "tags": [
-      "component"
-    ],
-    "content": "Changed data component `tooltip_display`. Added optional field `split_lines`, which allows items to opt-out of tooltip line splitting and word wrapping, defaults to `true`."
-  },
-  {
-    "group": "26.4",
-    "version": "26.4-pre-release-1",
-    "tags": [
-      "worldgen"
-    ],
-    "content": "Changed density function `upscale`. The axis processing order is now X, Z, Y instead of Z, X, Y."
   },
   {
     "group": "26.4",
